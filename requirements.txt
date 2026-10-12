@@ -1,0 +1,26 @@
+# Pinned to the environment that produced every artifact in this repository.
+# Versions are cross-checked against the provenance stamps carried in the artifacts
+# themselves (python, cplex, docplex fields), not merely against the current machine.
+#
+# SOLVERS ARE NOT VENDORED. CPLEX and Gurobi are commercial; install them separately.
+# Their versions are recorded in every artifact so a replicator can match them:
+#     cplex 22.1.1.0, deterministic parallel mode, threads=4
+#     gurobi 13.0.3  (used only where CPLEX cannot close a cell)
+#
+# Reference environment: Python 3.10.11 on Windows 10/11 (x86-64).
+
+numpy==2.2.6
+scipy==1.15.3
+pandas==2.3.3
+matplotlib==3.10.8
+
+# CPLEX Python API. `cplex` and `docplex` ship with an IBM CPLEX installation;
+# the pins below record what was used, not an instruction to pip-install a solver.
+docplex==2.32.264
+cplex==22.1.1.0
+
+# CP-SAT, used for the water-bound cross-check.
+ortools==9.15.6755
+
+# Optional: only needed to reproduce the cells CPLEX cannot close (e.g. R205/n20).
+gurobipy==13.0.3

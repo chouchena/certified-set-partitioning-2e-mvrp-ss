@@ -1,0 +1,462 @@
+{
+ "size": 50,
+ "variant": "pu_union_full",
+ "rows": [
+  {
+   "cell": "C201",
+   "best": 1754.841,
+   "cfg": "pu_ng5_full",
+   "cars": 4,
+   "our_lb": 1525.8647082630687,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "C202",
+   "best": 1576.814,
+   "cfg": "pu_ng5_full",
+   "cars": 3,
+   "our_lb": 1418.1838793859645,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "C203",
+   "best": 1458.843,
+   "cfg": "pu_ng10_full",
+   "cars": 3,
+   "our_lb": 1381.2434581388568,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "C204",
+   "best": 1434.0729999999999,
+   "cfg": "pu_ng25_full",
+   "cars": 3,
+   "our_lb": 1270.139286706584,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "C205",
+   "best": 1569.743,
+   "cfg": "pu_ng10_full",
+   "cars": 3,
+   "our_lb": 1404.9770783743954,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "C206",
+   "best": 1503.483,
+   "cfg": "pu_ng25_full",
+   "cars": 3,
+   "our_lb": 1359.8105583725521,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "C207",
+   "best": 1477.2549999999999,
+   "cfg": "pu_ng10_full",
+   "cars": 3,
+   "our_lb": 1341.490710714329,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "C208",
+   "best": 1469.973,
+   "cfg": "pu_ng10_full",
+   "cars": 3,
+   "our_lb": 1308.687028184624,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R201",
+   "best": 1867.568,
+   "cfg": "pu_ng5_full",
+   "cars": 3,
+   "our_lb": 1646.1661264445302,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R202",
+   "best": 1681.258,
+   "cfg": "pu_ng10_full",
+   "cars": 3,
+   "our_lb": 1471.3578963913633,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R203",
+   "best": 1587.432,
+   "cfg": "pu_ng5_full",
+   "cars": 3,
+   "our_lb": 1356.1646120878409,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R204",
+   "best": 1290.297,
+   "cfg": "pu_ng10_full",
+   "cars": 2,
+   "our_lb": 1162.532524639741,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R205",
+   "best": 1677.4650000000001,
+   "cfg": "pu_ng25_full",
+   "cars": 3,
+   "our_lb": 1412.6280968242877,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R206",
+   "best": 1602.164,
+   "cfg": "pu_ng25_full",
+   "cars": 3,
+   "our_lb": 1310.5234065613568,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R207",
+   "best": 1550.601,
+   "cfg": "pu_ng25_full",
+   "cars": 3,
+   "our_lb": 1242.2301129700518,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R208",
+   "best": 1285.054,
+   "cfg": "pu_ng5_full",
+   "cars": 2,
+   "our_lb": 1148.6005494433089,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R209",
+   "best": 1599.064,
+   "cfg": "pu_ng5_full",
+   "cars": 3,
+   "our_lb": 1325.4485177713386,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R210",
+   "best": 1609.181,
+   "cfg": "pu_ng5_full",
+   "cars": 3,
+   "our_lb": 1334.9827387703467,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R211",
+   "best": 1375.938,
+   "cfg": "pu_ng10_full",
+   "cars": 2,
+   "our_lb": 1250.2782937983757,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "RC201",
+   "best": 2319.031,
+   "cfg": "pu_ng25_full",
+   "cars": 4,
+   "our_lb": 1839.9388645718823,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "RC202",
+   "best": 1975.645,
+   "cfg": "pu_ng25_full",
+   "cars": 3,
+   "our_lb": 1597.7305678104567,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "RC203",
+   "best": 1883.2920000000001,
+   "cfg": "pu_ng10_full",
+   "cars": 3,
+   "our_lb": 1508.364135422276,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "RC204",
+   "best": 1787.522,
+   "cfg": "pu_ng5_full",
+   "cars": 3,
+   "our_lb": 1310.9740847544576,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "RC205",
+   "best": 2210.2670000000003,
+   "cfg": "pu_ng25_full",
+   "cars": 4,
+   "our_lb": 1674.6501784638922,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "RC206",
+   "best": 1979.125,
+   "cfg": "pu_ng5_full",
+   "cars": 3,
+   "our_lb": 1556.5330013731486,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "RC207",
+   "best": 1905.0320000000002,
+   "cfg": "pu_ng5_full",
+   "cars": 3,
+   "our_lb": 1513.2307893871962,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "RC208",
+   "best": 1856.1390000000001,
+   "cfg": "pu_ng25_full",
+   "cars": 3,
+   "our_lb": 1388.8226546806804,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "theirs": null,
+   "proven": false
+  }
+ ],
+ "sources": {
+  "analysis/tep_grid_consolidate.py": "6a9ee2c4c3776861"
+ },
+ "_provenance": {
+  "sources": {
+   "analysis/tep_grid_consolidate.py": "6a9ee2c4c3776861"
+  },
+  "when": "2026-10-08T00:11:47",
+  "git_sha": "8df3384b561a",
+  "git_dirty": true,
+  "sources_dirty": [],
+  "python": "3.10.11",
+  "host": "LAPTOP-420NB7DQ",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cpu": {
+   "model": "Intel(R) Core(TM) Ultra 7 258V",
+   "logical": 8,
+   "cores": 8
+  },
+  "source_hash": "31644e34c7cac695",
+  "sources_unresolved": [],
+  "code_in_play_hash": "49b86fa9d9143dff",
+  "code_in_play_n": 3,
+  "code_in_play": {
+   "analysis/artifact_guard.py": "5aa960abca47c6e8",
+   "analysis/stamp.py": "6f8d1d3a0792144f",
+   "analysis/tep_grid_consolidate.py": "6a9ee2c4c3776861"
+  },
+  "code_hash_missing": [],
+  "code_hash_covers": [
+   "crossfeed/block_a.py",
+   "crossfeed/easy_reduction.py",
+   "crossfeed/blockA_cpsat.py",
+   "crossfeed/easy_reduction_descend.py",
+   "crossfeed/bound_tracer.py",
+   "build_instance.py",
+   "joint_model_cplex.py",
+   "joint_model_gurobi.py",
+   "solver/engines/fixopt.py"
+  ],
+  "code_hash": "26b414c6",
+  "solver_versions": {
+   "docplex": null,
+   "cplex": "22.1.1.0"
+  },
+  "gurobi": "13.0.3",
+  "solver_tolerances": {
+   "FeasibilityTol": 1e-06,
+   "IntFeasTol": 1e-05,
+   "OptimalityTol": 1e-06,
+   "MIPGap": 0.0001,
+   "NumericFocus": 0,
+   "source": "gurobipy defaults for a fresh model"
+  }
+ },
+ "_rt": {
+  "wall_s": 2.31,
+  "wall_measured_by": "analysis/stamp.py",
+  "process_wall_s": 2.31,
+  "cpu_s": 0.156,
+  "det_ticks": null,
+  "clock": "time.time / time.process_time since analysis.stamp import",
+  "rt_class": "diagnostic",
+  "rt_not_comparable": "the writer declared no rt_class, so this wall was never certified against d47 (4 threads, single tenancy) and is not quotable",
+  "threads": null,
+  "tenancy": 1,
+  "policy": "d47",
+  "declared": false,
+  "cores_regime": {
+   "threads_requested": null,
+   "cores_used_measured": 0.068,
+   "tenancy": 1,
+   "machine_cores": 8,
+   "machine_logical": 8,
+   "policy_threads": 4,
+   "policy": "d47"
+  }
+ }
+}

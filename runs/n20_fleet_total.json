@@ -1,0 +1,262 @@
+{
+ "total": 42,
+ "k_total": 43,
+ "verified": 27,
+ "n_cells": 27,
+ "proven": 20,
+ "argued": 1,
+ "open_cells": [
+  "C204",
+  "R202",
+  "RC202",
+  "RC205",
+  "RC206",
+  "RC207"
+ ],
+ "rows": [
+  {
+   "cell": "C201",
+   "cars": 2,
+   "objective": 697.695,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "L-fleet certificate proves >=2",
+   "source": "published_artifacts\\solutions\\best_C201_n20.json"
+  },
+  {
+   "cell": "C202",
+   "cars": 2,
+   "objective": 678.6550000000001,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "L-fleet certificate proves >=2",
+   "source": "published_artifacts\\solutions\\best_C202_n20.json"
+  },
+  {
+   "cell": "C203",
+   "cars": 2,
+   "objective": 673.7090000000001,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "L-fleet certificate proves >=2",
+   "source": "published_artifacts\\solutions\\best_C203_n20.json"
+  },
+  {
+   "cell": "C204",
+   "cars": 2,
+   "objective": 668.1450000000001,
+   "verified": true,
+   "status": "OPEN",
+   "ground": "no proof that 1 is impossible",
+   "source": "published_artifacts\\solutions\\best_C204_n20.json"
+  },
+  {
+   "cell": "C205",
+   "cars": 2,
+   "objective": 685.19,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "L-fleet certificate proves >=2",
+   "source": "published_artifacts\\solutions\\best_C205_n20.json"
+  },
+  {
+   "cell": "C206",
+   "cars": 2,
+   "objective": 680.785,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "L-fleet certificate proves >=2",
+   "source": "published_artifacts\\solutions\\best_C206_n20.json"
+  },
+  {
+   "cell": "C207",
+   "cars": 2,
+   "objective": 678.805,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "L-fleet certificate proves >=2",
+   "source": "published_artifacts\\solutions\\best_C207_n20.json"
+  },
+  {
+   "cell": "C208",
+   "cars": 2,
+   "objective": 678.135,
+   "verified": true,
+   "status": "ARGUED",
+   "ground": "K prove the objective optimal, plus H1 (empirical)",
+   "source": "published_artifacts\\solutions\\best_C208_n20.json"
+  },
+  {
+   "cell": "R201",
+   "cars": 2,
+   "objective": 821.71,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "solver proved nofCars<=1 infeasible",
+   "source": "published_artifacts\\solutions\\best_R201_n20.json"
+  },
+  {
+   "cell": "R202",
+   "cars": 2,
+   "objective": 756.706,
+   "verified": true,
+   "status": "OPEN",
+   "ground": "no proof that 1 is impossible",
+   "source": "published_artifacts\\solutions\\best_R202_n20.json"
+  },
+  {
+   "cell": "R203",
+   "cars": 1,
+   "objective": 639.466,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "one car is the floor",
+   "source": "published_artifacts\\solutions\\best_R203_n20.json"
+  },
+  {
+   "cell": "R204",
+   "cars": 1,
+   "objective": 582.7950000000001,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "one car is the floor",
+   "source": "published_artifacts\\solutions\\best_R204_n20.json"
+  },
+  {
+   "cell": "R205",
+   "cars": 1,
+   "objective": 642.216,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "one car is the floor",
+   "source": "published_artifacts\\solutions\\best_R205_n20.json"
+  },
+  {
+   "cell": "R206",
+   "cars": 1,
+   "objective": 603.6650000000001,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "one car is the floor",
+   "source": "published_artifacts\\solutions\\best_R206_n20.json"
+  },
+  {
+   "cell": "R207",
+   "cars": 1,
+   "objective": 582.3850000000001,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "one car is the floor",
+   "source": "published_artifacts\\solutions\\best_R207_n20.json"
+  },
+  {
+   "cell": "R208",
+   "cars": 1,
+   "objective": 549.9060000000001,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "one car is the floor",
+   "source": "published_artifacts\\solutions\\best_R208_n20.json"
+  },
+  {
+   "cell": "R209",
+   "cars": 1,
+   "objective": 626.2660000000001,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "one car is the floor",
+   "source": "published_artifacts\\solutions\\best_R209_n20.json"
+  },
+  {
+   "cell": "R210",
+   "cars": 1,
+   "objective": 632.745,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "one car is the floor",
+   "source": "published_artifacts\\solutions\\best_R210_n20.json"
+  },
+  {
+   "cell": "R211",
+   "cars": 1,
+   "objective": 577.696,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "one car is the floor",
+   "source": "published_artifacts\\solutions\\best_R211_n20.json"
+  },
+  {
+   "cell": "RC201",
+   "cars": 2,
+   "objective": 981.158,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "solver proved nofCars<=1 infeasible",
+   "source": "published_artifacts\\solutions\\best_RC201_n20.json"
+  },
+  {
+   "cell": "RC202",
+   "cars": 2,
+   "objective": 900.598,
+   "verified": true,
+   "status": "OPEN",
+   "ground": "no proof that 1 is impossible",
+   "source": "published_artifacts\\solutions\\best_RC202_n20.json"
+  },
+  {
+   "cell": "RC203",
+   "cars": 1,
+   "objective": 711.398,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "one car is the floor",
+   "source": "published_artifacts\\solutions\\best_RC203_n20.json"
+  },
+  {
+   "cell": "RC204",
+   "cars": 1,
+   "objective": 641.5880000000001,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "one car is the floor",
+   "source": "published_artifacts\\solutions\\best_RC204_n20.json"
+  },
+  {
+   "cell": "RC205",
+   "cars": 2,
+   "objective": 935.518,
+   "verified": true,
+   "status": "OPEN",
+   "ground": "no proof that 1 is impossible",
+   "source": "published_artifacts\\solutions\\best_RC205_n20.json"
+  },
+  {
+   "cell": "RC206",
+   "cars": 2,
+   "objective": 885.2080000000001,
+   "verified": true,
+   "status": "OPEN",
+   "ground": "no proof that 1 is impossible",
+   "source": "published_artifacts\\solutions\\best_RC206_n20.json"
+  },
+  {
+   "cell": "RC207",
+   "cars": 2,
+   "objective": 881.4079999999999,
+   "verified": true,
+   "status": "OPEN",
+   "ground": "no proof that 1 is impossible",
+   "source": "published_artifacts\\solutions\\best_RC207_n20.json"
+  },
+  {
+   "cell": "RC208",
+   "cars": 1,
+   "objective": 693.8680000000002,
+   "verified": true,
+   "status": "PROVEN",
+   "ground": "one car is the floor",
+   "source": "published_artifacts\\solutions\\best_RC208_n20.json"
+  }
+ ],
+ "prereg": "validation/PREREG_n20_fleet_total.md"
+}

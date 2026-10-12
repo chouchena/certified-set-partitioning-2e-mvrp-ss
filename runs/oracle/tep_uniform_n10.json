@@ -1,0 +1,599 @@
+{
+ "size": 10,
+ "variant": "pu_union",
+ "rows": [
+  {
+   "cell": "C201",
+   "best": 369.059,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 365.5,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 365.5,
+   "our_lb": 355.55899999999997,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C202",
+   "best": 327.489,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 327.5,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 327.5,
+   "our_lb": 316.12399999999997,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C203",
+   "best": 327.489,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 327.5,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 327.5,
+   "our_lb": 316.12399999999997,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C204",
+   "best": 304.269,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 304.3,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 304.3,
+   "our_lb": 296.33649999999994,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C205",
+   "best": 366.759,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 365.5,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 365.5,
+   "our_lb": 322.8215,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C206",
+   "best": 366.759,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 365.5,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 365.5,
+   "our_lb": 301.08816666666667,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C207",
+   "best": 365.489,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 365.5,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 365.5,
+   "our_lb": 323.839,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C208",
+   "best": 363.909,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 358.4,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 358.4,
+   "our_lb": 279.0707692307692,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R201",
+   "best": 420.144,
+   "cfg": "pu_ng5",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 420.1,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 420.1,
+   "our_lb": 369.3218809523811,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R202",
+   "best": 388.438,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 387.8,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 387.8,
+   "our_lb": 324.1512499999999,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R203",
+   "best": 388.438,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 387.8,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 387.8,
+   "our_lb": 324.1512499999999,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R204",
+   "best": 354.654,
+   "cfg": "pu_ng5",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 351.4,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 351.4,
+   "our_lb": 285.01499999999993,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R205",
+   "best": 382.046,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 376.4,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 376.4,
+   "our_lb": 288.375537037037,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R206",
+   "best": 327.558,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 327.6,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 327.6,
+   "our_lb": 281.65999999999997,
+   "lb_width": null,
+   "lb_class": "AB4 total"
+  },
+  {
+   "cell": "R207",
+   "best": 327.558,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 327.6,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 327.6,
+   "our_lb": 281.65999999999997,
+   "lb_width": null,
+   "lb_class": "AB4 total"
+  },
+  {
+   "cell": "R208",
+   "best": 327.558,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 327.6,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 327.6,
+   "our_lb": 281.65999999999997,
+   "lb_width": null,
+   "lb_class": "AB4 total"
+  },
+  {
+   "cell": "R209",
+   "best": 362.074,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 362.1,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 362.1,
+   "our_lb": 286.44,
+   "lb_width": null,
+   "lb_class": "AB4 total"
+  },
+  {
+   "cell": "R210",
+   "best": 354.654,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 353.4,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 353.4,
+   "our_lb": 286.3661999999999,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R211",
+   "best": 344.5,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 344.5,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 344.5,
+   "our_lb": 281.65999999999997,
+   "lb_width": null,
+   "lb_class": "AB4 total"
+  },
+  {
+   "cell": "RC201",
+   "best": 392.769,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 392.8,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 392.8,
+   "our_lb": 253.98998437499986,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC202",
+   "best": 356.509,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 356.5,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 356.5,
+   "our_lb": 246.241,
+   "lb_width": null,
+   "lb_class": "AB4 total"
+  },
+  {
+   "cell": "RC203",
+   "best": 356.509,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 356.5,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 356.5,
+   "our_lb": 246.241,
+   "lb_width": null,
+   "lb_class": "AB4 total"
+  },
+  {
+   "cell": "RC204",
+   "best": 320.2,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 320.2,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 320.2,
+   "our_lb": 246.241,
+   "lb_width": null,
+   "lb_class": "AB4 total"
+  },
+  {
+   "cell": "RC205",
+   "best": 440.64,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 440.6,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 440.6,
+   "our_lb": 303.49224999999996,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC206",
+   "best": 363.069,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 363.1,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 363.1,
+   "our_lb": 246.241,
+   "lb_width": null,
+   "lb_class": "AB4 total"
+  },
+  {
+   "cell": "RC207",
+   "best": 364.35900000000004,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 364.4,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 364.4,
+   "our_lb": 246.241,
+   "lb_width": null,
+   "lb_class": "AB4 total"
+  },
+  {
+   "cell": "RC208",
+   "best": 319.495,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 318.7,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10
+   ],
+   "their_lb": 318.7,
+   "our_lb": 246.241,
+   "lb_width": null,
+   "lb_class": "AB4 total"
+  }
+ ],
+ "sources": {
+  "analysis/tep_uniform_grid.py": "f034051feb3483bf"
+ },
+ "_provenance": {
+  "sources": {
+   "analysis/tep_uniform_grid.py": "f034051feb3483bf"
+  },
+  "when": "2026-10-06T21:44:27",
+  "git_sha": "da4a751f4771",
+  "git_dirty": true,
+  "sources_dirty": [],
+  "python": "3.10.11",
+  "host": "LAPTOP-420NB7DQ",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cpu": {
+   "model": "Intel(R) Core(TM) Ultra 7 258V",
+   "logical": 8,
+   "cores": 8
+  },
+  "source_hash": "46d96819e0a9ae4a",
+  "sources_unresolved": [],
+  "code_in_play_hash": "77b5c608a0ccf2c1",
+  "code_in_play_n": 5,
+  "code_in_play": {
+   "analysis/artifact_guard.py": "5aa960abca47c6e8",
+   "analysis/k_comparison.py": "d79be3920c09fa96",
+   "analysis/kref.py": "3235fd335fc1fa4c",
+   "analysis/stamp.py": "6f8d1d3a0792144f",
+   "analysis/tep_uniform_grid.py": "f034051feb3483bf"
+  },
+  "code_hash_missing": [],
+  "code_hash_covers": [
+   "crossfeed/block_a.py",
+   "crossfeed/easy_reduction.py",
+   "crossfeed/blockA_cpsat.py",
+   "crossfeed/easy_reduction_descend.py",
+   "crossfeed/bound_tracer.py",
+   "build_instance.py",
+   "joint_model_cplex.py",
+   "joint_model_gurobi.py",
+   "solver/engines/fixopt.py"
+  ],
+  "code_hash": "26b414c6",
+  "solver_versions": {
+   "docplex": null,
+   "cplex": "22.1.1.0"
+  },
+  "gurobi": "13.0.3",
+  "solver_tolerances": {
+   "FeasibilityTol": 1e-06,
+   "IntFeasTol": 1e-05,
+   "OptimalityTol": 1e-06,
+   "MIPGap": 0.0001,
+   "NumericFocus": 0,
+   "source": "gurobipy defaults for a fresh model"
+  }
+ },
+ "_rt": {
+  "wall_s": 1.638,
+  "wall_measured_by": "analysis/stamp.py",
+  "process_wall_s": 1.638,
+  "cpu_s": 0.156,
+  "det_ticks": null,
+  "clock": "time.time / time.process_time since analysis.stamp import",
+  "rt_class": "diagnostic",
+  "rt_not_comparable": "the writer declared no rt_class, so this wall was never certified against d47 (4 threads, single tenancy) and is not quotable",
+  "threads": null,
+  "tenancy": 1,
+  "policy": "d47",
+  "declared": false,
+  "cores_regime": {
+   "threads_requested": null,
+   "cores_used_measured": 0.095,
+   "tenancy": 1,
+   "machine_cores": 8,
+   "machine_logical": 8,
+   "policy_threads": 4,
+   "policy": "d47"
+  }
+ }
+}

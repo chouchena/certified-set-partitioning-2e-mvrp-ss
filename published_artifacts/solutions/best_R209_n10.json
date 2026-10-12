@@ -1,0 +1,131 @@
+{
+ "xij": [
+  [
+   0,
+   2
+  ],
+  [
+   2,
+   6
+  ],
+  [
+   6,
+   5
+  ],
+  [
+   5,
+   8
+  ],
+  [
+   8,
+   7
+  ],
+  [
+   7,
+   10
+  ],
+  [
+   10,
+   9
+  ],
+  [
+   9,
+   3
+  ],
+  [
+   3,
+   1
+  ],
+  [
+   1,
+   4
+  ],
+  [
+   4,
+   0
+  ]
+ ],
+ "vi": [
+  5,
+  10,
+  1,
+  4
+ ],
+ "hubs": [
+  14,
+  13,
+  15,
+  15
+ ],
+ "yij": [
+  [
+   11,
+   5
+  ],
+  [
+   5,
+   10
+  ],
+  [
+   10,
+   1
+  ],
+  [
+   1,
+   4
+  ],
+  [
+   4,
+   11
+  ]
+ ],
+ "nCars": 1,
+ "nVessel": 1,
+ "hi": {
+  "2": 74.0,
+  "6": 266.0,
+  "5": 286.0,
+  "8": 330.36,
+  "7": 352.57,
+  "10": 496.0,
+  "9": 551.0,
+  "3": 576.0,
+  "1": 636.0,
+  "4": 702.0
+ },
+ "ui": {
+  "5": 305.86,
+  "10": 508.5,
+  "1": 663.5,
+  "4": 730.5
+ },
+ "objVal": 362.07399999999996,
+ "size": 10,
+ "_proximity": 0.0,
+ "_verified": true,
+ "selection": "ALNS from incumbent (seed 1016)",
+ "superseded_objVal": 369.308,
+ "superseded_from": "runs\\postpass\\ownwater_R209_n10.json",
+ "secs": 0.9,
+ "alns_iters": 787,
+ "sources": {
+  "analysis/tep_alns.py": "78596e87f6c2002f"
+ },
+ "_provenance": {
+  "sources": {
+   "analysis/tep_alns.py": "78596e87f6c2002f"
+  },
+  "when": "2026-09-26T18:43:20",
+  "git_sha": "15f739cc3138",
+  "git_dirty": true,
+  "python": "3.10.11",
+  "host": "LAPTOP-420NB7DQ",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "code_hash": "e24bcc52",
+  "solver_versions": {
+   "docplex": null,
+   "cplex": "22.1.1.0"
+  },
+  "gurobi": "13.0.3"
+ }
+}

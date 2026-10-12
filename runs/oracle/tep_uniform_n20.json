@@ -1,0 +1,626 @@
+{
+ "size": 20,
+ "variant": "pu_union",
+ "rows": [
+  {
+   "cell": "C201",
+   "best": 697.695,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 697.7,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 697.7,
+   "our_lb": 684.6179999999999,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C202",
+   "best": 679.445,
+   "cfg": "pu_ng5",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 678.7,
+   "which": "Joint",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 529.3860000000001,
+   "our_lb": 665.578,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C203",
+   "best": 673.605,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 676.3,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 314.042,
+   "our_lb": 658.2994285714285,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C204",
+   "best": 668.935,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 668.1,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 293.90500000000003,
+   "our_lb": 519.7025888594164,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C205",
+   "best": 685.185,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 685.2,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 685.2,
+   "our_lb": 606.3777499999999,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C206",
+   "best": 680.785,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 680.8,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 680.8,
+   "our_lb": 570.9101236559138,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C207",
+   "best": 679.802,
+   "cfg": "pu_ng5",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 678.8,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 524.986,
+   "our_lb": 556.811141025641,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C208",
+   "best": 678.135,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 678.1,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 678.1,
+   "our_lb": 534.4658,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R201",
+   "best": 821.706,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 821.7,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 821.7,
+   "our_lb": 661.2182916666666,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R202",
+   "best": 772.226,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 756.7,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 613.1700000000001,
+   "our_lb": 589.5816010362693,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R203",
+   "best": 642.946,
+   "cfg": "pu_ng5",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 635.8,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 402.192,
+   "our_lb": 542.8588035714288,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R204",
+   "best": 613.346,
+   "cfg": "pu_ng20",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 605.7,
+   "which": "Joint",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 351.3060000000001,
+   "our_lb": 506.56935097493044,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R205",
+   "best": 657.326,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 642.2,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 642.2,
+   "our_lb": 544.3798138390273,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R206",
+   "best": 618.625,
+   "cfg": "pu_ng5",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 603.8,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 422.90099999999995,
+   "our_lb": 500.59343029595027,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R207",
+   "best": 582.385,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 601.7,
+   "which": "Joint",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 385.088,
+   "our_lb": 465.71843799033627,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R208",
+   "best": 553.806,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 549.9,
+   "which": "Joint",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 346.437,
+   "our_lb": 438.35939007127564,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R209",
+   "best": 626.266,
+   "cfg": "pu_ng20",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 626.3,
+   "which": "Joint",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 588.722,
+   "our_lb": 530.8682377792524,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R210",
+   "best": 636.857,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 632.8,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 575.919,
+   "our_lb": 519.039406420833,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R211",
+   "best": 577.696,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 584.4,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 347.932,
+   "our_lb": 483.32390735889504,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC201",
+   "best": 990.8580000000001,
+   "cfg": "pu_ng20",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 981.2,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 981.2,
+   "our_lb": 701.9558484848486,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC202",
+   "best": 908.067,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 906.4,
+   "which": "Joint",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 507.58400000000006,
+   "our_lb": 638.483031125299,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC203",
+   "best": 724.997,
+   "cfg": "pu_ng20",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 754.3,
+   "which": "Joint",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 331.89199999999994,
+   "our_lb": 512.1236519154556,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC204",
+   "best": 642.378,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 642.4,
+   "which": "Joint",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 321.2,
+   "our_lb": 489.01023768939393,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC205",
+   "best": 935.758,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 935.5,
+   "which": "Joint",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 795.175,
+   "our_lb": 675.1080714285704,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC206",
+   "best": 893.263,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 885.2,
+   "which": "Joint",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 637.344,
+   "our_lb": 577.1090420569868,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC207",
+   "best": 882.228,
+   "cfg": "pu_ng20",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 885.0,
+   "which": "Joint",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 654.9,
+   "our_lb": 574.9371224206349,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC208",
+   "best": 708.883,
+   "cfg": "pu_ng5",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 858.7,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    20
+   ],
+   "their_lb": 308.56,
+   "our_lb": 494.19954959272934,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  }
+ ],
+ "sources": {
+  "analysis/tep_uniform_grid.py": "f034051feb3483bf"
+ },
+ "_provenance": {
+  "sources": {
+   "analysis/tep_uniform_grid.py": "f034051feb3483bf"
+  },
+  "when": "2026-10-06T21:44:31",
+  "git_sha": "da4a751f4771",
+  "git_dirty": true,
+  "sources_dirty": [],
+  "python": "3.10.11",
+  "host": "LAPTOP-420NB7DQ",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cpu": {
+   "model": "Intel(R) Core(TM) Ultra 7 258V",
+   "logical": 8,
+   "cores": 8
+  },
+  "source_hash": "46d96819e0a9ae4a",
+  "sources_unresolved": [],
+  "code_in_play_hash": "77b5c608a0ccf2c1",
+  "code_in_play_n": 5,
+  "code_in_play": {
+   "analysis/artifact_guard.py": "5aa960abca47c6e8",
+   "analysis/k_comparison.py": "d79be3920c09fa96",
+   "analysis/kref.py": "3235fd335fc1fa4c",
+   "analysis/stamp.py": "6f8d1d3a0792144f",
+   "analysis/tep_uniform_grid.py": "f034051feb3483bf"
+  },
+  "code_hash_missing": [],
+  "code_hash_covers": [
+   "crossfeed/block_a.py",
+   "crossfeed/easy_reduction.py",
+   "crossfeed/blockA_cpsat.py",
+   "crossfeed/easy_reduction_descend.py",
+   "crossfeed/bound_tracer.py",
+   "build_instance.py",
+   "joint_model_cplex.py",
+   "joint_model_gurobi.py",
+   "solver/engines/fixopt.py"
+  ],
+  "code_hash": "26b414c6",
+  "solver_versions": {
+   "docplex": null,
+   "cplex": "22.1.1.0"
+  },
+  "gurobi": "13.0.3",
+  "solver_tolerances": {
+   "FeasibilityTol": 1e-06,
+   "IntFeasTol": 1e-05,
+   "OptimalityTol": 1e-06,
+   "MIPGap": 0.0001,
+   "NumericFocus": 0,
+   "source": "gurobipy defaults for a fresh model"
+  }
+ },
+ "_rt": {
+  "wall_s": 1.656,
+  "wall_measured_by": "analysis/stamp.py",
+  "process_wall_s": 1.656,
+  "cpu_s": 0.109,
+  "det_ticks": null,
+  "clock": "time.time / time.process_time since analysis.stamp import",
+  "rt_class": "diagnostic",
+  "rt_not_comparable": "the writer declared no rt_class, so this wall was never certified against d47 (4 threads, single tenancy) and is not quotable",
+  "threads": null,
+  "tenancy": 1,
+  "policy": "d47",
+  "declared": false,
+  "cores_regime": {
+   "threads_requested": null,
+   "cores_used_measured": 0.066,
+   "tenancy": 1,
+   "machine_cores": 8,
+   "machine_logical": 8,
+   "policy_threads": 4,
+   "policy": "d47"
+  }
+ }
+}

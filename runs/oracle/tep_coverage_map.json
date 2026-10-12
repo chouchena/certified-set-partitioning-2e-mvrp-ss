@@ -1,0 +1,480 @@
+{
+ "sizes": {
+  "n10": {
+   "comparator": "Table 3 per instance -> family means; their best = min(Joint,LBBD)",
+   "water_stage": "GREEDY -- never harmonized; STALE vs tonight's levers",
+   "rows": [
+    {
+     "family": "C",
+     "n": 8,
+     "primal_cells": 8,
+     "bound_cells": 1,
+     "k_cells": 8,
+     "our_inc_mean": 348.4565,
+     "k_inc_mean": 347.4625,
+     "inc_vs_k_pct": 0.2860740367665704,
+     "cells_below_k": 0,
+     "cells_k_proven": 8,
+     "cfg_counts": {
+      "ceil": 2,
+      "refine": 6
+     }
+    },
+    {
+     "family": "R",
+     "n": 11,
+     "primal_cells": 11,
+     "bound_cells": 1,
+     "k_cells": 11,
+     "our_inc_mean": 361.7418181818182,
+     "k_inc_mean": 360.57272727272726,
+     "inc_vs_k_pct": 0.32423165166528545,
+     "cells_below_k": 0,
+     "cells_k_proven": 11,
+     "cfg_counts": {
+      "alns": 4,
+      "ceil": 3,
+      "refine": 4
+     }
+    },
+    {
+     "family": "RC",
+     "n": 8,
+     "primal_cells": 8,
+     "bound_cells": 1,
+     "k_cells": 8,
+     "our_inc_mean": 366.24625,
+     "k_inc_mean": 364.1,
+     "inc_vs_k_pct": 0.5894671793463147,
+     "cells_below_k": 0,
+     "cells_k_proven": 8,
+     "cfg_counts": {
+      "alns": 1,
+      "ceil": 4,
+      "floor": 2,
+      "selchain": 1
+     }
+    }
+   ],
+   "k_proven_cells": 27
+  },
+  "n20": {
+   "comparator": "Table 3 per instance -> family means; their best = min(Joint,LBBD)",
+   "water_stage": "GREEDY -- never harmonized; STALE vs tonight's levers",
+   "rows": [
+    {
+     "family": "C",
+     "n": 8,
+     "primal_cells": 8,
+     "bound_cells": 5,
+     "k_cells": 8,
+     "our_inc_mean": 680.813,
+     "k_inc_mean": 680.4625,
+     "inc_vs_k_pct": 0.05150908389515152,
+     "cells_below_k": 1,
+     "cells_k_proven": 4,
+     "cfg_counts": {
+      "alns": 1,
+      "ceil": 4,
+      "floor": 3
+     },
+     "our_lb_mean": 600.2774324712643,
+     "k_lb_mean": 415.57975,
+     "lb_vs_k_x": 1.444433787910177,
+     "lb_above_k_cells": 4,
+     "width_counts": {
+      "d20": 2,
+      "d5": 2
+     },
+     "our_bracket_pct": 10.31118060796208,
+     "k_bracket_pct": 38.11219190156568
+    },
+    {
+     "family": "R",
+     "n": 11,
+     "primal_cells": 11,
+     "bound_cells": 9,
+     "k_cells": 11,
+     "our_inc_mean": 646.1074545454546,
+     "k_inc_mean": 641.9090909090909,
+     "inc_vs_k_pct": 0.6540433366378773,
+     "cells_below_k": 2,
+     "cells_k_proven": 2,
+     "cfg_counts": {
+      "alns": 4,
+      "ceil": 1,
+      "refine": 5,
+      "selchain": 1
+     },
+     "our_lb_mean": 509.7066893140126,
+     "k_lb_mean": 448.18522222222225,
+     "lb_vs_k_x": 1.1372679509305337,
+     "lb_above_k_cells": 6,
+     "width_counts": {
+      "d20": 8,
+      "d5": 1
+     },
+     "our_bracket_pct": 18.499850606834343,
+     "k_bracket_pct": 36.0
+    },
+    {
+     "family": "RC",
+     "n": 8,
+     "primal_cells": 8,
+     "bound_cells": 7,
+     "k_cells": 8,
+     "our_inc_mean": 860.2748750000001,
+     "k_inc_mean": 856.0875,
+     "inc_vs_k_pct": 0.48912932381328655,
+     "cells_below_k": 0,
+     "cells_k_proven": 1,
+     "cfg_counts": {
+      "alns": 4,
+      "ceil": 3,
+      "refine": 1
+     },
+     "our_lb_mean": 565.8529580327242,
+     "k_lb_mean": 508.0935714285714,
+     "lb_vs_k_x": 1.113678640809713,
+     "lb_above_k_cells": 4,
+     "width_counts": {
+      "d20": 7
+     },
+     "our_bracket_pct": 32.72224517931293,
+     "k_bracket_pct": 43.99999999999999
+    }
+   ],
+   "k_proven_cells": 7
+  },
+  "n30": {
+   "comparator": "Table 3 per instance -> family means; their best = min(Joint,LBBD)",
+   "water_stage": "exact (<1 s, optimal)",
+   "rows": [
+    {
+     "family": "C",
+     "n": 8,
+     "primal_cells": 8,
+     "bound_cells": 8,
+     "k_cells": 8,
+     "our_inc_mean": 864.136625,
+     "k_inc_mean": 863.8625,
+     "inc_vs_k_pct": 0.03173248057417588,
+     "cells_below_k": 2,
+     "cells_k_proven": 1,
+     "cfg_counts": {
+      "alns": 2,
+      "ceil": 1,
+      "floor": 3,
+      "refine": 1,
+      "selchain": 1
+     },
+     "our_lb_mean": 788.580983017253,
+     "k_lb_mean": 575.2935714285715,
+     "lb_vs_k_x": 1.370745341476779,
+     "lb_above_k_cells": 7,
+     "width_counts": {
+      "d20": 1,
+      "d5": 6
+     },
+     "our_bracket_pct": 5.828215414534766,
+     "k_bracket_pct": 35.0
+    },
+    {
+     "family": "R",
+     "n": 11,
+     "primal_cells": 11,
+     "bound_cells": 11,
+     "k_cells": 11,
+     "our_inc_mean": 916.1759090909092,
+     "k_inc_mean": 934.1636363636363,
+     "inc_vs_k_pct": -1.925543509994343,
+     "cells_below_k": 6,
+     "cells_k_proven": 0,
+     "cfg_counts": {
+      "alns": 3,
+      "floor": 5,
+      "refine": 1,
+      "selchain": 2
+     },
+     "our_lb_mean": 767.2530120983498,
+     "k_lb_mean": 540.5430909090909,
+     "lb_vs_k_x": 1.4194113753410036,
+     "lb_above_k_cells": 10,
+     "width_counts": {
+      "d20": 1,
+      "d5": 10
+     },
+     "our_bracket_pct": 17.033882239190824,
+     "k_bracket_pct": 48.02516411378556
+    },
+    {
+     "family": "RC",
+     "n": 8,
+     "primal_cells": 8,
+     "bound_cells": 8,
+     "k_cells": 8,
+     "our_inc_mean": 1426.9695000000002,
+     "k_inc_mean": 1451.2125,
+     "inc_vs_k_pct": -1.6705341223287373,
+     "cells_below_k": 2,
+     "cells_k_proven": 0,
+     "cfg_counts": {
+      "alns": 6,
+      "refine": 2
+     },
+     "our_lb_mean": 1085.8399175133893,
+     "k_lb_mean": 760.659125,
+     "lb_vs_k_x": 1.4274987071421634,
+     "lb_above_k_cells": 7,
+     "width_counts": {
+      "d5": 8
+     },
+     "our_bracket_pct": 22.756579356710695,
+     "k_bracket_pct": 57.60283495121864
+    }
+   ],
+   "k_proven_cells": 1
+  },
+  "n100": {
+   "comparator": "Table 6 per family (LBBD)",
+   "water_stage": "WORK-LIMITED (60 units, d481)",
+   "rows": [
+    {
+     "family": "C",
+     "n": 8,
+     "primal_cells": 8,
+     "bound_cells": 8,
+     "our_inc_mean": 3457.923125,
+     "k_inc_mean": 3857.2,
+     "inc_vs_k_pct": -10.351469330083996,
+     "our_lb_mean": 2661.258061788338,
+     "k_lb_mean": 1704.2487,
+     "lb_vs_k_x": 1.5615432546836256,
+     "our_bracket_pct": 23.038830951791667,
+     "k_bracket_pct": 55.81642901586643,
+     "instrument": "easy-reduction (d448)"
+    },
+    {
+     "family": "R",
+     "n": 11,
+     "primal_cells": 11,
+     "bound_cells": 11,
+     "our_inc_mean": 2798.690181818182,
+     "k_inc_mean": 3720.9,
+     "inc_vs_k_pct": -24.784590238432045,
+     "our_lb_mean": 2071.1450742374236,
+     "k_lb_mean": 1056.3606,
+     "lb_vs_k_x": 1.960642108610851,
+     "our_bracket_pct": 25.995914528420762,
+     "k_bracket_pct": 71.61007820688543,
+     "instrument": "easy-reduction (d448)"
+    },
+    {
+     "family": "RC",
+     "n": 8,
+     "primal_cells": 8,
+     "bound_cells": 8,
+     "our_inc_mean": 3677.221,
+     "k_inc_mean": 4810.6,
+     "inc_vs_k_pct": -23.560034091381542,
+     "our_lb_mean": 2729.1936290598323,
+     "k_lb_mean": 1249.475,
+     "lb_vs_k_x": 2.1842722976128632,
+     "our_bracket_pct": 25.78108226131004,
+     "k_bracket_pct": 74.0266286949653,
+     "instrument": "easy-reduction (d448)"
+    }
+   ],
+   "primal_cfg": "floor and ceil per cell (ceil arm added d516; sweep in progress)"
+  }
+ },
+ "table4": [
+  {
+   "size": 10,
+   "pool": "1:10",
+   "cells": 27,
+   "our_mean": 359.14007407407405,
+   "k_lbbd": 357.7,
+   "k_joint": 357.7,
+   "vs_lbbd_pct": 0.40259269613476256,
+   "below_pool_mean": 13,
+   "cfg_counts": {
+    "alns": 5,
+    "ceil": 9,
+    "floor": 2,
+    "refine": 10,
+    "selchain": 1
+   },
+   "family_means_not_like_for_like": {
+    "C": 348.4565,
+    "R": 361.7418181818182,
+    "RC": 366.24625
+   },
+   "water_stage": "GREEDY -- never harmonized; STALE vs tonight's levers",
+   "bound_leg": "see Table 3 block"
+  },
+  {
+   "size": 20,
+   "pool": "1:10",
+   "cells": 27,
+   "our_mean": 719.8475925925926,
+   "k_lbbd": 719.0,
+   "k_joint": 722.7,
+   "vs_lbbd_pct": 0.11788492247464255,
+   "below_pool_mean": 18,
+   "cfg_counts": {
+    "alns": 9,
+    "ceil": 8,
+    "floor": 3,
+    "refine": 6,
+    "selchain": 1
+   },
+   "family_means_not_like_for_like": {
+    "C": 680.813,
+    "R": 646.1074545454546,
+    "RC": 860.2748750000001
+   },
+   "water_stage": "GREEDY -- never harmonized; STALE vs tonight's levers",
+   "bound_leg": "see Table 3 block"
+  },
+  {
+   "size": 50,
+   "pool": "1:10",
+   "cells": 27,
+   "our_mean": 1708.017111111111,
+   "k_lbbd": 1941.8,
+   "k_joint": 1989.3,
+   "vs_lbbd_pct": -12.03949371144757,
+   "below_pool_mean": 23,
+   "cfg_counts": {
+    "ceil": 23,
+    "floor": 4
+   },
+   "family_means_not_like_for_like": {
+    "C": 1548.62075,
+    "R": 1595.6024545454545,
+    "RC": 2021.983625
+   },
+   "water_stage": "exact (<1 s, optimal)",
+   "bound_leg": "18/27 default-width LPs proved as BY-PRODUCTS, not a reported leg"
+  }
+ ],
+ "uncovered": [
+  {
+   "exhibit": "Table 4",
+   "what": "n10 pool 10:1 (Joint+LBBD, with travel/fleet split)",
+   "why": "our instances carry the 1:10 cost ratio only; the other ratios are a separate study, not started (d472)"
+  },
+  {
+   "exhibit": "Table 4",
+   "what": "n10 pool 1:1 (Joint+LBBD, with travel/fleet split)",
+   "why": "our instances carry the 1:10 cost ratio only; the other ratios are a separate study, not started (d472)"
+  },
+  {
+   "exhibit": "Table 4",
+   "what": "n10 pool 1:5 (Joint+LBBD, with travel/fleet split)",
+   "why": "our instances carry the 1:10 cost ratio only; the other ratios are a separate study, not started (d472)"
+  },
+  {
+   "exhibit": "Table 4",
+   "what": "n20 pool 10:1 (Joint+LBBD, with travel/fleet split)",
+   "why": "our instances carry the 1:10 cost ratio only; the other ratios are a separate study, not started (d472)"
+  },
+  {
+   "exhibit": "Table 4",
+   "what": "n20 pool 1:1 (Joint+LBBD, with travel/fleet split)",
+   "why": "our instances carry the 1:10 cost ratio only; the other ratios are a separate study, not started (d472)"
+  },
+  {
+   "exhibit": "Table 4",
+   "what": "n20 pool 1:5 (Joint+LBBD, with travel/fleet split)",
+   "why": "our instances carry the 1:10 cost ratio only; the other ratios are a separate study, not started (d472)"
+  },
+  {
+   "exhibit": "Table 4",
+   "what": "n50 pool 10:1 (Joint+LBBD, with travel/fleet split)",
+   "why": "our instances carry the 1:10 cost ratio only; the other ratios are a separate study, not started (d472)"
+  },
+  {
+   "exhibit": "Table 4",
+   "what": "n50 pool 1:1 (Joint+LBBD, with travel/fleet split)",
+   "why": "our instances carry the 1:10 cost ratio only; the other ratios are a separate study, not started (d472)"
+  },
+  {
+   "exhibit": "Table 4",
+   "what": "n50 pool 1:5 (Joint+LBBD, with travel/fleet split)",
+   "why": "our instances carry the 1:10 cost ratio only; the other ratios are a separate study, not started (d472)"
+  },
+  {
+   "exhibit": "Table 4 / Table 3 / Table 6",
+   "what": "inc_time (time to incumbent) at every size",
+   "why": "settled: we do not race K on speed -- our time-to-best is budget-bounded and theirs is not (CLAUDE.md s.3)"
+  },
+  {
+   "exhibit": "Table 4",
+   "what": "n10/n20 component splits (travel street/water, fleet, used satellites) at 1:10",
+   "why": "comparable to our artifacts but not yet computed; done at n50 (d472) and n100 (d458)"
+  },
+  {
+   "exhibit": "bound leg",
+   "what": "n50 lower bound",
+   "why": "no leg run; 18/27 default-width LPs proved as by-products of the primal; 9 R-cells elem_exhausted"
+  },
+  {
+   "exhibit": "bound leg",
+   "what": "n10 lower bound vs Table 3",
+   "why": "every n10 cell is K-proven; a bound on a closed cell is not a claim"
+  },
+  {
+   "exhibit": "Table 3",
+   "what": "n20 bound on the 7 K-proven cells; n30 bound on C201",
+   "why": "closed cells; only open cells are compared"
+  },
+  {
+   "exhibit": "fig4",
+   "what": "{'sizes': [50], 'proximity_order': [0.0, 0.1, 0.2, 0.3, 0.4], 'travel_time_increase_pct_vs_kmeans': [15.3, 6.6, 6.8, 14.",
+   "why": "a figure, not a table; not reproduced"
+  },
+  {
+   "exhibit": "fig5",
+   "what": "{'sizes': [10, 20, 30, 40, 50], 'proximity': 0.1, 'instances_averaged': {'10': 27, '20': 27, '30': 27, '40': 26, '50': 2",
+   "why": "a figure, not a table; not reproduced"
+  },
+  {
+   "exhibit": "n10/n20 primal",
+   "what": "artifacts are floor-only with GREEDY water: none of ceil (P5 adopted it there, but only on the old K-retime route), exact water, select+chain, forced or diverse has been applied",
+   "why": "stale by every lever built 2026-09-26; refresh is cheap (exact water: seconds; ceil route: minutes) but is a solver job, d415-gated"
+  },
+  {
+   "exhibit": "n20 dual",
+   "what": "finer-bucket bound (d5) on the 20 open cells",
+   "why": "not run; the n30 grid lifted proven bounds +1.4 to +7.8 percent, so the same lever is available at n20"
+  },
+  {
+   "exhibit": "n30 dual",
+   "what": "C207 and R208 at d=5 (unproven; keep d20)",
+   "why": "C207 stalled, R208 hit the 900 s wall; solo re-run with longer stall/wall proposed, not run"
+  },
+  {
+   "exhibit": "n100 primal",
+   "what": "in-cycle exact water; refinement stage",
+   "why": "d481: work-limited water at n100; refine out of scope there per PREREG; neither run"
+  }
+ ],
+ "sources": {},
+ "_provenance": {
+  "sources": {},
+  "when": "2026-09-27T00:20:18",
+  "git_sha": "15f739cc3138",
+  "git_dirty": true,
+  "python": "3.10.11",
+  "host": "LAPTOP-420NB7DQ",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "code_hash": "e24bcc52",
+  "solver_versions": {
+   "docplex": null,
+   "cplex": "22.1.1.0"
+  },
+  "gurobi": "13.0.3"
+ }
+}

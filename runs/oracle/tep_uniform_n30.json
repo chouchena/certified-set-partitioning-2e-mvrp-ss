@@ -1,0 +1,626 @@
+{
+ "size": 30,
+ "variant": "pu_union",
+ "rows": [
+  {
+   "cell": "C201",
+   "best": 1017.432,
+   "cfg": "pu_ng25",
+   "cars": 3,
+   "floor": null,
+   "ceil": null,
+   "theirs": 1011.9,
+   "which": "Joint",
+   "proven": true,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 1011.9,
+   "our_lb": 866.1191666666664,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C202",
+   "best": 857.181,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 854.9,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 595.9519999999999,
+   "our_lb": 814.1791388888889,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C203",
+   "best": 827.03,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 843.6,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 502.656,
+   "our_lb": 799.0315,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C204",
+   "best": 804.75,
+   "cfg": "pu_ng5",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 810.8,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 343.102,
+   "our_lb": 734.8679805672739,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C205",
+   "best": 871.49,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 869.6,
+   "which": "Joint",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 782.64,
+   "our_lb": 792.5687222222222,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C206",
+   "best": 856.651,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 847.5,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 768.33,
+   "our_lb": 775.7405306712963,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C207",
+   "best": 834.97,
+   "cfg": "pu_ng25",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 836.9,
+   "which": "Joint",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 543.985,
+   "our_lb": 773.8469870129868,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "C208",
+   "best": 837.64,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 835.7,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 490.39000000000004,
+   "our_lb": 716.7111247792819,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R201",
+   "best": 1064.708,
+   "cfg": "pu_ng25",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 1048.8,
+   "which": "Joint",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 1027.8239999999998,
+   "our_lb": 961.0288395061732,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R202",
+   "best": 1012.5440000000001,
+   "cfg": "pu_ng5",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 1003.0,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 533.8679999999999,
+   "our_lb": 842.8439591836732,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R203",
+   "best": 913.4290000000001,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 919.8,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 459.95399999999995,
+   "our_lb": 769.2084345980594,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R204",
+   "best": 851.142,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 851.1,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 418.18499999999995,
+   "our_lb": 676.0482559306569,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R205",
+   "best": 959.712,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 968.5,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 610.56,
+   "our_lb": 792.6080204384095,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R206",
+   "best": 926.3340000000001,
+   "cfg": "pu_ng25",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 914.0,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 475.05,
+   "our_lb": 731.1609475833899,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R207",
+   "best": 882.248,
+   "cfg": "pu_ng25",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 914.5,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 436.4549999999999,
+   "our_lb": 677.5206205509137,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R208",
+   "best": 702.028,
+   "cfg": "pu_ng10",
+   "cars": 1,
+   "floor": null,
+   "ceil": null,
+   "theirs": 884.6,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 409.72799999999995,
+   "our_lb": 639.3088341528543,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R209",
+   "best": 924.921,
+   "cfg": "pu_ng25",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 933.9,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 503.699,
+   "our_lb": 754.6822003398793,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R210",
+   "best": 906.7620000000001,
+   "cfg": "pu_ng5",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 937.3,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 655.7439999999999,
+   "our_lb": 749.8568582328171,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "R211",
+   "best": 896.142,
+   "cfg": "pu_ng5",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 900.3,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 414.90700000000004,
+   "our_lb": 694.8137480177879,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC201",
+   "best": 1675.219,
+   "cfg": "pu_ng10",
+   "cars": 3,
+   "floor": null,
+   "ceil": null,
+   "theirs": 1665.5,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 1524.303,
+   "our_lb": 1241.7647551317496,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC202",
+   "best": 1407.548,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 1413.4,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 656.7600000000001,
+   "our_lb": 1069.9913569819814,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC203",
+   "best": 1390.618,
+   "cfg": "pu_ng5",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 1379.3,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 476.88000000000005,
+   "our_lb": 975.9158333333335,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC204",
+   "best": 1271.698,
+   "cfg": "pu_ng25",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 1273.9,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 387.61400000000003,
+   "our_lb": 904.8533657027253,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC205",
+   "best": 1597.6490000000001,
+   "cfg": "pu_ng10",
+   "cars": 3,
+   "floor": null,
+   "ceil": null,
+   "theirs": 1597.7,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 1000.217,
+   "our_lb": 1187.842611111111,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC206",
+   "best": 1399.0810000000001,
+   "cfg": "pu_ng5",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 1384.6,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 1032.744,
+   "our_lb": 1042.079696539431,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC207",
+   "best": 1358.968,
+   "cfg": "pu_ng25",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 1602.3,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 614.124,
+   "our_lb": 1023.0186128089795,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  },
+  {
+   "cell": "RC208",
+   "best": 1298.215,
+   "cfg": "pu_ng10",
+   "cars": 2,
+   "floor": null,
+   "ceil": null,
+   "theirs": 1293.0,
+   "which": "LBBD",
+   "proven": false,
+   "ng_banked": [
+    5,
+    10,
+    25
+   ],
+   "their_lb": 392.6310000000001,
+   "our_lb": 919.1578250534349,
+   "lb_width": null,
+   "lb_class": "composed (LP street + AB water)"
+  }
+ ],
+ "sources": {
+  "analysis/tep_uniform_grid.py": "f034051feb3483bf"
+ },
+ "_provenance": {
+  "sources": {
+   "analysis/tep_uniform_grid.py": "f034051feb3483bf"
+  },
+  "when": "2026-10-06T21:35:03",
+  "git_sha": "2091a50a0a97",
+  "git_dirty": true,
+  "sources_dirty": [],
+  "python": "3.10.11",
+  "host": "LAPTOP-420NB7DQ",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cpu": {
+   "model": "Intel(R) Core(TM) Ultra 7 258V",
+   "logical": 8,
+   "cores": 8
+  },
+  "source_hash": "46d96819e0a9ae4a",
+  "sources_unresolved": [],
+  "code_in_play_hash": "77b5c608a0ccf2c1",
+  "code_in_play_n": 5,
+  "code_in_play": {
+   "analysis/artifact_guard.py": "5aa960abca47c6e8",
+   "analysis/k_comparison.py": "d79be3920c09fa96",
+   "analysis/kref.py": "3235fd335fc1fa4c",
+   "analysis/stamp.py": "6f8d1d3a0792144f",
+   "analysis/tep_uniform_grid.py": "f034051feb3483bf"
+  },
+  "code_hash_missing": [],
+  "code_hash_covers": [
+   "crossfeed/block_a.py",
+   "crossfeed/easy_reduction.py",
+   "crossfeed/blockA_cpsat.py",
+   "crossfeed/easy_reduction_descend.py",
+   "crossfeed/bound_tracer.py",
+   "build_instance.py",
+   "joint_model_cplex.py",
+   "joint_model_gurobi.py",
+   "solver/engines/fixopt.py"
+  ],
+  "code_hash": "26b414c6",
+  "solver_versions": {
+   "docplex": null,
+   "cplex": "22.1.1.0"
+  },
+  "gurobi": "13.0.3",
+  "solver_tolerances": {
+   "FeasibilityTol": 1e-06,
+   "IntFeasTol": 1e-05,
+   "OptimalityTol": 1e-06,
+   "MIPGap": 0.0001,
+   "NumericFocus": 0,
+   "source": "gurobipy defaults for a fresh model"
+  }
+ },
+ "_rt": {
+  "wall_s": 1.745,
+  "wall_measured_by": "analysis/stamp.py",
+  "process_wall_s": 1.745,
+  "cpu_s": 0.141,
+  "det_ticks": null,
+  "clock": "time.time / time.process_time since analysis.stamp import",
+  "rt_class": "diagnostic",
+  "rt_not_comparable": "the writer declared no rt_class, so this wall was never certified against d47 (4 threads, single tenancy) and is not quotable",
+  "threads": null,
+  "tenancy": 1,
+  "policy": "d47",
+  "declared": false,
+  "cores_regime": {
+   "threads_requested": null,
+   "cores_used_measured": 0.081,
+   "tenancy": 1,
+   "machine_cores": 8,
+   "machine_logical": 8,
+   "policy_threads": 4,
+   "policy": "d47"
+  }
+ }
+}

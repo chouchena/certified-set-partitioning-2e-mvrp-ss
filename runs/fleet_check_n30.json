@@ -1,0 +1,326 @@
+[
+ {
+  "cell": "C201",
+  "ratio": 2.0479128856624316,
+  "infeasible_k1": true,
+  "witness": [
+   "deadline-prefix",
+   8,
+   1128.3999999999999,
+   551.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "C202",
+  "ratio": 1.4624484848484849,
+  "infeasible_k1": true,
+  "witness": [
+   "slice",
+   7,
+   1206.52,
+   825.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "C203",
+  "ratio": 1.4624484848484849,
+  "infeasible_k1": true,
+  "witness": [
+   "slice",
+   7,
+   1206.52,
+   825.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "C204",
+  "ratio": 1.3791331360946746,
+  "infeasible_k1": true,
+  "witness": [
+   "deadline-prefix",
+   30,
+   4661.47,
+   3380.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "C205",
+  "ratio": 1.7882725832012676,
+  "infeasible_k1": true,
+  "witness": [
+   "deadline-prefix",
+   8,
+   1128.3999999999999,
+   631.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "C206",
+  "ratio": 1.556413793103448,
+  "infeasible_k1": true,
+  "witness": [
+   "deadline-prefix",
+   8,
+   1128.3999999999999,
+   725.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "C207",
+  "ratio": 1.3840469121140144,
+  "infeasible_k1": true,
+  "witness": [
+   "deadline-prefix",
+   30,
+   4661.47,
+   3368.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "C208",
+  "ratio": 1.4265486725663714,
+  "infeasible_k1": true,
+  "witness": [
+   "deadline-prefix",
+   8,
+   1128.3999999999999,
+   791.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "R201",
+  "ratio": 1.316056338028169,
+  "infeasible_k1": true,
+  "witness": [
+   "slice",
+   9,
+   280.32,
+   213.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "R202",
+  "ratio": 1.2007981220657278,
+  "infeasible_k1": true,
+  "witness": [
+   "slice",
+   7,
+   255.77,
+   213.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "R203",
+  "ratio": 1.1794392523364485,
+  "infeasible_k1": true,
+  "witness": [
+   "slice",
+   3,
+   126.2,
+   107.0
+  ],
+  "our_cars": 2
+ },
+ {
+  "cell": "R204",
+  "ratio": 0.74678391959799,
+  "infeasible_k1": false,
+  "witness": [
+   "deadline-prefix",
+   30,
+   743.05,
+   995.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "R205",
+  "ratio": 0.9109216589861752,
+  "infeasible_k1": false,
+  "witness": [
+   "deadline-prefix",
+   14,
+   395.34000000000003,
+   434.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "R206",
+  "ratio": 0.772,
+  "infeasible_k1": false,
+  "witness": [
+   "slice",
+   14,
+   413.02,
+   535.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "R207",
+  "ratio": 0.7482880161127895,
+  "infeasible_k1": false,
+  "witness": [
+   "deadline-prefix",
+   30,
+   743.05,
+   993.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "R208",
+  "ratio": 0.74678391959799,
+  "infeasible_k1": false,
+  "witness": [
+   "deadline-prefix",
+   30,
+   743.05,
+   995.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "R209",
+  "ratio": 0.828443113772455,
+  "infeasible_k1": false,
+  "witness": [
+   "deadline-prefix",
+   21,
+   553.4,
+   668.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "R210",
+  "ratio": 0.759764826175869,
+  "infeasible_k1": false,
+  "witness": [
+   "deadline-prefix",
+   30,
+   743.05,
+   978.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "R211",
+  "ratio": 0.7559003051881994,
+  "infeasible_k1": false,
+  "witness": [
+   "deadline-prefix",
+   30,
+   743.05,
+   983.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "RC201",
+  "ratio": 1.6041422594142258,
+  "infeasible_k1": true,
+  "witness": [
+   "slice",
+   12,
+   383.39,
+   239.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "RC202",
+  "ratio": 1.2,
+  "infeasible_k1": true,
+  "witness": [
+   "slice",
+   6,
+   222.0,
+   185.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "RC203",
+  "ratio": 1.062216216216216,
+  "infeasible_k1": true,
+  "witness": [
+   "deadline-prefix",
+   4,
+   196.51,
+   185.0
+  ],
+  "our_cars": 2
+ },
+ {
+  "cell": "RC204",
+  "ratio": 0.8105382131324005,
+  "infeasible_k1": false,
+  "witness": [
+   "deadline-prefix",
+   30,
+   752.99,
+   929.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "RC205",
+  "ratio": 1.2055828220858895,
+  "infeasible_k1": true,
+  "witness": [
+   "deadline-prefix",
+   4,
+   196.51,
+   163.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "RC206",
+  "ratio": 1.0679387186629525,
+  "infeasible_k1": true,
+  "witness": [
+   "slice",
+   12,
+   383.39,
+   359.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "RC207",
+  "ratio": 0.925512048192771,
+  "infeasible_k1": false,
+  "witness": [
+   "deadline-prefix",
+   24,
+   614.54,
+   664.0
+  ],
+  "our_cars": null
+ },
+ {
+  "cell": "RC208",
+  "ratio": 0.8422706935123042,
+  "infeasible_k1": false,
+  "witness": [
+   "deadline-prefix",
+   30,
+   752.99,
+   894.0
+  ],
+  "our_cars": 2
+ }
+]

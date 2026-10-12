@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the paper and this repository."
+title: "Certified lower bounds and matching incumbents for the 2E-MVRP-SS via a time-expanded trip-event partitioning"
+type: software
+license: MIT
+authors:
+  - family-names: Chouchena
+    given-names: David
+    email: davidch@mail.sapir.ac.il
+    orcid: "https://orcid.org/0009-0005-9871-1330"
+    affiliation: "Sapir Academic College, D.N. Hof Ashkelon 7915600, Israel"
+  - family-names: Ben-Abu
+    given-names: Yuval
+    email: yuvalb@sapir.ac.il
+    orcid: "https://orcid.org/0000-0002-6983-5730"
+    affiliation: "Sapir Academic College, D.N. Hof Ashkelon 7915600, Israel"
+keywords:
+  - vehicle routing
+  - two-echelon
+  - synchronization
+  - lower bounds
+  - reproducibility
+references:
+  - type: article
+    title: "A two-echelon multi-trip vehicle routing problem with synchronization for an integrated water- and land-based transportation system"
+    authors:
+      - family-names: Karademir
+        given-names: Cigdem
+      - family-names: Beirigo
+        given-names: "Breno A."
+      - family-names: Atasoy
+        given-names: Bilge
+    journal: "European Journal of Operational Research"
+    volume: 322
+    issue: 2
+    start: 480
+    end: 499
+    year: 2025
+    doi: 10.1016/j.ejor.2024.10.047
+    notes: "The problem, model and benchmark this study continues. Their repository is NOT redistributed here; see THIRD_PARTY.md."

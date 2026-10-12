@@ -1,0 +1,207 @@
+{
+ "theirs": {
+  "cells_total": 135,
+  "proven_total": 35,
+  "proven_by_size": {
+   "10": 27,
+   "20": 7,
+   "30": 1,
+   "50": 0,
+   "100": 0
+  },
+  "cells_by_size": {
+   "10": 27,
+   "20": 27,
+   "30": 27,
+   "50": 27,
+   "100": 27
+  },
+  "per_instance_gap_min": 0.0,
+  "per_instance_gap_max": 71.0,
+  "per_instance_gap_min_nonzero": 2.0,
+  "per_instance_cells": 81,
+  "published_averages": {
+   "n10": 0.0,
+   "n20": 26.2,
+   "n30": 43.0,
+   "n50 (1:10)": 58.0,
+   "n100 C": 60.1,
+   "n100 R": 74.6,
+   "n100 RC": 77.0
+  },
+  "published_average_min": 0.0,
+  "published_average_max": 77.0
+ },
+ "attainment": {
+  "n10": {
+   "cells": 27,
+   "mean": 0.37703275079115617,
+   "median": 0.002524544179505206,
+   "worst": 1.837150925635389,
+   "exact": 15,
+   "within1": 22,
+   "below": 0
+  },
+  "n20": {
+   "cells": 7,
+   "mean": 0.26796396593245747,
+   "median": 0.002491435689822019,
+   "worst": 1.0607419486343472,
+   "exact": 5,
+   "within1": 6,
+   "below": 0
+  },
+  "n30": {
+   "cells": 1,
+   "mean": 0.17709259808280642,
+   "median": 0.17709259808280642,
+   "worst": 0.17709259808280642,
+   "exact": 0,
+   "within1": 1,
+   "below": 0
+  },
+  "all": {
+   "cells": 35,
+   "mean": 0.3495064180277493,
+   "median": 0.002524544179505206,
+   "worst": 1.837150925635389,
+   "exact": 20,
+   "within1": 29,
+   "below": 0
+  }
+ },
+ "brackets": {
+  "n20": {
+   "cells": 20,
+   "ours_median": 20.93847617450712,
+   "ours_mean": 21.966147596207833,
+   "k_cells": 20,
+   "k_median": 36.37118590751808,
+   "smaller_than_k": 14
+  },
+  "n30": {
+   "cells": 26,
+   "ours_median": 17.12690560857054,
+   "ours_mean": 15.964738377052292,
+   "k_cells": 26,
+   "k_median": 46.4189388041038,
+   "smaller_than_k": 24
+  },
+  "n50": {
+   "cells": 27,
+   "ours_median": 16.716744292929576,
+   "ours_mean": 14.16504310325167,
+   "k_cells": 0,
+   "k_median": null,
+   "smaller_than_k": null
+  },
+  "n100": {
+   "cells": 27,
+   "ours_median": null,
+   "ours_mean": 15.17070211603489,
+   "k_cells": 27,
+   "k_median": null,
+   "k_mean": 67.64649340601457,
+   "by_family": {
+    "C": {
+     "cells": 8,
+     "ours": 12.716915875889246,
+     "k": 55.81642901586643,
+     "inc_vs_k": -13.339507933215799
+    },
+    "R": {
+     "cells": 11,
+     "ours": 17.725053509331033,
+     "k": 71.61007820688543,
+     "inc_vs_k": -27.89372561379334
+    },
+    "RC": {
+     "cells": 8,
+     "ours": 14.112255190398336,
+     "k": 74.0266286949653,
+     "inc_vs_k": -26.774245936057884
+    }
+   }
+  }
+ },
+ "closure": {
+  "n20": {
+   "cells": 20,
+   "from_bound": 1696.7996399402405,
+   "from_primal": -63.69100000000037,
+   "bound_share": 103.89998549039156
+  },
+  "n30": {
+   "cells": 26,
+   "from_bound": 6588.267354309733,
+   "from_primal": 402.7989999999992,
+   "bound_share": 94.23837538386846
+  },
+  "n100": {
+   "cells": 27,
+   "from_bound": 36576.58412618093,
+   "from_primal": 25837.141000000003,
+   "bound_share": 58.603430659257356
+  }
+ },
+ "runtime": {
+  "n10": {
+   "max_our_s": 378.0,
+   "max_cell": "C202",
+   "max_share_at_2p5": 6.5625,
+   "median_our_s": 4.5,
+   "max_share_at_2p5_with_abandoned": 6.5625
+  },
+  "n20": {
+   "max_our_s": 962.5,
+   "max_cell": "C203",
+   "max_share_at_2p5": 16.710069444444443,
+   "median_our_s": 51.0,
+   "max_share_at_2p5_with_abandoned": 17.57638888888889
+  },
+  "n30": {
+   "max_our_s": 2228,
+   "max_cell": "C204",
+   "max_share_at_2p5": 38.68055555555556,
+   "median_our_s": 314.6,
+   "max_share_at_2p5_with_abandoned": 38.68055555555556
+  },
+  "n50": {
+   "max_our_s": 1100.1,
+   "max_cell": "C204",
+   "max_share_at_2p5": 19.098958333333332,
+   "median_our_s": 20.5,
+   "max_share_at_2p5_with_abandoned": 125.453125
+  },
+  "n100": {
+   "max_our_s": 1322.4,
+   "max_cell": "R208",
+   "max_share_at_2p5": 22.958333333333332,
+   "median_our_s": 188.09999999999997,
+   "max_share_at_2p5_with_abandoned": 71.06944444444444
+  },
+  "worst_cell_share_at_2p5": 38.68055555555556
+ },
+ "failures": [],
+ "sources": {},
+ "_provenance": {
+  "sources": {},
+  "when": "2026-09-28T00:48:09",
+  "git_sha": "f5303a6ac9fa",
+  "git_dirty": true,
+  "python": "3.10.11",
+  "host": "LAPTOP-420NB7DQ",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cpu": {
+   "model": "Intel(R) Core(TM) Ultra 7 258V",
+   "logical": 8,
+   "cores": 8
+  },
+  "code_hash": "e24bcc52",
+  "solver_versions": {
+   "docplex": null,
+   "cplex": "22.1.1.0"
+  },
+  "gurobi": "13.0.3"
+ }
+}

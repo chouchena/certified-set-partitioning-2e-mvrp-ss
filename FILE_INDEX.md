@@ -1,0 +1,527 @@
+# File index
+
+Every file in this release and its purpose. This is the replication package for the submitted manuscript: the code, the artifacts the reported quantities read, the manuscript, and the reproduction map. For any number in the paper, `REPRODUCTION_INDEX.md` gives the command that regenerates it. The repository contains no development history, interim grid results, algorithm variants, or planning material.
+
+
+## Reproduction & navigation
+
+- `.zenodo.json` -- Zenodo deposition metadata for the archived release.
+- `CITATION.cff` -- Machine-readable citation metadata for this software release.
+- `LICENSE` -- MIT licence governing all code in this release.
+- `README.md` -- Replication guide: install, fetch the predecessors' files, and regenerate every reported number, table and figure.
+- `REPLICABILITY.md` -- How replication works here: seeds, provenance, the publishing rule.
+- `REPRODUCTION_INDEX.md` -- THE PROVENANCE MAP: every manuscript number/table/plot -> its claim id -> the command that regenerates it. `python analysis/reproduction_index.py --check` fails if anything on the page is not on it.
+- `fetch_karademir.py` -- Downloads and SHA-256-verifies the predecessors' files from their repo at a pinned commit (including instanceGenerator.py, which the pipeline imports).
+- `requirements.txt` -- Pinned Python dependencies for the pipeline.
+- `third_party_manifest.json` -- SHA-256 digests of the 35 predecessor files we do NOT redistribute (hashes only).
+
+## Reproduction target (no manuscript)
+
+- `paper/numbers.json` -- The reproduction baseline -- every reported quantity as JSON with the global provenance record (code_in_play, code hashes, solver versions). Regenerate with `python analysis/manuscript_numbers.py` and diff.
+
+## Code -- core modules
+
+- `build_instance.py` -- Faithful instance builder with a choice of transfer duration tau.
+- `greedy26.py` -- greedy26.py -- A CONSTRUCTIVE PRIMAL, BUILT FROM SCRATCH, WITH CONSTRAINT (26) EMBEDDED.
+- `instance_view.py` -- instance_view.py -- INDEPENDENT instance reconstruction for the 2E-MVRP-SS (Karademir, Beirigo & Atasoy 2025, EJOR 322(2) 480-499), per collaboration rule 3.
+- `joint_model_cplex.py` -- CPLEX (docplex) port of integratedJointModel.JointSynchronized — the joint / compact MILP for the 2E-MVRP-SS.
+- `joint_model_gurobi.py` -- joint_model_gurobi.py -- faithful Gurobi port of joint_model_cplex.py.
+- `runlog.py` -- runlog.py -- structured run logging for the 2E-MVRP-SS solver work (collaboration rule 4: maximum logging, the basis for stall / trigger analysis and ablation).
+
+## Code -- analysis
+
+- `analysis/ab4_grid.py` -- AB4 candidates over the full cell x size grid.
+- `analysis/ab4_grid_rt.py` -- AB4 over the whole grid, with its runtime charged: value, RT and provenance per cell.
+- `analysis/ab_formula_check.py` -- Area 7 -- arithmetic-bound (AB4) formula, components, and reproduction (d795).
+- `analysis/ab_grid_build.py` -- Provenanced rebuild of the arithmetic-bound grid -- and a fidelity test of the existing one.
+- `analysis/ab_proximity_sweep.py` -- D3 -- broaden K's satellite-proximity study (their Fig.
+- `analysis/ab_twprune_probe.py` -- READ-ONLY probe: does restricting AB's distance relaxations to K's OWN time-window-pruned arc set tighten the bound? Motivation (validation/AB_VALIDITY_VS_K_GUROBI.md section 2.2): K's model admits an arc only when `e_i + s_i + D[i][j] <= l
+- `analysis/ab_vs_milp_build.py` -- Rebuild the AB-vs-MILP crossover as a DERIVED VIEW over two provenanced sources.
+- `analysis/ab_wls_build.py` -- Provenanced rebuild of the AB WLS sweep -- and a fidelity test of the existing one.
+- `analysis/ablation.py` -- ablation.py -- pivot the results ledger into ablation / sensitivity tables.
+- `analysis/ablation_order_reproduction_check.py` -- Does the PATCHED code reproduce the banked drop sets exactly, on all 27 n20 cells? The banked `easiness` artifacts were produced BEFORE --selection existed, so their code_hash differs from the arms'.
+- `analysis/ablation_report.py` -- Ablation claims derived ENTIRELY from the banked uniform-primal grid (pu_ng* artifacts) -- no further solver runs.
+- `analysis/abstract_facts.py` -- EVERY QUANTITY THE ABSTRACT ASSERTS, recomputed from the artifacts and audited against K's own tables (d556).
+- `analysis/abstract_wordcount.py` -- Resolve the abstract's macros and count its words the way the publisher will (d556).
+- `analysis/aggregate_results.py` -- aggregate_results.py -- authoritative current best-of table, self-contained gaps.
+- `analysis/arbiter.py` -- THE ARBITER -- an independent optimum for the 2E-MVRP-SS, by enumeration, with no solver.
+- `analysis/arbiter_controls.py` -- FR2 and FR3 -- validate the ARBITER, the instrument that now adjudicates disagreements.
+- `analysis/arbiter_vs_milp.py` -- FR1 -- does the MILP reproduce the arbiter's exact optimum? The arbiter (analysis/arbiter.py) computes the optimum by exhaustive enumeration in exact rationals, importing no project module.
+- `analysis/artifact_gate.py` -- THE ARTIFACT GATE.
+- `analysis/artifact_guard.py` -- THE GUILLOTINE.
+- `analysis/assemble_precluster.py` -- ASSEMBLY TEST: pre-clustered trips (PRIO-ST / TIME-SLICE) -> Gurobi chaining (cars, times, satellite booking, vessel-arrival bound) -> joint sub-MILP with xij/vi/vip fixed and the water side free -> verifier3.
+- `analysis/audit_frozen_run.py` -- Post-run audit: does a banked frozen-two-legs cell fulfil EVERY pre-registered request? Governing spec: validation/PREREG_frozen_twolegs_campaign.md.
+- `analysis/audit_k_alignment.py` -- AUDIT: does our capture of Karademir et al.
+- `analysis/backfill_det_ledger.py` -- Backfill `det_used` into the ledger rows of runs whose per-run log recorded it (G14, d415).
+- `analysis/backfill_ledger.py` -- one-off: seed results/ledger.jsonl from logs produced before ledger existed..
+- `analysis/banked_grid.py` -- Run tep_cg_banked over the grid, and VERIFY each artifact before moving to the next cell.
+- `analysis/baseline_audit.py` -- What of the banked corpus is actually usable, per cell, per leg, against seven tests.
+- `analysis/basin_schedule_vs_routing.py` -- Do distinct basins differ more in ROUTING or in SCHEDULE? The measurement AUDIT_temporal _hypothesis_overturned.md concluded on, without making it.
+- `analysis/best_known.py` -- ONE accessor for "the best verified thing we have for this cell".
+- `analysis/bib_verify.py` -- Hard-check every DOI in paper/references.bib against Crossref.
+- `analysis/bigM_audit.py` -- Big-M audit — is the 2E-MVRP-SS formulation carrying looser big-M constants than integer-validity requires, and how much does that cost? A big-M constraint LHS <= RHS + M(1 - x) only needs M large enough that every INTEGER-feasible point wi
+- `analysis/bks_n100.py` -- Best-known n100 objective per cell across every banked artifact directory (the d374 table was an inline scan; this is its generating code).
+- `analysis/bound_certificate.py` -- Certificate contract for TEP bound artifacts.
+- `analysis/bound_source.py` -- WHICH dual instrument a reported bound comes from, as a run parameter (d441).
+- `analysis/budget_grid.py` -- The grid under the 1500 s cap: what every cell reports when only affordable instruments count.
+- `analysis/build_ledger.py` -- Build the capture-everything run ledger from fixopt traces (task #23; ablation-aware-harness).
+- `analysis/build_manuscript.py` -- Flatten paper/manuscript/main.tex into the SINGLE-FILE submission the publisher requires.
+- `analysis/c26_attainability.py` -- Is K's published optimum for a cell ATTAINABLE under constraint (26)? Pre-run audit: validation/runaudits/c26_attainability_C201_n30.md (d229).
+- `analysis/c26_gate_validation.py` -- Is the (26) gate slack really the mechanism, and does the fix close it? THE SUSPECT.
+- `analysis/c26_when_binding.py` -- WHEN can (26) bind at all? A structural answer, by enumeration.
+- `analysis/campaign_dry_audit.py` -- Every remaining campaign command, audited WITHOUT running one of them.
+- `analysis/campaign_supervise.py` -- One-screen supervision of the running campaign: is it alive, is it spooling, is it stuck? (d583) WHY THIS EXISTS.
+- `analysis/captl_adaptive_signal.py` -- Is there signal to drive an ADAPTIVE burst depth (user proposal: adapt on past burst improvements + remaining RT)? Decided from the 125 bursts already on disk, before building anything -- an adaptive rule keyed on a signal that isn't there 
+- `analysis/captl_anytime.py` -- Adversary finding #3: cap-TL has been judged ONLY on final OV at 2400s, but the paper's primal claim is RT-domination (time-to-good), not OV-at-budget.
+- `analysis/captl_burst_budget.py` -- How much wall time does cap-TL actually spend INSIDE kick bursts? This is the headroom question for the PARALLEL-1-core kick build (#29): parallelising 4 kicks onto 4 cores can only recover time that is currently being spent in bursts.
+- `analysis/captl_ctrl_runner.py` -- BASELINE REPRODUCTION CONTROL -- queued to start only after the cap-TL extension frees the cores.
+- `analysis/captl_ext_anytime.py` -- Anytime/RT read of the cap-TL EXTENSION pairs (same code_hash, so confound-free).
+- `analysis/captl_ext_driver.py` -- cap-TL extension driver.
+- `analysis/captl_screen_monitor.py` -- Wait for the cap-TL screen (R203,R211 captl N=3) to finish, then report the PAIRED comparison vs the banked head-to-head baseline.
+- `analysis/cellreport.py` -- Per-instance report: new bound vs the earlier run and vs K, for cells finished so far.
+- `analysis/cert_audit.py` -- Area 5 -- per-cell lower-bound certificate audit (d792).
+- `analysis/certify_frozen_solution.py` -- CERTIFY A FROZEN SOLUTION — anchor the SOLUTION when the RUN cannot be anchored.
+- `analysis/cg_family_verdict.py` -- Family-level verdict for the TEP column-generation bound batch, against the pre-registered table in validation/runaudits/TEP_cg_bound_27cells.md section 2.
+- `analysis/cg_necessary_check.py` -- Necessary check for every proven TEP CG bound (TEP_cg_bound_27cells.md section 2): the LP street part must not exceed the street part (FleetStreet + TravelStreet, i.e.
+- `analysis/change_discipline.py` -- A commit that changes BEHAVIOUR must say so in its message.
+- `analysis/check_number_consistency.py` -- Every quantity that appears more than once must appear the SAME WAY.
+- `analysis/claims.py` -- Claim register — every quantitative claim, its evidence status, and what would kill it.
+- `analysis/claims_freshness.py` -- Standing guard: which CLAIMS embed numbers whose inputs have since changed? THE GAP THIS CLOSES (found 2026-09-13).
+- `analysis/cmp_frozen_n100_family.py` -- Two-leg strength over the COMPLETE frozen n100 grid (27 cells), at K's Table 6 FAMILY granularity.
+- `analysis/cmp_ov_vs_bk.py` -- Compare dual-byproduct OVs (overnight dual_measure + new harvest_measure) to best-known incumbents (tep_n100_best_of 'best').
+- `analysis/cmp_primal_vs_k.py` -- Primal batch vs K's per-instance baseline (n20/n30): OV (ours vs K's incumbent, d1 = MIN over K's joint/LBBD) and optimality gap (ours-to-ours vs K-to-K = K's published joint_gap).
+- `analysis/cmp_primal_vs_k_n100.py` -- Primal n100 arm vs K's Table 6 baseline.
+- `analysis/combined_budget_vs_k.py` -- OUR TOTAL per-instance spend -- DUAL + PRIMAL -- against K's single 14,400 s.
+- `analysis/cost_aware_greedy.py` -- Does cost-aware construction beat the distance-only rule? A PAIRED design.
+- `analysis/count_manuscript_ids.py` -- Count \num{...} ids cited in the manuscript section sources, and how many are primal-fleet vs dual-leg.
+- `analysis/crosssize_report.py` -- Comprehensive cross-size report for the frzdual2 dual leg: our {LB, OV, RT} vs K {LB, best-OV, RT} across n10/20/30/50/100, with per-cell OV parity (n10/20/30), the proven-optimum gold-standard check, the proven/unproven split, and the 'les
+- `analysis/cuts_sweep.py` -- Standalone paired cuts-on/off sweep at n100, compared against the campaign's LB.
+- `analysis/dag_sweep.py` -- Phase -1 breadth: the DAG arbiter's root bound and cost across every size.
+- `analysis/debug_passes_2_7.py` -- DEBUG PASSES 2, 5 and 7 for analysis/verify_committed.py.
+- `analysis/debug_passes_3_4.py` -- DEBUG PASSES 3 and 4 for analysis/verify_committed.py.
+- `analysis/debug_verify_committed.py` -- DEBUG HARNESS for analysis/verify_committed.py.
+- `analysis/decomp_probe.py` -- Can the TEP LP join AB4's PER-COMPONENT maximum instead of competing with it as a lump? python analysis/decomp_probe.py --sizes 10,20,30,50,100 THE IDEA (author, 2026-10-01): "define a maximization problem where OV is max LB ...
+- `analysis/divers_smoke.py` -- DIVERSIFICATION SMOKE: does enlarging the SUPPORT revive an exhausted neighbourhood? THE QUESTION.
+- `analysis/diverse_gates.py` -- Read the forced-diversity sample against the gates fixed in its pre-run audit.
+- `analysis/domination_table.py` -- domination_table.py -- ZERO-compute combined OV + LB + RT vs K (|C|=20).
+- `analysis/dp_trials.py` -- Phase -1, structured: one trial matrix over formulation x work x grid x warm start x size.
+- `analysis/dssr_bank_check.py` -- The post-cell check of the DSSR banking batch -- the batch checks its own steps (CLAUDE.md 4).
+- `analysis/dssr_certify.py` -- DSSR — decremental state-space relaxation, to earn the ELEMENTARY certificate on the nine n50 R cells that exhaust the elementary pricer's label cap.
+- `analysis/dssr_recertify.py` -- Replace a banked DSSR certificate with one from the FIXED certifier, and record the retraction.
+- `analysis/dssr_regression.py` -- REGRESSION TEST for d635: the DSSR certificate must not depend on the pool it starts from.
+- `analysis/dual_rt_ledger.py` -- Dual-leg RT ledger across the n100 grid -- the instrumentation for directive (1): "decide on RT cap for dual OR save effective RT for deduction from primal RT." Two numbers per cell, kept apart on purpose: * certified dual WALL (d._rt.wall_
+- `analysis/dual_vs_k.py` -- THE DUAL LEG -- our certified lower bound against K's, across the whole grid.
+- `analysis/enum_price_check.py` -- Independent small-instance pricing check -- area 4 of the validation framework (d789).
+- `analysis/envelope_tonight.py` -- Post-hoc envelope check of the night of 2026-09-23/24 (d245/d250: per cell LB wall + primal wall <= 14400 / 2.5 = 5760 our-seconds; the LB wall is deducted first; d383: one instrument set per family, S1 = {AB, MILP descent} or S2 = {AB, CG}
+- `analysis/envelope_with_cg.py` -- Envelope accounting for the TEP column-generation bound (d245: per cell, LB wall + primal wall = K_CAP / HW_FACTOR = 5760 our-seconds at factor 2.5; the LB wall is deducted before the primal).
+- `analysis/espprc_arbiter.py` -- SKELETON — the independent pricing arbiter of TRAJECTORY_DesignDP-0.0.md section 1.1.
+- `analysis/espprc_arbiter_dag.py` -- ARBITER v0.4 — the same question on a time-expanded DAG, where big-M does not exist.
+- `analysis/estimator_audit.py` -- One quantity, one definition.
+- `analysis/explore_lane.py` -- EXPLORE LANE — run focused trials on the idle cores without waiting for the pipeline.
+- `analysis/export_release.py` -- Generate the clean release tree.
+- `analysis/falsifier_battery.py` -- Execute the falsifiers whose inputs are ALREADY on disk.
+- `analysis/fastpricer_check.py` -- Area 4 (production pricer) -- validate the numba FastPricer the frozen grid actually used (d799).
+- `analysis/fetch_springer_template.py` -- Fetch the Springer Nature LaTeX template into paper/manuscript/, verified by sha256.
+- `analysis/fig_ablation.py` -- Figure 5 (task #52, d737/d767): what the primal leg adds -- dual-derived vs full-primal opt-gap.
+- `analysis/fig_band_family.py` -- Figure 2b (tasks #51/#52): per-family LB->OV band at |C| = 100, ours vs K.
+- `analysis/fig_crossover.py` -- F5 — the arithmetic/MILP crossover, and the mechanism behind it.
+- `analysis/fig_dual_anytime.py` -- F1 — anytime dual bound against K's published bound.
+- `analysis/fig_lb_ov_vs_k.py` -- Figure (tasks #51/#52): per-size floating bars LB->OV, ours vs K, OPEN (competition) cells.
+- `analysis/fig_optgap_vs_k.py` -- Figure 3 (task #52): optimality gap (OV-LB)/OV by instance size, ours vs K, open+proven split.
+- `analysis/figstyle.py` -- Shared figure style.
+- `analysis/fixopt_log_analysis.py` -- fixopt_log_analysis.py -- dissect the fixopt rseg stream: construction vs final, improvement curve, plateau onset, wasted budget, per-mode contribution, kicks.
+- `analysis/fleet_conflict_bound.py` -- Fleet lower bound from a TIME-WINDOW CONFLICT GRAPH -- "is k-1 infeasible by construction?" Motivation (user, 2026-09-14): do not spend budget forcing nofCars <= k-1 on cells where a smaller fleet is impossible anyway.
+- `analysis/fleet_drop_probe.py` -- Ask CPLEX for a FEASIBLE solution at a reduced fleet count.
+- `analysis/fleet_energetic_ab.py` -- Energetic fleet bound with the VALIDATED travel relaxation substituted in.
+- `analysis/fleet_energetic_bound.py` -- A WINDOWED work-conservation lower bound on the street fleet -- arithmetic only (d446).
+- `analysis/fleet_exhaustive_subsets.py` -- EXHAUSTIVE small-subset search for the k=1 infeasibility certificate.
+- `analysis/fleet_lb_arithmetic.py` -- QUICK fleet-count test: an arithmetic lower bound on nCars, computed in milliseconds.
+- `analysis/fleet_lb_solver.py` -- Solver-based fleet LOWER bound at |C| = 20, where the arithmetic certificate is weakest.
+- `analysis/fleet_share_mechanism.py` -- MECHANISM TEST for the LP-anatomy finding.
+- `analysis/fleet_subset_infeasibility.py` -- SHARPER mathematical k=1 infeasibility check — subset (interval) energetic reasoning.
+- `analysis/floor_map_check.py` -- Area 2 -- small-instance floor-mapping / relaxation check (d794).
+- `analysis/floor_relax_check.py` -- Area 4 (true floor relaxation) -- map a REAL continuous-time incumbent into the floor model (d802).
+- `analysis/floor_witness.py` -- Recompute the floor-relaxation witness BY HAND for the appendix (referee round, 2026-10-11).
+- `analysis/free_falsifiers.py` -- A battery of FREE falsification attempts over banked artifacts.
+- `analysis/freeze_det_budget_exceptions.py` -- Freeze the recovered deterministic tick budgets for rows recorded before 2026-09-15.
+- `analysis/freeze_published_artifacts.py` -- Freeze the run artifacts that BACK PUBLISHED NUMBERS into a committed snapshot.
+- `analysis/gate_26_runnable.py` -- G-P8 -- IS CONSTRAINT (26) RUNNABLE AT ALL? A precondition to the arm decision.
+- `analysis/gate_ambiguity.py` -- G22 -- the code must agree with the ambiguity register.
+- `analysis/gate_claims_prose.py` -- G-CLAIMS-PROSE: a document may not quote a registered claim while dropping its caveat.
+- `analysis/gate_constraint_parity.py` -- G-PARITY: does the verifier have a counterpart for every constraint the model posts? WHY THIS GATE EXISTS.
+- `analysis/gate_importable.py` -- G24 -- every analysis module's imports must RESOLVE, and no module may do work at import time.
+- `analysis/gate_results_current.py` -- G23 -- extend the code-stamp requirement from ONE file pattern to every result.
+- `analysis/gate_selftest.py` -- Mutation self-test for the release gate: can each blocking check actually FAIL? (d584) THE CLASS OF DEFECT THIS ATTACKS.
+- `analysis/greedy_blind_vs_aware_grid.py` -- BLIND vs COST-AWARE construction across the WHOLE GRID, with a self-vs-verifier OV check.
+- `analysis/greedy_coverage.py` -- B0 — how far does the greedy constructor reach, per size and family? WHY THIS EXISTS.
+- `analysis/greedy_grid_full.py` -- Every cell x every size x every proximity through greedy26 and verifier3.
+- `analysis/greedy_ov_decomposition.py` -- Where does the cost-aware constructor's OV improvement actually COME FROM? The grid comparison reported a percentage and a car count.
+- `analysis/grid_calibration.py` -- Derive validation/GRID_CALIBRATION.json from the envelope, rather than writing it by hand.
+- `analysis/grid_rejects.py` -- Bank the valid output, keep watching the bug.
+- `analysis/grid_summary.py` -- Full n100 grid summary -- OUR fast-pricer frozen dual (frzdual2) vs K Table 6, at FAMILY-MEAN granularity.
+- `analysis/grid_vs_k.py` -- Read the grid and answer, under the rules registered before it ran.
+- `analysis/gurobi_validity_check.py` -- CONDITIONAL Gurobi validity check for the arithmetic bound (claim C7).
+- `analysis/headroom.py` -- LIVE per-operator ceilings, computed from the RUN'S OWN STATE.
+- `analysis/hook_gate.py` -- hook_gate.py -- PreToolUse hook body.
+- `analysis/impair30.py` -- EXHAUSTIVE PER-CONSTRAINT FALSIFICATION: 30 impaired incumbents, one per published constraint.
+- `analysis/improve_probe.py` -- Direct test: can a dedicated CPLEX search IMPROVE our best incumbent on the cells where we lose worst to K? This is the one intervention identified today and never actually tried at the CORRECT instance.
+- `analysis/indication_table.py` -- THE STANDING INDICATION TABLE -- directional read across the grid, all signals at once.
+- `analysis/inherit_ab_batch.py` -- Dual->primal inheritance A/B (orchestrator; NOT a value-determining source).
+- `analysis/instance_profile.py` -- Instance-level covariate profile, and which cells are extremal on each.
+- `analysis/instance_specs.py` -- instance_specs.py -- one row per |C|=20 instance, every spec that could explain how the easy-reduction bound behaves.
+- `analysis/join_freshness.py` -- Standing guard: is any STORED JOIN stale with respect to its live sources? Origin (refactor finding A1, 2026-09-12).
+- `analysis/joint_lp_bound_n100.py` -- The relaxed exact model as a BOUND INSTRUMENT at n100 -- stage 1, the linear relaxation (d447).
+- `analysis/k_comparison.py` -- The single authority for HOW to compare against K.
+- `analysis/k_denominators.py` -- k_denominators.py -- S1a: K's per-cell comparison denominators, PROVENANCE-STAMPED.
+- `analysis/k_says.py` -- What does K actually publish? Query this instead of recalling it.
+- `analysis/k_targets_small.py` -- What a bound must clear at n10/n20/n30, per cell, from K's published per-instance table.
+- `analysis/kappa_probe.py` -- How much smaller than |C| can kappa legitimately be? A closed-form scan, no solve.
+- `analysis/khi_probe.py` -- Choose k_hi for a size by a PROVABILITY criterion -- outcome-blind, no bound values consulted.
+- `analysis/kick_ablation.py` -- KICK-vs-NO-KICK ablation, under the corrected measurement protocol.
+- `analysis/kick_calibrate.py` -- Stage 5: turn bench measurements into a burst schedule.
+- `analysis/kick_cores_probe.py` -- Stage 3c: q at 4 CORES on the SAME states -- the decisive test for parallel multikick.
+- `analysis/kick_pipeline.py` -- The kick-calibration pipeline, end to end, gated on tonight's runs.
+- `analysis/kref.py` -- THE accessor for every Karademir et al.
+- `analysis/kref_build.py` -- Build the ONE canonical machine-readable copy of every Karademir et al.
+- `analysis/kref_table4_extract.py` -- Complete the K inheritance: Table 4's six missing columns, Table 6's transshipment columns, and the |C|=10 per-instance Inc.Time — each gated on a checksum.
+- `analysis/lagrangian_smoke.py` -- Does the Lagrangian certificate survive START-STATE pricing? The measurement d626 asks for.
+- `analysis/launch_budget_matched.py` -- Budget-matched primal over one family, with a gate that refuses to launch on a broken primal.
+- `analysis/lb_campaign.py` -- Forward LB campaign at any size, under the replicable protocol.
+- `analysis/lb_cap_with_ab_floor.py` -- What a per-run cap costs when the ELEM pass can be truncated and AB4 is always the floor.
+- `analysis/lb_chain.py` -- Chain the LB campaign stages so the box is never idle and never double-booked.
+- `analysis/lb_coverage.py` -- LB coverage extension -- ZERO compute, then a work-list for what is still missing.
+- `analysis/lb_coverage_run.py` -- Close the LB coverage gap at |C|=20: run easy_reduction_descend on the cells never tried.
+- `analysis/lb_crossing_samehw.py` -- lb_crossing_samehw.py -- ZERO-compute SAME-MACHINE crossing (R10 cheap-before-expensive).
+- `analysis/lb_crossing_scan.py` -- lb_crossing_scan.py -- CHEAP, no-solver disk scan (R10 cheap-before-expensive).
+- `analysis/lb_dual_measure.py` -- DUAL-ONLY measurement driver (Stage 1, 2026-10-01): LB & OV vs time, HARD-capped wallclock, wise + tracked cores.
+- `analysis/lb_estimator.py` -- The canonical per-cell dual-bound estimator.
+- `analysis/lb_grid.py` -- THE LOWER-BOUND GRID: every cell, every instrument, its value, its runtime and its provenance.
+- `analysis/lb_harvest_measure.py` -- LAGRANGIAN-HARVEST measurement driver (Stage 2, 2026-10-02): valid LB(t) trajectory for a SINGLE rung run STANDALONE, cap-agnostic, hard guillotine.
+- `analysis/lb_method_ablation.py` -- Per METHOD, before the best-of: what each dual sweep cost and what it was worth.
+- `analysis/lb_monitor.py` -- One monitor for the whole LB leg, at K's OWN granularity per size.
+- `analysis/lb_n100_probe.py` -- n100 feasibility probe against K Table 6 -- CHEAPEST DECISIVE TEST FIRST.
+- `analysis/lb_n20_reprov.py` -- Re-run all 27 n20 cells under FULL PROVENANCE.
+- `analysis/lb_n30.py` -- Extend the LB leg to |C|=30 -- the CORE GRID size, and the one the paper's asset does not reach.
+- `analysis/lb_portfolio_ablation.py` -- Post-hoc: what the LB and the runtime would have been with each subset of the portfolio.
+- `analysis/lb_projection.py` -- What the dual leg costs to regenerate, projected from banked runtimes.
+- `analysis/lb_repair_n30.py` -- Re-run the n30 cells damaged by the k_cap<k_hi defect, at the SAME protocol as the other 16.
+- `analysis/lb_reprov.py` -- Re-run cells under FULL PROVENANCE at any size.
+- `analysis/lb_solver.py` -- THE UNIFORM LOWER-BOUND SOLVER.
+- `analysis/lb_solver_v2.py` -- UNIFORM LB SOLVER v2 -- the defensible, uniform-on-policy variant.
+- `analysis/lb_time_profile.py` -- Where the dual leg's seconds actually go: value, confirmation, proof.
+- `analysis/lb_under_cap.py` -- What lower bound is still PROVABLE if the dual leg is capped at T seconds per cell.
+- `analysis/lb_verdict_watch.py` -- Emit ONE unambiguous verdict line per cell, the moment its artifact appears.
+- `analysis/lb_vs_k_headline.py` -- THE headline table: our certified LB vs K's derived dual bound, at n20.
+- `analysis/ledger.py` -- ledger.py -- one append-only JSONL record per (experiment, cell, config) run.
+- `analysis/ledger_renumber.py` -- Restore the decision NUMBER on every ledger entry that was appended without one.
+- `analysis/lemma1_water_bound_audit.py` -- AUDIT of L-water (water bound): is the vessel penalty charged per TRIP or per VESSEL? Why it mattered.
+- `analysis/lemma3_splice_arc_audit.py` -- LEMMA 3 audit: does the SPLICED arc always exist in the reduced model? THE GAP.
+- `analysis/log_instance_correlation.py` -- Correlate run-log outcomes with instance-structural features.
+- `analysis/lp_anatomy.py` -- Decompose the joint model's LP relaxation into its four cost components.
+- `analysis/lp_component_anatomy.py` -- Component-level anatomy of the LP gap, for ALL probed cells.
+- `analysis/m5_primal_time_to_beat.py` -- M5 for the PRIMAL: how long until our incumbent beats K's published OV? METRIC AUTHORITY: `validation/RT_COMPARABILITY.md` metric **M5** -- "time for our bound to reach K's final published bound" -- rated CANDIDATE: *well defined, checkable
+- `analysis/m6_score.py` -- Score M6 -- the matched-budget reproduction of K's LBBD -- against its pre-registration.
+- `analysis/m7_score.py` -- Score M7 -- the matched-budget LBBD reproduction at |C| = 30 -- against its pre-registration.
+- `analysis/make_figures.py` -- Build the manuscript's result figures from banked artifacts.
+- `analysis/make_submission_zip.py` -- Build the numbered submission zip -- the same curated layout as the previous package, plus the one genuinely-missing part (third_party_manifest.json), and a RELEASE NUMBER in the filename so the new package does not overwrite the previous o
+- `analysis/make_tables.py` -- Build the manuscript's tables from banked artifacts.
+- `analysis/manuscript_numbers.py` -- THE NUMBERS REGISTRY.
+- `analysis/master_sequence.py` -- MASTER SEQUENCER -- runs the corrected trajectory in one process, in priority order.
+- `analysis/missing_data_inventory.py` -- What data is ACTUALLY missing? Verify before running, because "it doesn't exist" keeps being wrong.
+- `analysis/mk_preempt_monitor.py` -- Preempt monitor for the multikick head-to-head (user rule 2026-09-08): stop the current-design multikick batch once we have 3 CONFIRMING losses across >=2 cells, where 'confirming' = (a) paired same-seed loss (k3 OV > baseline OV) AND (b) t
+- `analysis/n100_budget_forward_check.py` -- Forward prediction and determinism audit for the n100 budget equalisation.
+- `analysis/n20_fleet_total.py` -- The |C| = 20 street-fleet total, with every cell's minimality status derived, not asserted.
+- `analysis/n30_primal_picture.py` -- Does the primal margin over K hold at |C| = 30? Tests the hypothesis "maybe ours is better on higher |C|".
+- `analysis/n30_rollup.py` -- n30 repair roll-up.
+- `analysis/n50_bigcap_batch.py` -- The eight remaining |C|=50 R cells at a raised label cap, one at a time, each checked.
+- `analysis/n50_close.py` -- n50 completion sequence — runs the full close-out the moment the campaign reaches 27/27.
+- `analysis/n50_coverage_matrix.py` -- Which paper-relevant analyses cover n50, and which do not.
+- `analysis/ng_arbiter_memory.py` -- EXTERNAL VALIDATOR: ng-memory monotonicity.
+- `analysis/night_2026_09_17b.py` -- NIGHT DRIVER, 2026-09-17b.
+- `analysis/night_batch.py` -- Overnight batches against the agreed target.
+- `analysis/nonobvious_set.py` -- Materialize the freeze-evaluation instance frame + K denominators from paper/paper-reference-data.md.
+- `analysis/notation_audit.py` -- NOTATION AUDIT.
+- `analysis/obbt_bigm.py` -- PROVABLY VALID, TIGHTER big-M for the corrected constraint (26), by LP bound tightening.
+- `analysis/operator_headroom.py` -- THE MAXIMUM AN OPERATOR CAN WIN, COMPUTED BEFORE IT RUNS.
+- `analysis/oracle_L0_L1b.py` -- L0 and L1b of the transcription oracle (DESIGN_transcription_oracle_v4.md).
+- `analysis/oracle_L1a.py` -- L1a of the transcription oracle: instance checks that need NO solve.
+- `analysis/oracle_L1a_mintransfers.py` -- Run #5 -- resolve L1a's three UNRESOLVED rows, or prove they are not comparable.
+- `analysis/oracle_L2.py` -- L2 of the transcription oracle: is the MODEL BUILDER correct, GIVEN the transcription? Specified since before v1 and never built.
+- `analysis/oracle_L2_controls.py` -- Negative controls for L2.
+- `analysis/oracle_L2c.py` -- L2c -- the OTHER direction.
+- `analysis/oracle_L2d.py` -- L2d -- G-b.
+- `analysis/oracle_L3_diag.py` -- Why is the corrected (26) free on L3's cells? Two different findings look identical.
+- `analysis/oracle_L3b.py` -- L3b -- G-d.
+- `analysis/oracle_power_and_slack.py` -- Two tests that decide what L1b left open.
+- `analysis/oracle_residuals.py` -- (no module docstring)
+- `analysis/oracle_residue.py` -- oracle-residue-open: the automated check I said could not exist.
+- `analysis/p2_depth.py` -- Win vs loss DEPTH on the complete 20-cell unproved arm.
+- `analysis/p2_full_arm.py` -- P2 on the FULL 20-cell UNPROVED arm at |C| = 20.
+- `analysis/parity_n2030.py` -- n20/n30 per-cell PARITY cross-check (d663) -- discharges the 'our OV beats K at n100' burden.
+- `analysis/path_cover_fleet.py` -- Minimum vehicles to cover a solution's OWN trips, holding every trip's schedule fixed.
+- `analysis/phase_a_deep.py` -- phase_a_deep.py -- the Phase A decision analysis.
+- `analysis/phase_b_deep.py` -- phase_b_deep.py -- Phase B analysis: indep vs xfeed, escape lottery, RT.
+- `analysis/plot_trajectories.py` -- SMOKE TEST for the trajectory figures (F1 dual, F3 primal) — does the plotting path work end-to-end on real logged data? This is a smoke test, not the publication figure.
+- `analysis/portfolio_trace.py` -- portfolio_trace.py -- reconstruct per-island convergence from the RunLogger jsonls, mark migration / kick events, and answer the post-hoc questions: * which island (and which event: rotation move / kick / migrate_in) produced the global bes
+- `analysis/precluster_trips.py` -- Spatiotemporal, customer-prioritised pre-clustering into trips, scored at the TRIP level against the incumbent's own trips (author: 'spatiotemporal heuristic customer prioritized pre-clustering trip-wise').
+- `analysis/preflight.py` -- preflight.py -- the LAUNCH GATE.
+- `analysis/preflight_campaign.py` -- Campaign preflight: the double-checks that must PASS before any multi-cell launch.
+- `analysis/primal_cap.py` -- Per-cell primal hard cap = 5760 + 20 - dual_RT(cell), per PREREG_n100_primal_capped_variants.md (d661).
+- `analysis/primal_freeze.py` -- THE FROZEN PRIMAL CONFIGURATION.
+- `analysis/primal_mean_vs_k.py` -- The primal against K reported as MEAN and SD, with best-of demoted to complementary.
+- `analysis/primal_seed.py` -- Primal-seed contract: compose the dual-leg handoff into a single object a FUTURE primal variant can warm-start from -- derived OV, incumbent routes, and the certified LB together.
+- `analysis/primal_target.py` -- THE PRIMAL SEARCH TARGET — the objective every configuration is ranked by.
+- `analysis/primal_traj_batch.py` -- First wide PRIMAL trajectory batch (orchestrator, NOT a value-determining source; --no-bank so tep_solve writes no artifact -- the full OV(t)+event trajectory is in logs/<run_id>.out).
+- `analysis/provenance.py` -- provenance.py -- reproducibility stamp for EVERY logged result.
+- `analysis/quarantine_guard.py` -- HALT GUARD: a verifier/solver contradiction stops everything.
+- `analysis/quarantine_watch.py` -- Check the quarantine AFTER EVERY CELL, not once per batch.
+- `analysis/queue_run.py` -- The run queue, with the checks the shell queue did not have.
+- `analysis/rc203_coupling.py` -- rc203_coupling.py -- opt B: does starting the joint solve in block-A(H)'s optimal routing basin fix RC203? 1.
+- `analysis/rc203_coupling_clean.py` -- rc203_coupling.py -- opt B: does starting the joint solve in block-A(H)'s optimal routing basin fix RC203? 1.
+- `analysis/recap_grid_vs_k.py` -- FULL-UNION GRID recap: per-family (C/R/RC) and ALL, MEAN and MEDIAN of our OV, LB, opt-gap and RT, beside K, at K's disclosed granularity.
+- `analysis/redump_incumbents.py` -- Re-dump the 11 ledger-only incumbents so every quoted primal number is artifact-backed.
+- `analysis/reference_set_audit.py` -- Two questions about the REFERENCE against which our bound is scored.
+- `analysis/refuted_recheck.py` -- Re-run the CORRECT solver over every cell tonight's grid produced, and rule on each one.
+- `analysis/release_gate.py` -- RELEASE GATE — executable preconditions for publishing the replication package.
+- `analysis/replay_verify.py` -- Replay-verify a proposed code change against every existing artifact.
+- `analysis/report_fam_vs_k.py` -- Mean OV, mean LB and mean optimality gap (OV-LB)/OV -- OURS vs K -- at family x n-count where K discloses family, else at K's aggregation level.
+- `analysis/report_gapattack.py` -- Gap-attack report: per cell/size, the THINNED gap after the overnight campaign vs the frzdual2 baseline and K's proven optima.
+- `analysis/report_lossrecap.py` -- Per size (n10/20/30): worst OV loss by VALUE, worst OV loss by PERCENT, and #wins -- ensemble primal (prim_ens) vs K's BEST incumbent (min joint/lbbd, table3).
+- `analysis/report_optgap.py` -- MAIN NARRATIVE METRIC: proven optimality gap (OV-LB)/OV -- ours vs K -- on the OPEN cells (K did not prove).
+- `analysis/report_postpass_n10.py` -- Which EXISTING path (postpass corpus) reaches each n10 cell's optimum? For each cell: the dual own-water incumbent (ownwater, = the frozen dual OV path), the ceil-arm, and the cars-first select-chain -- vs K's proven optimum (table3).
+- `analysis/report_prim2.py` -- Sampled primal comparison reporter (PREREG_n100_primal_capped_variants.md, d661).
+- `analysis/report_prim_ens.py` -- Ensemble primal variant (prim_ens, d674) vs K proven optima at n10 -- the single-run, clean-config result (NOT cross-config best-of).
+- `analysis/report_prim_small.py` -- Validate the PRIMAL leg at n10/20/30 against K's per-cell PROVEN optima (Table 3).
+- `analysis/report_recap.py` -- Recap of the BEST PRIMAL VARIANT (ensemble prim_ens) over n10/20/30: OV and LB vs K.
+- `analysis/report_thinned.py` -- Thinned-gap report (d676): per cell/size (n10/20/30), the gap after BOTH levers -- best LB = max over {frzdual2, finer-grain fgd<delta>}; best OV = min over {frzdual2 derived, ensemble prim_ens}.
+- `analysis/report_v2_cell.py` -- Per-cell v2 full-leg comparison -- RT / LB / derived OV vs v1 banked and K's BK.
+- `analysis/repro_check.py` -- Prove replicability empirically: run the SAME cell twice at the SAME seed, demand equality.
+- `analysis/repro_preflight.py` -- Replicability gate for any run whose output may reach the paper.
+- `analysis/reproduction_index.py` -- The reproduction index: every number, table, plot and quantity in the manuscript, and how to reproduce or verify it.
+- `analysis/restrict_to_H_check.py` -- restrict_to_H_check.py -- S1c: tighter bound-validity check (zero solver).
+- `analysis/reverify_derived.py` -- INDEPENDENT re-verification of a dual-derived incumbent (logs/harvest_measure/*_incumbent.json).
+- `analysis/reverify_reported.py` -- Area 6 -- independent joint re-verification of every REPORTED incumbent (d793).
+- `analysis/root_after_cuts.py` -- ADVERSE CHECK on the 'formulation is the bottleneck' claim.
+- `analysis/root_aggressive_cuts.py` -- (no module docstring)
+- `analysis/rootlp_bigm_pretest.py` -- Does a tighter big-M move the ROOT LP of the corrected (26) model? Pre-test, seconds.
+- `analysis/rt_budget_fairness.py` -- Does our TOTAL compute per instance exceed K's, after hardware normalisation? THE CONSTRAINT, author-stated 2026-09-17: "The total RT budget should not exceed K's one AFTER NORMALIZATION." This is a fairness constraint on the QUALITY compar
+- `analysis/rt_class.py` -- The 4-thread / single-tenancy rule (d47), moved OUT of a driver and INTO the artifact.
+- `analysis/rt_fair_pipeline.py` -- Make the same-machine RT comparison FAIR.
+- `analysis/rt_leg_descriptives.py` -- RT-leg descriptives: the host manifest, and our run time by size and family.
+- `analysis/rt_normalize.py` -- RT comparability without a hardware fudge factor.
+- `analysis/rt_to_k_monitor.py` -- ALWAYS-ON RT-to-beat-K.
+- `analysis/rt_to_k_optimal.py` -- rt_to_k_optimal.py -- ZERO-compute RT comparison from existing logs.
+- `analysis/rules_alignment.py` -- THE FOURTH GATE.
+- `analysis/run_full_grid.py` -- The budget-matched grid, one seed at a time, breadth first.
+- `analysis/run_manifest.py` -- run_manifest.py -- the single RUN->PROVENANCE traceability registry for the replication repo.
+- `analysis/run_primal_uniform.py` -- Production grid for the FROZEN uniform primal variant (d684-d708), with maximal ablation logging.
+- `analysis/s1_validate_primal.py` -- S1 — the primal validation layer.
+- `analysis/s2_close.py` -- S2 close-out: apply the PRE-REGISTERED winner rule, and nothing else.
+- `analysis/s2d_close.py` -- S2d close-out — proved-cell fidelity and the pre-registered P1 prediction.
+- `analysis/s2e_close.py` -- S2e close-out — RC203's escape rate at n=38, and what it does to the restart frontier.
+- `analysis/s2f_close.py` -- S2f close-out — what did the n50 timing probe actually cost, and did it plateau? Applies validation/PREREG_S2f_n50_timing_probe.md.
+- `analysis/s2g_status.py` -- IN-FLIGHT status of S2g, under its own pre-committed reporting rule.
+- `analysis/s2k_exact_closure.py` -- S2k — does injecting OUR lower bound let an exact solver close a cell K left open? Applies validation/PREREG_S2k_exact_closure.md exactly, and nothing else.
+- `analysis/s2p_feasibility_control.py` -- (no module docstring)
+- `analysis/s2p_fleet_floor.py` -- S2p — fleet-count reduction at |C| = 20, per validation/PREREG_S2p_fleet_floor_smoke.md.
+- `analysis/s3a_ablation_compare.py` -- S3a: compare retained-set selection arms against the banked `easiness` baseline.
+- `analysis/s3a_friedman_holm.py` -- Friedman + Holm post-hoc across all three S3a arms, with easiness as the control.
+- `analysis/s3a_significance.py` -- Statistical treatment of the S3a selection ablation.
+- `analysis/safe_edit.py` -- Apply a source transform to many files WITHOUT the possibility of writing a broken one.
+- `analysis/scope_unproven.py` -- Scope the unproven-cell sample for the coarse-grain harvested sweep: read the oracle best_of files per n, report proven/unproven counts per family, and list the unproven cells (= LB solver still has value).
+- `analysis/score_coverage.py` -- Score a coverage sweep, with the provenance checks I kept failing by hand.
+- `analysis/score_stage0_gate.py` -- Stage 0 gate, scored at the TRAJECTORY's budget, not the driver's.
+- `analysis/sensitivity_curves.py` -- The two sensitivity curves the paper owes a referee, both from banked data.
+- `analysis/seq_handoff.py` -- One-shot handoff: swap the running sequencer for the revised one at the stage-1 boundary.
+- `analysis/session_state.py` -- SESSION STATE — executable, and it FAILS when it is stale.
+- `analysis/similarity_check.py` -- Verbatim-overlap check against the predecessor paper.
+- `analysis/single_authority.py` -- One lookup, one authority.
+- `analysis/smoke25_targeted.py` -- STEP 7: 25 cells chosen to MAXIMISE the odds of invalidating verifier3's transcription.
+- `analysis/smoke_verifier3.py` -- SMOKE for verifier3: does it REJECT what it should, and ACCEPT what it should? A verifier that accepts everything is useless and looks perfect.
+- `analysis/smoke_verify_arith.py` -- SMOKE SUITE for analysis/verify_arith.py -- the arithmetic verifier variant.
+- `analysis/spp_lp_bound.py` -- DUAL QUESTION, first instrument: a VALID trip set-covering LP bound on street travel.
+- `analysis/stamp.py` -- Full provenance and real runtime on every result, or the result is not written at all.
+- `analysis/status_audit.py` -- One home per fact.
+- `analysis/step2_bigm_n50n100.py` -- STEP 2 -- does K's undersized big-M EXCLUDE a real solution at n50 and n100? WHY A COUNT AND NOT A COMPARISON.
+- `analysis/step2_reaggregate.py` -- Rebuild step 2's result from its OWN stamped dumps, without re-solving anything.
+- `analysis/step2_repair.py` -- Re-solve the step-2 dumps that kill_tree() destroyed, and nothing else.
+- `analysis/step_value_preflight.py` -- Before a queued step spends a night: what can it possibly buy? (d585) WHY.
+- `analysis/stratification_check.py` -- STRATIFICATION CHECK — fire on per-cell tables that mix K-proven and K-unsolved cells.
+- `analysis/street_part_banked.py` -- Street part (penalty_cars * nCars + travelcoststreet * street) of every banked, verified n100 artifact of a cell -- the necessary check for the TEP CG street bound (TEP_cg_bound_n100.md section 3.2): a valid bound is <= every one of them.
+- `analysis/supervision.py` -- The standing supervision suite.
+- `analysis/tab_budget_sensitivity.py` -- Budget-sensitivity table (#41/d754-759): paper/tables/budget_sensitivity.tex.
+- `analysis/tab_n50_longrt.py` -- n50 longer-than-budget sensitivity table: paper/tables/n50_longrt.tex.
+- `analysis/tab_percell_grid.py` -- Per-cell grid appendix (#53, d775): paper/tables/percell_grid.tex.
+- `analysis/tab_stage_ablation.py` -- Per-stage ablation (the online resource §6.4 promises): paper/tables/stage_ablation.tex.
+- `analysis/tep_ablation_table.py` -- Ablation of the TEP primal pipeline, per size: what each stage bought, from the banked artifacts.
+- `analysis/tep_alns.py` -- External ALNS, capped and deterministic, starting from the banked incumbent.
+- `analysis/tep_alns_v2.py` -- v2 ALNS: grow-k-on-stall (kick ladder) + helpless early-abort (Rule B), in a NEW module so the frozen v1 tep_alns.alns stays BYTE-UNTOUCHED (d647/d662/d670).
+- `analysis/tep_arbiter_cell.py` -- One cell of the arbiter panel: ground truth against both pricers, at a matched DELTA (d437).
+- `analysis/tep_arbiter_panel.py` -- Drive `tep_arbiter_cell` over the grid and aggregate (d437).
+- `analysis/tep_bk_handoff_probe.py` -- Why does the master IP miss BK by 20.64 per cent on R208 n30 with BK's own columns in the pool? (d597) THE OPEN ISSUE.
+- `analysis/tep_bk_in_column_space.py` -- Is the banked best-known solution expressible in our master's column space? (d589) WHY THIS IS THE FIRST THING TO RUN.
+- `analysis/tep_ceil_feasibility.py` -- Does the incumbent survive CEIL bucketing, and at which Δ? Pure Python, no solver (d421).
+- `analysis/tep_ceil_feasibility_audit.py` -- L-TEP-ceil, checked on every banked ceil solution: does the round-up schedule really satisfy the spacing? (d544) WHY THIS EXISTS.
+- `analysis/tep_ceil_n30_batch.py` -- The ceil-rounded primal across the n30 grid, against the floor route and against K.
+- `analysis/tep_cert_witness.py` -- Worked CERTIFICATE witness for the appendix (referee round, 2026-10-11).
+- `analysis/tep_cg_banked.py` -- TEP dual leg, piece 2: column generation with a TIME-EXPANDED car flow (FORMULATION_TEP §10, amendment 1 of 2026-09-23).
+- `analysis/tep_cg_batch.py` -- Driver for the TEP column-generation bound over the n100 cells (audit validation/runaudits/TEP_cg_bound_27cells.md; author's go 2026-09-23 18:05 "Go go").
+- `analysis/tep_cg_bound.py` -- TEP dual leg, piece 2: column generation with a TIME-EXPANDED car flow (FORMULATION_TEP §10, amendment 1 of 2026-09-23).
+- `analysis/tep_chain_exact.py` -- TEP refinement 1 -- the exact chaining layer (d373 design).
+- `analysis/tep_chain_exact2.py` -- TEP refinement, iteration 2 (d373): chain first with free times and NO booking, then book as a repair under the chains' precedences, looping on conflicts.
+- `analysis/tep_chain_own_water.py` -- The chaining route with OUR water stage instead of the predecessors' re-timing (d451).
+- `analysis/tep_cost_decomposition.py` -- Recompute FleetStreet / TravelStreet / FleetWater / TravelWater on every banked best-known.
+- `analysis/tep_coverage_map.py` -- Coverage map: every interim finding, primal and dual, with variant provenance, against every K exhibit.
+- `analysis/tep_cut_phase0.py` -- PHASE 0 of the cut smoke test: can Oliveira et al.'s aggregate rounded-capacity cuts move our bound at all? (d564) WHAT IS BEING TESTED.
+- `analysis/tep_cut_tail_smoke.py` -- Cuts at the tail of the incumbent: design, audit and smoke, without touching frozen code.
+- `analysis/tep_cut_waiver.py` -- Before running any cut: how much can it possibly buy on this cell, and may we waive it? (d580) THE THEOREM, and it is one line.
+- `analysis/tep_direction_ablation.py` -- A5 -- the rounding direction, floor against ceil, on every cell of every size.
+- `analysis/tep_diverse_primal.py` -- Forced-diversity primal selection: generate structurally distinct partitions, rank them exactly.
+- `analysis/tep_easy_reduction.py` -- The easy-reduction idea, MIMICKED OVER OUR FORMULATION instead of the predecessors' (d448).
+- `analysis/tep_easy_reduction_recompute.py` -- Recompute the n100 subset-master bounds so that every artifact carries its own elementary certificate.
+- `analysis/tep_exact_small.py` -- GROUND TRUTH for the TEP master LP at small n, by exhaustive enumeration -- no pricer (d437).
+- `analysis/tep_exhaustive_audit.py` -- EXHAUSTIVE, PRICER-FREE OPTIMALITY AUDIT of a converged TEP master at small n (d437).
+- `analysis/tep_final_campaign.py` -- The final campaign: one variant provenance on both legs, every cell, every size.
+- `analysis/tep_fine_delta_bound_batch.py` -- The finer-bucket BOUND leg across the n30 grid, checking its own steps.
+- `analysis/tep_fleet_branch.py` -- Is the integer-car CUT valid? A fixed-pool branch test (d442).
+- `analysis/tep_force_fleet.py` -- Force the fleet down on a cell and ask whether the partition can be served at all.
+- `analysis/tep_gap_to_bound.py` -- Gap relative to the bound, (OV - LB) / LB, per cell and per size, for us and for K, each side with its own OV and LB.
+- `analysis/tep_grid_consolidate.py` -- Consolidate a size's pu_ng* runs into TWO stamped artifacts (d723), with the surgery gate (d724/d727) built in as refuse-on-fail: tep_uniform_n<size>_full.json the FULL union -- best OV over ALL banked ng, no budget cut (the cap-SENSITIVITY
+- `analysis/tep_guided_construct.py` -- FIX B: realise the master's trip partition with MINIMAL routing-respecting consolidation (d449).
+- `analysis/tep_harvest_master_ip.py` -- Harvest the verified master-IP solutions that were never banked.
+- `analysis/tep_incumbent_ledger.py` -- Audited incumbent ledger, runtime event log, and the banking of every final incumbent in the repo.
+- `analysis/tep_insights.py` -- Derived analyses and figures over the TEP event, operator, runtime and objective record.
+- `analysis/tep_intcars_batch.py` -- Integer-car cuts on the TEP bound over all 27 n100 cells, four at a time (audit validation/runaudits/TEP_intcars_27cells.md; author approved 2026-09-25 06:18).
+- `analysis/tep_intcars_grid.py` -- The integer-car cut across the grid, in the order fixed by the pre-registration.
+- `analysis/tep_ip_cap_probe.py` -- Is the primal TRUNCATED or CONVERGED at the large sizes? One cell, one pool, two work limits.
+- `analysis/tep_ip_chain.py` -- The quick primal fix (d428): let the integer master SELECT the trip partition, and let the existing exact CONTINUOUS-TIME chaining model do the chaining and the timing.
+- `analysis/tep_master_fleet_cap.py` -- Cap the fleet in the MASTER, not just the chaining, and re-partition.
+- `analysis/tep_mechanism.py` -- WHY does the master's trip selection beat the composition heuristics? (author, 09:05) d338/d339 located the gap to K in WAITING INSIDE TRIPS, which follows the temporal spread of the customer windows inside a satellite's region.
+- `analysis/tep_n100_family_table.py` -- The n100 headline: both legs, per family, against the predecessors' published figures (d453).
+- `analysis/tep_n10_optimum_anatomy.py` -- What does the OPTIMUM look like on the n10 cells our primal route misses by more than 5%? (d439) The audit in `tep_primal_n10_audit.py` established that on R201, R202, R203 and RC201 the selected trip partition genuinely needs two cars -- c
+- `analysis/tep_n30_best_of.py` -- n30 per instance, taking the better of our two rounding configurations.
+- `analysis/tep_n30_structure.py` -- Structure of the n30 cells we lose on, against same-family cells we win on.
+- `analysis/tep_n30_table.py` -- The n30 per-instance table: both legs, per cell, against the better of their two methods (d456).
+- `analysis/tep_n50_batch.py` -- The n50 grid, both rounding configurations, against K's Table 4.
+- `analysis/tep_ov_vs_cars.py` -- The true shape of the objective as a function of the FLEET (d443).
+- `analysis/tep_pool_search.py` -- Score the master's SOLUTION POOL by the real objective instead of trusting its proxy (d457).
+- `analysis/tep_pretests.py` -- The three pre-tests method B required before any trip-based primal was built, applied to TEP (d417; validation/DESIGN_B_trip_based_primal.md A1.1, A2.1, A2.2).
+- `analysis/tep_pricer.py` -- TEP dual leg, piece 1: an EXACT trip pricer (labeling with load and time; elementary or ng-route).
+- `analysis/tep_pricer_banked.py` -- TEP dual leg, piece 1: an EXACT trip pricer (labeling with load and time; elementary or ng-route).
+- `analysis/tep_pricer_fast.py` -- TEP dual leg, piece 1: an EXACT trip pricer (labeling with load and time; elementary or ng-route).
+- `analysis/tep_pricer_njit.py` -- Pricer nopython kernel (investigation II, d652).
+- `analysis/tep_primal_n10_audit.py` -- FULL AUDIT of the n10 cells the TEP primal route leaves more than 5% above K's proven optimum.
+- `analysis/tep_primal_small.py` -- The TEP primal route at the small sizes, against K's published numbers (d439).
+- `analysis/tep_reduction_sweep.py` -- Does the easy-reduction mimic generalise -- across cells and across sizes? (d448) AUDIT.
+- `analysis/tep_refine.py` -- Deterministic local search over OUR street representation, re-scored through the exact water stage.
+- `analysis/tep_refine_njit.py` -- v2 primal engine (variant TWO-LEGS v2, d647): a numba-compiled, BIT-EXACT drop-in for tep_refine._pass -- the time-window forward-propagation that is ~88% of ALNS wall.
+- `analysis/tep_retime_by_direction.py` -- The rounding direction, measured where it bites hardest: does the selection survive exact re-timing? (d577) WHAT THIS IS.
+- `analysis/tep_reverify_all.py` -- Re-verify every banked primal artifact from disk with verifier3, at K's proximity for its size.
+- `analysis/tep_runtime_vs_k.py` -- Runtime against the predecessors', per size, normalised — and time-to-best wherever they publish it.
+- `analysis/tep_sample15.py` -- The K-free TEP pair on a 15-cell sample: 3 families x 5 sizes, against what we already hold.
+- `analysis/tep_select_chain.py` -- SELECT the trips and CHAIN them in one model, with the CAR COUNT as the primary objective.
+- `analysis/tep_solve.py` -- ONE VARIANT, ONE INVOCATION, ONE OV -- Algorithm 1 lines 1-6 and 8-13 wired in a row.
+- `analysis/tep_stage3_validation.py` -- Full validation of stage three: the two consolidation choices, across the grid (d450).
+- `analysis/tep_surrogate_equivalence.py` -- Equivalence smoke: surrogate-scored search against the exact-scored one, same cells, seeds and budgets.
+- `analysis/tep_timing_backfill.py` -- Backfill the missing per-stage SECONDS without touching a single banked solution.
+- `analysis/tep_uniform_grid.py` -- The UNIFORM-GRID per-instance table at |C| in {10,20,30}.
+- `analysis/tep_vs_fixopt.py` -- TEP assembly vs the best pure fixopt artifact per n100 cell (verified rows only, same scan as bks_n100.py).
+- `analysis/tep_water_opt.py` -- Replace the greedy vessel stage with an EXACT one, on committed transfers.
+- `analysis/termination_confront.py` -- Confront the termination-rule discussion with ALL logged fixopt trajectories (n10/n20/n30).
+- `analysis/tex_to_md.py` -- Render the flattened submission .tex to a readable Markdown manuscript (for review, not for typesetting).
+- `analysis/time_to_parity.py` -- TIME TO PARITY — our dual time-to-tie PLUS our primal time-to-tie, against K's compounded RT.
+- `analysis/transcription_audit.py` -- TRANSCRIPTION AUDIT: is verifier3's reading of K's (1)-(30) corroborated by sources that are NOT my reading? Design: validation/DESIGN_transcription_audit.md Design audit: validation/AUDIT_design_transcription.md (five mandated changes, all
+- `analysis/trial_reuse_harm.py` -- Does the reuse constructor ever HURT, at the sizes where nobody has looked? (n=596) WHY.
+- `analysis/ttb_head_to_head.py` -- OUR (LB TTB + primal TTB) against THEIRS — same target, same machine, both methods.
+- `analysis/tw_width_mechanism.py` -- Time-window WIDTH as the discriminator of K's reported difficulty.
+- `analysis/undo_spawn_blast.py` -- Undo the blast radius of the 2026-09-20 import-gate incident.
+- `analysis/validate_harvest.py` -- VALIDATION (prints only, writes no artifact): confirm the refactored certify path is numerically unchanged, and that the gated harvest hook (1) fires near convergence, (2) banks a VALID bound, (3) never overshoots the completed LP* (max int
+- `analysis/verifier3.py` -- verifier3 -- CHECKED AGAINST THE PUBLISHED CONSTRAINTS, NOT AGAINST OUR MODEL.
+- `analysis/verify_arith.py` -- ARITHMETIC VERIFIER VARIANT -- no solver, no search, no CP-SAT.
+- `analysis/verify_committed.py` -- VERIFIER VARIANT -- A PARALLEL DIAGNOSTIC.
+- `analysis/verify_incumbent.py` -- Verify a banked incumbent from the repo, independently of everything that produced it.
+- `analysis/verify_reduction_bound.py` -- verify_reduction_bound.py -- Rule 3 independent check of z_A(H)*.
+- `analysis/waiter_contract.py` -- A waiter may not be armed until its predicate has been shown to tell the two states apart.
+- `analysis/waiters.py` -- List every armed waiter and running job on this host: bash/sh scripts (queues, waiters) and python processes with their command lines and parents.
+- `analysis/water_floor_check.py` -- Where does our water cost come from? Four free checks, no solver.
+- `analysis/water_optimality.py` -- Is the banked best-known's water optimal GIVEN its street? Proven per cell, not sampled.
+- `analysis/wire_stamps.py` -- Wire provenance stamping into every result writer, by AST rather than by regex.
+
+## Code -- crossfeed
+
+- `crossfeed/__init__.py` -- crossfeed/ — deeper coupling of the dual bound with the LBBD, per the roadmap Phase 3b/3a sequence.
+- `crossfeed/_lb_worker.py` -- one block-A(H) frontier solve in one formulation -> JSON.
+- `crossfeed/blockA_cpsat.py` -- blockA_cpsat.py — CP-SAT (OR-Tools) model of block A (street + synchronisation), built as a VALID LOWER BOUND on z_A via floored integer costs.
+- `crossfeed/block_a.py` -- Lagrangian Decomposition — Candidate A, BLOCK A (street + synchronization).
+- `crossfeed/block_b.py` -- Lagrangian Decomposition — Candidate A, BLOCK B (water level).
+- `crossfeed/bound_tracer.py` -- BoundTracer -- a PURE OBSERVER progress listener for the LB leg.
+- `crossfeed/check_cuts.py` -- check_cuts.py -- guard: do any of our verified feasible incumbents VIOLATE the problem-aware valid inequalities from mfree_cuts.add_rcc? An invalid "valid" cut silently pushes the bound ABOVE the true optimum.
+- `crossfeed/dual_bound_harness.py` -- dual_bound_harness.py — THE single harness for every dual-bound experiment on this project (rule 21 generalised, rule 22e).
+- `crossfeed/dual_mining.py` -- dual_mining.py -- FAIL-FAST check for research idea #6: Mine a valid GLOBAL dual bound from the restricted LP sub-solves that a fix-and-optimize matheuristic (solver/engines/fixopt.py) generates.
+- `crossfeed/easy_reduction.py` -- easy_reduction.py -- "easy customer" reduction for a tighter block-A bound.
+- `crossfeed/easy_reduction_descend.py` -- easy_reduction_descend.py -- descend protocol for the easy-reduction bound.
+- `crossfeed/fullset_bound.py` -- Full-set decomposed lower bound -- no customer is dropped, so nothing degrades with size.
+- `crossfeed/kstar_regrow.py` -- kstar_regrow.py -- wiser E at frontier cardinality, evaluation-based.
+- `crossfeed/kstar_swap.py` -- kstar_swap.py -- wiser E at the frontier cardinality.
+- `crossfeed/lagrangian_decomp.py` -- Lagrangian Decomposition — Candidate A coordinator.
+- `crossfeed/lagrangian_subproblem.py` -- #4 — the bounded synchronization+water subproblem for a FIXED (routing, transfer-set) decision, with the satellite-assignment coupling `hubAssignment_i : sum_p v_ip = 1` either kept OR Lagrangian-relaxed.
+- `crossfeed/lb_portfolio.py` -- lb_portfolio.py -- the LB unifier / formulation-race presolve stage.
+- `crossfeed/mfree_cuts.py` -- mfree_cuts.py -- can M-free timing + rounded-capacity street cuts prove block-A over a LARGER H (smaller k) than plain big-M, recovering reduction tax? ADAPTIVE calibration (so it transfers to |C|=30/50): * calibrate the per-solve budget fr
+- `crossfeed/seed_from_core.py` -- seed_from_core.py -- build a full feasible joint incumbent from a block-A(H) proven core.
+- `crossfeed/shrink_e.py` -- shrink_e.py -- recover the reduction tax: prove block-A(H) at a SMALLER |E| than the greedy frontier, using a contention-guided E instead of the greedy prefix.
+- `crossfeed/smoke_45.py` -- Smoke test + first validation for crossfeed #4 (optimized Lagrangian dual of the satellite-assignment coupling) and #5 (multiplier warm-start).
+- `crossfeed/stall_stopper.py` -- StallStopper — a docplex progress listener that lets a MIP run as long as its best bound keeps improving, and aborts once it plateaus.
+- `crossfeed/subgradient.py` -- Subgradient ascent on the Lagrangian dual max_lam L(lam) of the satellite-assignment coupling.
+- `crossfeed/test_blocks.py` -- Structural-equivalence tests for the LD block models (rule 3 extension).
+- `crossfeed/waive_smoke.py` -- waive_smoke.py -- smoke test of the "waive E" primal/dual idea.
+
+## Code -- solver
+
+- `solver/config.py` -- SolverConfig — the single configuration surface for the modular 2E-MVRP-SS solver (roadmap Phase 3.3).
+- `solver/engines/base.py` -- Abstract engine interfaces.
+- `solver/engines/construct.py` -- ConstructivePrimal — a time-window- and capacity-feasible constructive warm start.
+- `solver/engines/fixopt.py` -- FixOptPrimal — a fix-and-optimize / MIP-based large-neighbourhood-search matheuristic (roadmap Phase 3b(ii)).
+- `solver/engines/portfolio.py` -- portfolio.py -- the primal cooperative portfolio (unified solver, primal stage).
+- `solver/fleet_postpass.py` -- Standalone fleet-reduction post-pass.
+- `solver/greedy26_reuse.py` -- greedy26 with vehicle REUSE: continue from the satellite whenever a customer is still reachable.
+- `solver/lbbd.py` -- Our iterative logic-based Benders decomposition (roadmap Phase 3b(i)).
+- `solver/orchestrate.py` -- Orchestrator — runs the configured primal / dual engines, gates every incumbent through the independent verifier (rule 3), logs every event through RunLogger (rule 4), and returns a verified incumbent + a valid bound (when a dual engine is 
+- `solver/problem.py` -- SolverProblem — thin wrapper the engines see.
+
+## Comparison data
+
+- `data/karademir2025/k_reference.json` -- Our cited transcription of the predecessors' PUBLISHED result tables (objective values and gaps), for comparison only -- not their code or instances.
+
+## Figures (the four in the paper)
+
+- `paper/figures/ablation_primal_leg.pdf` -- Fig 4: what the primal leg adds over the bound leg's dual-derived incumbent.
+- `paper/figures/ablation_primal_leg.png` -- Fig 4: what the primal leg adds over the bound leg's dual-derived incumbent.
+- `paper/figures/band_family_n100.pdf` -- Fig 2: per-family LB and incumbent at |C|=100, ours vs published.
+- `paper/figures/band_family_n100.png` -- Fig 2: per-family LB and incumbent at |C|=100, ours vs published.
+- `paper/figures/lb_ov_vs_k_by_size.pdf` -- Fig 1: pooled lower bound and incumbent vs size, ours vs published.
+- `paper/figures/lb_ov_vs_k_by_size.png` -- Fig 1: pooled lower bound and incumbent vs size, ours vs published.
+- `paper/figures/optgap_vs_k_by_size.pdf` -- Fig 3: optimality gap (OV-LB)/OV by size, ours vs published.
+- `paper/figures/optgap_vs_k_by_size.png` -- Fig 3: optimality gap (OV-LB)/OV by size, ours vs published.
+
+## Reported artifacts (read-closure)
+
+- `runs/** , published_artifacts/** , validation/certificates/**` -- The 707 artifact files the number/table/figure generators actually read -- not the rest of runs/. Each is an input to a reported quantity listed in REPRODUCTION_INDEX.md.
+
+## Claim register & validation (DAS-promised)
+
+- `CLAIMS.md` -- Human-readable claim register: each empirical claim with its falsifier.
+- `validation/EQ_TO_CODE.md` -- Map from each model equation to the code line that implements it.
+- `validation/VALIDATION_REPORT.md` -- Readable validation report for the formulation and implementation.
+- `validation/certificate_records.json` -- Index of the per-instance lower-bound certificates.
+- `validation/claims.json` -- Machine-readable claim register (checked by analysis/claims.py); REPRODUCTION_INDEX links each number to a claim id here.
+- `validation/incumbent_manifest.json` -- Index of the reported incumbent per cell and the artifact backing it.
+
+## Pre-registrations (reported analyses only)
+
+- `validation/PREREG_M6_matched_budget_reproduction.md` -- Governs the matched-budget reproduction of K's LBBD (reported m6-matched-budget).
+- `validation/PREREG_M7_n30_matched_budget.md` -- Governs the matched-budget reproduction at |C|=30 (reported m7-matched-budget-n30).
+- `validation/PREREG_S2k_exact_closure.md` -- Governs whether our bound closes a cell K left open (reported s2k-closure).
+- `validation/PREREG_S3a_bound_selection_ablation.md` -- Governs the bound-selection ablation (Friedman-Holm) and the primal Wilcoxon signed-rank test (reported s3a-* numbers, sec6.4).
+- `validation/PREREG_gap_decomposition_RQ.md` -- Governs the gap-decomposition research question (reported gap-* numbers).
+- `validation/PREREG_n100_budget_equalisation.md` -- Governs the n100 budget-equalisation re-run behind the budget-sensitivity results (referenced in the claim register).
+- `validation/PREREG_n20_fleet_total.md` -- Governs the |C|=20 street-fleet total and the one-vehicle-impossible certificate (reported n20-fleet-total, fleet-certificate-coverage).

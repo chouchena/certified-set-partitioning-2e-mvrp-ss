@@ -1,0 +1,163 @@
+{
+ "rows": [
+  {
+   "family": "C",
+   "cells_primal": 8,
+   "cells_bound": 8,
+   "n": 8,
+   "our_inc": 3342.6685,
+   "their_inc": 3857.2,
+   "our_lb": 2917.5841588451513,
+   "their_lb": 1704.2487,
+   "our_gap": 12.716915875889246,
+   "their_gap": 55.81642901586643,
+   "bound_classes": [
+    "elementary",
+    "ng"
+   ],
+   "bound_sources": {
+    "C201": "tep_easy_reduction_C201_n100_k0.json",
+    "C202": "tep_cg_bound_C202_ip.json",
+    "C203": "tep_cg_bound_C203_ip_intcars.json",
+    "C204": "tep_easy_reduction_C204_n100_k24.json",
+    "C205": "tep_cg_bound_C205_ip.json",
+    "C206": "tep_cg_bound_C206_ip.json",
+    "C207": "tep_cg_bound_C207_ip.json",
+    "C208": "tep_cg_bound_C208_ip.json"
+   },
+   "missing_primal": []
+  },
+  {
+   "family": "R",
+   "cells_primal": 11,
+   "cells_bound": 11,
+   "n": 11,
+   "our_inc": 2683.0023636363635,
+   "their_inc": 3720.9,
+   "our_lb": 2207.4387590252018,
+   "their_lb": 1056.3606,
+   "our_gap": 17.725053509331033,
+   "their_gap": 71.61007820688543,
+   "bound_classes": [
+    "elementary",
+    "ng"
+   ],
+   "bound_sources": {
+    "R201": "tep_cg_bound_R201_ip.json",
+    "R202": "tep_cg_bound_R202_ip.json",
+    "R203": "tep_cg_bound_R203_ip_intcars.json",
+    "R204": "tep_easy_reduction_R204_n100_k24.json",
+    "R205": "tep_cg_bound_R205_ip.json",
+    "R206": "tep_cg_bound_R206_ip_intcars.json",
+    "R207": "tep_easy_reduction_R207_n100_k24.json",
+    "R208": "tep_easy_reduction_R208_n100_k24.json",
+    "R209": "tep_cg_bound_R209_ip.json",
+    "R210": "tep_cg_bound_R210_ip.json",
+    "R211": "tep_cg_bound_R211_ip_intcars.json"
+   },
+   "missing_primal": []
+  },
+  {
+   "family": "RC",
+   "cells_primal": 8,
+   "cells_bound": 8,
+   "n": 8,
+   "our_inc": 3522.598125,
+   "their_inc": 4810.6,
+   "our_lb": 3025.480088267813,
+   "their_lb": 1249.475,
+   "our_gap": 14.112255190398336,
+   "their_gap": 74.0266286949653,
+   "bound_classes": [
+    "ng"
+   ],
+   "bound_sources": {
+    "RC201": "tep_cg_bound_RC201_ip.json",
+    "RC202": "tep_cg_bound_RC202_ip.json",
+    "RC203": "tep_cg_bound_RC203_ip.json",
+    "RC204": "tep_cg_bound_RC204_ip_intcars.json",
+    "RC205": "tep_cg_bound_RC205_ip.json",
+    "RC206": "tep_cg_bound_RC206_ip.json",
+    "RC207": "tep_cg_bound_RC207_ip.json",
+    "RC208": "tep_cg_bound_RC208_ip.json"
+   },
+   "missing_primal": []
+  }
+ ],
+ "sources": {},
+ "_provenance": {
+  "sources": {},
+  "when": "2026-10-01T13:23:10",
+  "git_sha": "431e85d32cdb",
+  "git_dirty": true,
+  "sources_dirty": [],
+  "python": "3.10.11",
+  "host": "LAPTOP-420NB7DQ",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cpu": {
+   "model": "Intel(R) Core(TM) Ultra 7 258V",
+   "logical": 8,
+   "cores": 8
+  },
+  "source_hash": "e3b0c44298fc1c14",
+  "sources_unresolved": [],
+  "code_in_play_hash": "0525ee52fb1a8ece",
+  "code_in_play_n": 5,
+  "code_in_play": {
+   "analysis/artifact_guard.py": "5aa960abca47c6e8",
+   "analysis/bound_certificate.py": "21a19407e834f9ae",
+   "analysis/kref.py": "3235fd335fc1fa4c",
+   "analysis/stamp.py": "6f8d1d3a0792144f",
+   "analysis/tep_n100_family_table.py": "e62ff600598d2178"
+  },
+  "code_hash_missing": [],
+  "code_hash_covers": [
+   "crossfeed/block_a.py",
+   "crossfeed/easy_reduction.py",
+   "crossfeed/blockA_cpsat.py",
+   "crossfeed/easy_reduction_descend.py",
+   "crossfeed/bound_tracer.py",
+   "build_instance.py",
+   "joint_model_cplex.py",
+   "joint_model_gurobi.py",
+   "solver/engines/fixopt.py"
+  ],
+  "code_hash": "26b414c6",
+  "solver_versions": {
+   "docplex": null,
+   "cplex": "22.1.1.0"
+  },
+  "gurobi": "13.0.3",
+  "solver_tolerances": {
+   "FeasibilityTol": 1e-06,
+   "IntFeasTol": 1e-05,
+   "OptimalityTol": 1e-06,
+   "MIPGap": 0.0001,
+   "NumericFocus": 0,
+   "source": "gurobipy defaults for a fresh model"
+  }
+ },
+ "_rt": {
+  "wall_s": 2.304,
+  "wall_measured_by": "analysis/stamp.py",
+  "process_wall_s": 2.304,
+  "cpu_s": 0.297,
+  "det_ticks": null,
+  "clock": "time.time / time.process_time since analysis.stamp import",
+  "rt_class": "diagnostic",
+  "rt_not_comparable": "the writer declared no rt_class, so this wall was never certified against d47 (4 threads, single tenancy) and is not quotable",
+  "threads": null,
+  "tenancy": 1,
+  "policy": "d47",
+  "declared": false,
+  "cores_regime": {
+   "threads_requested": null,
+   "cores_used_measured": 0.129,
+   "tenancy": 1,
+   "machine_cores": 8,
+   "machine_logical": 8,
+   "policy_threads": 4,
+   "policy": "d47"
+  }
+ }
+}

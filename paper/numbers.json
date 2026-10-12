@@ -1,0 +1,854 @@
+{
+ "_provenance": {
+  "code_hash": "26b414c6",
+  "code_hash_covers": [
+   "crossfeed/block_a.py",
+   "crossfeed/easy_reduction.py",
+   "crossfeed/blockA_cpsat.py",
+   "crossfeed/easy_reduction_descend.py",
+   "crossfeed/bound_tracer.py",
+   "build_instance.py",
+   "joint_model_cplex.py",
+   "joint_model_gurobi.py",
+   "solver/engines/fixopt.py"
+  ],
+  "code_hash_missing": [],
+  "code_in_play": {
+   "analysis/artifact_guard.py": "5aa960abca47c6e8",
+   "analysis/k_comparison.py": "d79be3920c09fa96",
+   "analysis/kref_build.py": "269def6173e2320f",
+   "analysis/lb_estimator.py": "ae92eeeaeca6ef26",
+   "analysis/manuscript_numbers.py": "f63abb3121e7b19c",
+   "analysis/s3a_friedman_holm.py": "099930c38a9579c0",
+   "analysis/s3a_significance.py": "d42f1c28113773e0",
+   "analysis/sensitivity_curves.py": "e766125aa7cde75f",
+   "analysis/stamp.py": "6f8d1d3a0792144f",
+   "analysis/verifier3.py": "ca99a477ad2ce826",
+   "build_instance.py": "6ff56f7b57fc4934",
+   "instanceGenerator.py": "22988317bcdc13ea",
+   "instance_view.py": "5f3a0e8f996c0c65"
+  },
+  "code_in_play_hash": "d944321be2cd3229",
+  "code_in_play_n": 13,
+  "cpu": {
+   "cores": 8,
+   "logical": 8,
+   "model": "Intel(R) Core(TM) Ultra 7 258V"
+  },
+  "git_dirty": true,
+  "git_sha": "36f7d0cefa83",
+  "gurobi": "13.0.3",
+  "host": "LAPTOP-420NB7DQ",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.10.11",
+  "solver_tolerances": {
+   "FeasibilityTol": 1e-06,
+   "IntFeasTol": 1e-05,
+   "MIPGap": 0.0001,
+   "NumericFocus": 0,
+   "OptimalityTol": 1e-06,
+   "source": "gurobipy defaults for a fresh model"
+  },
+  "solver_versions": {
+   "cplex": "22.1.1.0",
+   "docplex": null
+  },
+  "source_hash": "106bd8b9d2867db6",
+  "sources": {
+   "analysis/manuscript_numbers.py": "f63abb3121e7b19c"
+  },
+  "sources_dirty": [],
+  "sources_unresolved": [],
+  "when": "2026-10-11T17:59:35"
+ },
+ "_rt": {
+  "clock": "time.time / time.process_time since analysis.stamp import",
+  "cores_regime": {
+   "cores_used_measured": 0.539,
+   "machine_cores": 8,
+   "machine_logical": 8,
+   "policy": "d47",
+   "policy_threads": 4,
+   "tenancy": 1,
+   "threads_requested": null
+  },
+  "cpu_s": 12.047,
+  "declared": false,
+  "det_ticks": null,
+  "policy": "d47",
+  "process_wall_s": 22.361,
+  "rt_class": "diagnostic",
+  "rt_not_comparable": "the writer declared no rt_class, so this wall was never certified against d47 (4 threads, single tenancy) and is not quotable",
+  "tenancy": 1,
+  "threads": null,
+  "wall_measured_by": "analysis/stamp.py",
+  "wall_s": 22.361
+ },
+ "ab-crossovers-by-size": {
+  "claim": "n50-headline-under-registered-estimator",
+  "desc": "cells where the arithmetic bound exceeds the restriction bound",
+  "unit": "",
+  "value": {
+   "n10": "0 of 27",
+   "n100": "18 of 27",
+   "n20": "0 of 27",
+   "n30": "0 of 27",
+   "n50": "8 of 27"
+  }
+ },
+ "ab-over-kbk-by-family-n50": {
+  "claim": "n50-headline-under-registered-estimator",
+  "desc": "arithmetic bound as a share of K best-known, by family at n50",
+  "unit": "",
+  "value": {
+   "C": "0.467",
+   "R": "0.448",
+   "RC": "0.469"
+  }
+ },
+ "ab-tightens-k-gaps": {
+  "claim": "ab-tightens-k-published-gaps",
+  "desc": "cells where the arithmetic bound exceeds K's published dual bound, and the gap reduction that follows",
+  "unit": "",
+  "value": {
+   "ab-widest-family": "R at |C|=30",
+   "ab-widest-family-n": "11",
+   "ab-widest-family-sd": "27.2",
+   "ab-widest-family-sd-n": "11",
+   "ab-widest-family-spread": "86",
+   "avg-n20-from-pct": "35.4",
+   "avg-n20-pp": "4.7",
+   "avg-n20-to-pct": "30.7",
+   "avg-n30-from-pct": "44.7",
+   "avg-n30-pp": "4.1",
+   "avg-n30-to-pct": "40.6",
+   "cells": "24 of 46",
+   "k-narrowest-family": "C at |C|=20",
+   "k-narrowest-family-n": "8",
+   "k-narrowest-family-sd": "157.4",
+   "k-narrowest-family-sd-n": "11",
+   "k-narrowest-family-spread": "404",
+   "largest-cell": "C204",
+   "largest-from-pct": "62",
+   "largest-pp": "21.3",
+   "largest-size": "30",
+   "largest-to-pct": "40.7",
+   "loses": "22 of 46",
+   "mean-reduction-pp": "8.4",
+   "n20-cells": "11",
+   "n30-cells": "13",
+   "spread-factor": "4.7",
+   "spread-factor-sd": "5.8",
+   "threshold-pct": "31"
+  }
+ },
+ "ablation": {
+  "claim": "tep-primal-n100-family",
+  "desc": "what the primal leg adds over the dual-derived incumbent: mean OV reduction % and opt-gap reduction pp over cells where the primal ran (all sizes), and the n100 figure (d737/d765/d767)",
+  "unit": "%",
+  "value": {
+   "mean-gap-gain-pp": "4.0",
+   "mean-ov-gain-pct": "4.9",
+   "n100-ov-gain-pct": "2.9"
+  }
+ },
+ "budget-below-frontier": {
+  "claim": "trajectory-analysis-placement",
+  "desc": "median share of a cell's budget spent on solves that never certify, n20",
+  "unit": "%",
+  "value": 67.0
+ },
+ "budget-sens": {
+  "claim": "rt-budget-fairness",
+  "desc": "budget sensitivity (#41/d754-759): hardware-factor ceilings from the bound-leg walls, and OV/opt-gap degradation at the ceiling vs f=2.5, re-sliced from the banked ng10 trajectories",
+  "unit": "",
+  "value": {
+   "cap-floor-s": "1145",
+   "f-all-derived": "103",
+   "f-max": "12.6",
+   "f-max-n50": "32.7",
+   "gap-degrade-max-pp": "0.5",
+   "n100-base-mean": "13.3",
+   "n100-derived-mean": "13.8",
+   "n50-base-mean": "16.0",
+   "n50-derived-mean": "16.6",
+   "ov-degrade-max-pct": "0.6"
+  }
+ },
+ "budget-sensitivity": {
+  "claim": "trajectory-analysis-placement",
+  "desc": "share of the terminal bound held at a fraction of each cell's own budget",
+  "unit": "",
+  "value": {
+   "n100-at100": "1.0000",
+   "n100-at25": "0.9685",
+   "n100-at50": "0.9812",
+   "n100-at75": "0.9938",
+   "n100-undefined": "1",
+   "n20-at100": "1.0000",
+   "n20-at25": "0.9844",
+   "n20-at50": "0.9972",
+   "n20-at75": "0.9981",
+   "n20-undefined": "0",
+   "n30-at100": "1.0000",
+   "n30-at25": "0.9399",
+   "n30-at50": "0.9845",
+   "n30-at75": "0.9994",
+   "n30-undefined": "0",
+   "n50-at100": "1.0000",
+   "n50-at25": "0.9717",
+   "n50-at50": "0.9963",
+   "n50-at75": "0.9990",
+   "n50-undefined": "0"
+  }
+ },
+ "cross-size-share": {
+  "claim": "degradation-defence",
+  "desc": "our bound as a share of K best-known, n50 vs n100, one construction",
+  "unit": "",
+  "value": {
+   "drop-joint": "45.0",
+   "drop-min": "39.9",
+   "n100-denominator": "4084.2",
+   "n100-joint": "0.319",
+   "n100-min": "0.357",
+   "n50-denominator": "1941.8",
+   "n50-joint": "0.580",
+   "n50-min": "0.594"
+  }
+ },
+ "depth": {
+  "claim": "rt-budget-fairness",
+  "desc": "computational depth (#50): time-to-best crossing K's published levels (open cells n20/30), bound-leg wall share at n100, and pricing work scaling n50->n100",
+  "unit": "",
+  "value": {
+   "lb-wall-share": "20",
+   "ttb-lb-median-s": "1",
+   "ttb-ov-median-s": "39",
+   "work-scaling-note": "a factor of 1.6 from $|C|=50$ to $100$"
+  }
+ },
+ "descent-cost-multiplier": {
+  "claim": "trajectory-analysis-placement",
+  "desc": "median wall-time multiplier per step down in k, n20",
+  "unit": "x",
+  "value": 2.0
+ },
+ "fleet-certificate-coverage": {
+  "claim": "fleet-certificate-scales-and-dominates-ab",
+  "desc": "cells where one vehicle is proved impossible, by size",
+  "unit": "",
+  "value": {
+   "n100": "27 of 27",
+   "n20": "6 of 27",
+   "n30": "16 of 27",
+   "n50": "27 of 27"
+  }
+ },
+ "gap-closed-by-family": {
+  "claim": "gap-reporting-framing",
+  "desc": "share of K's closable gap that our portfolio bound closes, and the nominal gain, by family and size",
+  "unit": "",
+  "value": {
+   "n100-C-cells": "8",
+   "n100-C-closable": "2567.1",
+   "n100-C-closed-pct": "16.1",
+   "n100-C-gain": "412.8",
+   "n100-R-cells": "11",
+   "n100-R-closable": "3102.5",
+   "n100-R-closed-pct": "5.3",
+   "n100-R-gain": "165.5",
+   "n100-RC-cells": "8",
+   "n100-RC-closable": "4183.0",
+   "n100-RC-closed-pct": "10.0",
+   "n100-RC-gain": "417.0",
+   "n20-C-cells": "4",
+   "n20-C-closable": "1064.4",
+   "n20-C-closed-pct": "67.6",
+   "n20-C-gain": "719.2",
+   "n20-R-cells": "9",
+   "n20-R-closable": "1674.4",
+   "n20-R-closed-pct": "56.0",
+   "n20-R-gain": "937.9",
+   "n20-RC-cells": "7",
+   "n20-RC-closable": "2333.7",
+   "n20-RC-closed-pct": "68.5",
+   "n20-RC-gain": "1597.7",
+   "n30-C-cells": "7",
+   "n30-C-closable": "2205.1",
+   "n30-C-closed-pct": "62.4",
+   "n30-C-gain": "1375.4",
+   "n30-R-cells": "11",
+   "n30-R-closable": "5008.8",
+   "n30-R-closed-pct": "34.8",
+   "n30-R-gain": "1743.3",
+   "n30-RC-cells": "8",
+   "n30-RC-closable": "6290.6",
+   "n30-RC-closed-pct": "50.3",
+   "n30-RC-gain": "3166.8",
+   "n50-pooled-cells": "27",
+   "n50-pooled-closable": "1153.8",
+   "n50-pooled-closed-pct": "29.9",
+   "n50-pooled-gain": "345.3"
+  }
+ },
+ "lb-dual-wilcoxon": {
+  "claim": "lb-n20-domination",
+  "desc": "paired test of our bound against K's derived dual, K-unproven cells at n20 and n30",
+  "unit": "",
+  "value": {
+   "n20-cells": "20",
+   "n20-mean-ratio": "1.421",
+   "n20-median-ratio": "1.343",
+   "n20-p": "4e-06 (exact, n=20)",
+   "n20-p-robust-range": "2e-06-6e-06",
+   "n20-sign-p": "4e-05",
+   "n20-wins": "19 of 20",
+   "n20-worst-cell": "R209",
+   "n20-worst-k-gap": "6",
+   "n20-worst-ratio": "0.996",
+   "n30-cells": "26",
+   "n30-mean-ratio": "1.477",
+   "n30-median-ratio": "1.358",
+   "n30-p": "6e-08 (exact, n=26)",
+   "n30-p-robust-range": "6e-08-6e-08",
+   "n30-wins": "25 of 26"
+  }
+ },
+ "lb-over-kdual-n100": {
+  "claim": "degradation-defence",
+  "desc": "our portfolio bound over K's derived dual bound, by family at n100",
+  "unit": "",
+  "value": {
+   "C": "1.242",
+   "C-kdual": "1704.2",
+   "R": "1.157",
+   "R-kdual": "1056.4",
+   "RC": "1.334",
+   "RC-kdual": "1249.5"
+  }
+ },
+ "lb-proven-pct-range": {
+  "claim": "full-descent-2pct-residual",
+  "desc": "our bound as a share of the proven optimum, K-proven n20 cells",
+  "unit": "%",
+  "value": "96.3-98.1"
+ },
+ "lb-time-to-exceed-k": {
+  "claim": "lb-n20-domination",
+  "desc": "wall seconds until our bound first exceeds K's derived dual bound, K-unproven cells",
+  "unit": "",
+  "value": {
+   "n20-cells": "19 of 20",
+   "n20-max-s": "186",
+   "n20-median-s": "1.84",
+   "n20-never": "R209",
+   "n30-cells": "25 of 26",
+   "n30-max-s": "1495",
+   "n30-median-s": "3.31",
+   "n30-never": "R201"
+  }
+ },
+ "lb-unproven-mean-ratio": {
+  "claim": "lb-n20-domination",
+  "desc": "mean ours/K dual bound over the K-unproven n20 arm",
+  "unit": "",
+  "value": "1.421"
+ },
+ "lb-unproven-wins": {
+  "claim": "lb-n20-domination",
+  "desc": "cells where our bound exceeds K's derived dual bound, of the K-unproven arm at n20",
+  "unit": "",
+  "value": "19 of 20"
+ },
+ "lb-vs-k": {
+  "claim": "lb-n20-domination",
+  "desc": "certified LB vs K's derived dual: open-cell wins + Wilcoxon (n20/30), K-stronger near-proof cells, pooled/family LB ratios (n50/100). Mirrors lb-dual-wilcoxon (d743).",
+  "unit": "",
+  "value": {
+   "k-stronger-cells": "2",
+   "n100-C-ratio": "1.74",
+   "n100-R-ratio": "2.13",
+   "n100-RC-ratio": "2.42",
+   "n20-effect": "0.99",
+   "n20-open-cells": "20",
+   "n20-p-robust-range": "2e-06--6e-06",
+   "n20-wilcoxon-p": "4e-06",
+   "n20-wins": "19 of 20",
+   "n30-effect": "0.99",
+   "n30-open-cells": "26",
+   "n30-wilcoxon-p": "6e-08",
+   "n30-wins": "25 of 26",
+   "n50-pooled-ratio": "1.69"
+  }
+ },
+ "longrt-n50": {
+  "claim": "rt-budget-fairness",
+  "desc": "n50 LONGER-than-budget sensitivity (appendix): the ng-union consolidation drops any ng run that pushes a cell's cumulative wall past the fair 5760 s cap (d716/d717); re-admitting those over-budget runs (cumulative up to ~1.7x the cap) moves the mean optimality gap by hundredths of a point -- the reported n50 gap is not budget-limited. Distinct from budget-sens, which sweeps the ng10 run's own trajectory toward SHORTER budgets.",
+  "unit": "",
+  "value": {
+   "cells": "27",
+   "cells-improved": "3",
+   "delta-pp": "0.02",
+   "max-mult": "1.74",
+   "max-mult-cell": "R208"
+  }
+ },
+ "m6-matched-budget": {
+  "claim": "beats-both-k-bounds-v3",
+  "desc": "M6: our bound against K's LBBD reproduced at a budget matched to K's own per-cell incumbent time",
+  "unit": "",
+  "value": {
+   "budget-cap-s": "5400",
+   "budget-floor-s": "900",
+   "cells": "12",
+   "converged": "0 of 12",
+   "masters-growth-max": "11.0",
+   "masters-growth-median": "3.0",
+   "masters-growth-min": "1.3",
+   "mean-ratio": "1.586",
+   "old-mean-ratio": "1.59",
+   "old-wins": "11 of 12",
+   "wins": "11 of 12",
+   "worst-cell": "RC201",
+   "worst-ratio": "0.989"
+  }
+ },
+ "m7-matched-budget-n30": {
+  "claim": "beats-both-k-bounds-v3",
+  "desc": "M7: the |C|=30 arm of the matched-budget reproduction, the registered falsifier of beats-both-k-bounds-v3",
+  "unit": "",
+  "value": {
+   "at-cap": "5 of 12",
+   "cells": "12",
+   "converged": "0 of 12",
+   "n20-ratio-of-ratios": "1.0016",
+   "r-joint": "1.668",
+   "r-lbbd": "1.613",
+   "ratio-of-ratios": "0.9668",
+   "threshold": "0.8500",
+   "wins-joint": "12 of 12",
+   "wins-lbbd": "12 of 12",
+   "worst-cell": "RC204",
+   "worst-cell-ratio": "0.8502"
+  }
+ },
+ "milp-over-kbk-by-family-n100": {
+  "claim": "degradation-defence",
+  "desc": "restriction bound as a share of K best-known, by family at n100",
+  "unit": "",
+  "value": {
+   "C": "0.481",
+   "R": "0.242",
+   "RC": "0.274"
+  }
+ },
+ "n20-fleet-total": {
+  "claim": "n20-fleet-total-42-best-found",
+  "desc": "|C|=20 street-fleet total against the total K's published mean implies",
+  "unit": "",
+  "value": {
+   "argued-cells": "1",
+   "k-published-mean": "1.59",
+   "k-total": "43",
+   "margin": "1",
+   "one-car-cells": "12",
+   "open-cells": "6",
+   "proven-minimal": "20 of 27",
+   "total": "42",
+   "two-car-cells": "15",
+   "verified": "27 of 27"
+  }
+ },
+ "n50-ratio-vs-k": {
+  "claim": "n50-headline-under-registered-estimator",
+  "desc": "portfolio bound over K's derived dual bound at n50",
+  "unit": "",
+  "value": "1.413"
+ },
+ "objective-identity-match": {
+  "claim": "objective-identity-v2",
+  "desc": "K-proven n20 optima we reproduce at their reported precision",
+  "unit": "",
+  "value": "7 of 7"
+ },
+ "one-car-cells-n20": {
+  "claim": "rc208-quarantine-lifted-one-car-basin",
+  "desc": "|C|=20 cells for which we hold a one-vehicle solution",
+  "unit": "",
+  "value": "12 of 27"
+ },
+ "optgap": {
+  "claim": "tep-primal-n100-family",
+  "desc": "opt-gap (OV-LB)/OV means on the competition (open) cells, ours and K, n50/n100 (d763/d742/d774)",
+  "unit": "",
+  "value": {
+   "n100-competition-mean": "13.1",
+   "n100-k-mean": "71.0",
+   "n100-ov-improve-pct": "24.2",
+   "n50-competition-mean": "15.4",
+   "n50-k-mean": "58.0",
+   "n50-ov-improve-pct": "13.6"
+  }
+ },
+ "portfolio": {
+  "claim": "tep-bound-above-k-n30",
+  "desc": "portfolio bound: cells where the closed-form arithmetic bound ab4 carries the composed max over LP+water (all at n10, the smallest instances)",
+  "unit": "",
+  "value": {
+   "ab-carries-cells": "11"
+  }
+ },
+ "primal": {
+  "claim": "tep-primal-attainment-n10",
+  "desc": "primal incumbents: n10 slip from the K-proven optima and the count reported dual-derived at n100 (d761/d744)",
+  "unit": "",
+  "value": {
+   "dualonly-cells": "2",
+   "n10-max-slip": "1.54",
+   "n10-mean-slip": "0.24",
+   "n10-median-slip": "0.003",
+   "n10-outlier-cells": "C208, R205"
+  }
+ },
+ "protocol": {
+  "claim": "rt-budget-fairness",
+  "desc": "RT protocol constants: hardware factor f, per-cell budget K_cap/f (s), bound-leg threads (d245/d246/d250, d47)",
+  "unit": "",
+  "value": {
+   "bound-threads": "4",
+   "budget-s": "5760",
+   "hw-factor": "2.5"
+  }
+ },
+ "r205-one-car-optimal": {
+  "claim": "rc208-quarantine-lifted-one-car-basin",
+  "desc": "R205/n20: a one-vehicle solution, proven optimal",
+  "unit": "",
+  "value": {
+   "cars": "1",
+   "value": "642.216"
+  }
+ },
+ "rc208-one-car": {
+  "claim": "rc208-quarantine-lifted-one-car-basin",
+  "desc": "the RC208/n20 one-vehicle outlier: value, comparator, mechanism",
+  "unit": "",
+  "value": {
+   "cars": "1",
+   "comparator": "858.7",
+   "fleet-street": "194.36",
+   "improvement-pct": "19.20",
+   "published-over-one-car-pct": "23.76",
+   "published-over-two-car-pct": "0.72",
+   "two-car-value": "852.558",
+   "value": "693.868",
+   "vessels": "2"
+  }
+ },
+ "s2k-closure": {
+  "claim": "s2k-exact-closure",
+  "desc": "S2k: what our bound is worth to an exact solver on three open cells",
+  "unit": "",
+  "value": {
+   "arms": "6",
+   "cells": "3",
+   "closed": "0 of 6",
+   "control-bound-range": "285.7-487.1",
+   "control-gap-range": "29.7-60.0",
+   "injected-gap-range": "4.7-9.6",
+   "nodes-total": "1,240,525",
+   "ours-over-control-range": "1.36-2.27",
+   "tl-s": "3600"
+  }
+ },
+ "s3a-average-rank": {
+  "claim": "s3a-ablation-complete-three-arm",
+  "desc": "mean Friedman rank of each arm (1 = strongest bound)",
+  "unit": "",
+  "value": {
+   "easiness": "1.238",
+   "random": "2.119",
+   "reverse": "2.643"
+  }
+ },
+ "s3a-easiness-winrate": {
+  "claim": "s3a-ablation-complete-three-arm",
+  "desc": "informative cells where the easiness ordering gives the stronger frontier bound, per arm",
+  "unit": "",
+  "value": {
+   "random": "17 of 21",
+   "reverse": "20 of 21"
+  }
+ },
+ "s3a-friedman-p": {
+  "claim": "s3a-ablation-complete-three-arm",
+  "desc": "Iman-Davenport F p-value, three arms over informative cells",
+  "unit": "",
+  "value": "8.1e-07 (F(2,40) = 20.32, N = 21)"
+ },
+ "s3a-holm-adjusted-p": {
+  "claim": "s3a-ablation-complete-three-arm",
+  "desc": "Holm step-down adjusted p against the easiness control",
+  "unit": "",
+  "value": {
+   "random": "0.0043",
+   "reverse": "1.1e-05"
+  }
+ },
+ "s3a-informative-cells": {
+  "claim": "s3a-ablation-complete-three-arm",
+  "desc": "cells entering the ablation after the pre-registered k=0 exclusion",
+  "unit": "",
+  "value": 21
+ },
+ "s3a-mean-frontier-ratio": {
+  "claim": "s3a-ablation-complete-three-arm",
+  "desc": "mean arm/easiness frontier bound ratio over informative cells",
+  "unit": "",
+  "value": {
+   "random": "0.876",
+   "reverse": "0.822"
+  }
+ },
+ "s3a-wilcoxon-p": {
+  "claim": "s3a-ablation-complete-three-arm",
+  "desc": "exact one-sided Wilcoxon signed-rank p on log frontier ratios, easiness vs arm",
+  "unit": "",
+  "value": {
+   "random": "5.2e-05 (exact, n_eff=21)",
+   "reverse": "1.4e-06 (exact, n_eff=21)"
+  }
+ },
+ "sources": {
+  "analysis/manuscript_numbers.py": "f63abb3121e7b19c"
+ },
+ "surrogate-median-delta": {
+  "claim": "tep-primal-n30",
+  "desc": "surrogate vs exact scoring on the n30 grid: max median objective difference over the refine and ALNS arms (design validation, not a result)",
+  "unit": "%",
+  "value": "0.00"
+ },
+ "tep-abstract": {
+  "claim": "abstract-quantities-audited",
+  "desc": "every quantity the ABSTRACT asserts, from analysis/abstract_facts.py -- their proofs and published averages, our attainment over all 35 proven cells, the open-cell brackets at every size, which end closes the interval, and the budget",
+  "unit": "",
+  "value": {
+   "attain-cells": "35",
+   "attain-exact": "20",
+   "attain-mean": "0.35",
+   "attain-within1": "29",
+   "attain-worst": "1.84",
+   "budget-worst-cell": "C204 at |C|=30",
+   "budget-worst-share": "38.7",
+   "k-avg-max": "77.0",
+   "k-avg-min": "26.2",
+   "k-instances": "135",
+   "k-per-instance-max": "71.0",
+   "k-proven": "35",
+   "n100-bound-share": "58.6",
+   "n100-cells": "27",
+   "n100-inc-max": "27.9",
+   "n100-inc-min": "13.3",
+   "n100-k": "67.6",
+   "n100-ours": "15.2",
+   "n20-bound-share": "103.9",
+   "n20-cells": "20",
+   "n20-k": "36.4",
+   "n20-ours": "20.9",
+   "n20-smaller": "14",
+   "n30-bound-share": "94.2",
+   "n30-cells": "26",
+   "n30-k": "46.4",
+   "n30-ours": "17.1",
+   "n30-smaller": "24",
+   "n50-cells": "27",
+   "n50-ours": "16.7"
+  }
+ },
+ "tep-bound-calibration": {
+  "claim": "tep-bound-calibration",
+  "desc": "bound quality against GROUND TRUTH: distance of our certified bound below the proven optimum, by size, with the share of the objective one car costs",
+  "unit": "",
+  "value": {
+   "n10-car-share": "31.6",
+   "n10-cells": "27",
+   "n10-max": "35.3",
+   "n10-mean": "18.6",
+   "n10-median": "18.2",
+   "n20-car-share": "17.7",
+   "n20-cells": "7",
+   "n20-max": "28.5",
+   "n20-mean": "16.3",
+   "n20-median": "16.1",
+   "n30-car-share": "13.9",
+   "n30-cells": "1",
+   "n30-max": "14.4",
+   "n30-mean": "14.4",
+   "n30-median": "14.4"
+  }
+ },
+ "tep-coverage": {
+  "claim": "tep-primal-n100-family",
+  "desc": "which K exhibits the TEP results cover and which stay uncovered",
+  "unit": "",
+  "value": {
+   "sizes": "4",
+   "uncovered": "20"
+  }
+ },
+ "tep-n10-attainment": {
+  "claim": "tep-primal-attainment-n10",
+  "desc": "|C|=10: attainment of the 27 K-proven optima by the TEP primal (per-cell best-of)",
+  "unit": "",
+  "value": {
+   "cells": "27",
+   "mean": "0.24",
+   "median": "0.00",
+   "within-1pct": "25 of 27",
+   "worst": "1.54",
+   "worst-cell": "C208"
+  }
+ },
+ "tep-n100-family": {
+  "claim": "tep-primal-n100-family",
+  "desc": "|C|=100: family means of our verified primal against K published family means; bound columns only where certified",
+  "unit": "",
+  "value": {
+   "c-cells": "8",
+   "c-k": "3857.2",
+   "c-k-gap": "55.8",
+   "c-lb-certified": "yes",
+   "c-lb-ratio": "1.71",
+   "c-our-gap": "12.7",
+   "c-ours": "3342.7",
+   "c-vs-k-pct": "-13.34",
+   "r-cells": "11",
+   "r-k": "3720.9",
+   "r-k-gap": "71.6",
+   "r-lb-certified": "yes",
+   "r-lb-ratio": "2.09",
+   "r-our-gap": "17.7",
+   "r-ours": "2683.0",
+   "r-vs-k-pct": "-27.89",
+   "rc-cells": "8",
+   "rc-k": "4810.6",
+   "rc-k-gap": "74.0",
+   "rc-lb-certified": "yes",
+   "rc-lb-ratio": "2.42",
+   "rc-our-gap": "14.1",
+   "rc-ours": "3522.6",
+   "rc-vs-k-pct": "-26.77"
+  }
+ },
+ "tep-n20-split": {
+  "claim": "tep-primal-n20",
+  "desc": "|C|=20: PROVEN (7) attainment and OPEN (20) competition, with the open-cell bracket and bound comparison",
+  "unit": "",
+  "value": {
+   "open-below-k": "6 of 20",
+   "open-bound-above-k": "14 of 20",
+   "open-bracket-k": "36.4",
+   "open-bracket-ours": "20.4",
+   "open-cells": "20",
+   "open-cells-with-bound": "20",
+   "open-mean": "-0.83",
+   "open-median": "0.12",
+   "open-within-1pct": "16 of 20",
+   "open-worst": "2.46",
+   "open-worst-cell": "R206",
+   "proven-cells": "7",
+   "proven-mean": "0.48",
+   "proven-median": "0.00",
+   "proven-within-1pct": "6 of 7",
+   "proven-worst": "2.36",
+   "proven-worst-cell": "R205"
+  }
+ },
+ "tep-n30-fine-delta": {
+  "claim": "tep-bound-above-k-n30",
+  "desc": "|C|=30: the finer-bucket (d=5) bound leg -- cells proven and the median lift over the default width",
+  "unit": "",
+  "value": {
+   "cells": "27",
+   "median-lift": "2.52",
+   "proven-at-d5": "24 of 27",
+   "unproven": "2"
+  }
+ },
+ "tep-n30-split": {
+  "claim": "tep-primal-n30",
+  "desc": "|C|=30: PROVEN (1) attainment and OPEN (26) competition, with the open-cell bracket and bound comparison",
+  "unit": "",
+  "value": {
+   "open-below-k": "14 of 26",
+   "open-bound-above-k": "24 of 26",
+   "open-bracket-k": "46.4",
+   "open-bracket-ours": "17.9",
+   "open-cells": "26",
+   "open-cells-with-bound": "26",
+   "open-mean": "-1.57",
+   "open-median": "-0.09",
+   "open-within-1pct": "22 of 26",
+   "open-worst": "1.52",
+   "open-worst-cell": "R201",
+   "proven-cells": "1",
+   "proven-mean": "0.55",
+   "proven-median": "0.55",
+   "proven-within-1pct": "1 of 1",
+   "proven-worst": "0.55",
+   "proven-worst-cell": "C201"
+  }
+ },
+ "tep-n50-pool": {
+  "claim": "tep-primal-n50-pool",
+  "desc": "|C|=50: our 27-cell mean against the K pool the instances belong to (Table 4, 1:10); pooled, proximity inferred",
+  "unit": "",
+  "value": {
+   "ceil-chosen": "23",
+   "cells": "27",
+   "k-pool": "1:10",
+   "k-pool-best": "1941.8",
+   "our-mean": "1708.0",
+   "vs-k-pct": "-12.04"
+  }
+ },
+ "transfer-duration-by-family": {
+  "claim": "objective-identity-v2",
+  "desc": "transfer duration U = ceil(2*mean service) per family, from build_instance tau=formula (the published spec, not the released-generator 0); family-constant across sizes (\u00a73)",
+  "unit": "",
+  "value": {
+   "C": "180",
+   "R": "20",
+   "RC": "20"
+  }
+ },
+ "tw-ratio-by-family-n50": {
+  "claim": "tw-width-drives-k-difficulty",
+  "desc": "mean time-window width over horizon, by family at n50",
+  "unit": "",
+  "value": {
+   "C": "0.260",
+   "R": "0.397",
+   "RC": "0.315"
+  }
+ },
+ "wls-sensitivity": {
+  "claim": "degradation-defence",
+  "desc": "our arithmetic bound vs K best-known across their four cost scenarios",
+  "unit": "",
+  "value": {
+   "n-per-ratio": "81",
+   "share-10to1": "0.968",
+   "share-1to1": "0.750",
+   "share-1to10": "0.571",
+   "share-1to5": "0.592",
+   "street-10to1": "0.004",
+   "street-1to1": "0.132",
+   "street-1to10": "0.434",
+   "street-1to5": "0.365",
+   "street-invariance-spread": "0.00",
+   "water-spread": "277528.68"
+  }
+ }
+}

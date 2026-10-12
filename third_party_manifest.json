@@ -1,0 +1,148 @@
+{
+ "citation": "Karademir et al. (2025) EJOR 322(2) 480-499, doi:10.1016/j.ejor.2024.10.047",
+ "commit": "ebec1b5cd0754c8ec8dcdaafd821882c8485dbc9",
+ "files": {
+  "DecomposedModels.py": {
+   "bytes": 33028,
+   "sha256": "e0f17a8cdc75b51238ebabdac516d41cd3a15108a70b0d92d7643dc833f6684c"
+  },
+  "LBBDmodel.py": {
+   "bytes": 30301,
+   "sha256": "0373b886ca84ee98e736cb3f594eb7f89df9af403e665fe2b80a771717e0b1c6"
+  },
+  "SEVs.py": {
+   "bytes": 7301,
+   "sha256": "6d7a69f6212948ff06186e55c23791e5af59866df0ea097e94e5c9aedbc4148f"
+  },
+  "Solve.py": {
+   "bytes": 4017,
+   "sha256": "038f39c803c1a3026ab8cc7be97d30aee3f2b775bc7f6a4269e0f7d3a266fae2"
+  },
+  "data/json/C201.json": {
+   "bytes": 329900,
+   "sha256": "2548120e07e1f4dd330f4b91e42393eb885564896bc2fe7c7c7b3ecece83d7f6"
+  },
+  "data/json/C202.json": {
+   "bytes": 329843,
+   "sha256": "73df36c18b48c57c2e51610e750c13888e6433445dd7f5329482cf6ea61d8bc9"
+  },
+  "data/json/C203.json": {
+   "bytes": 329784,
+   "sha256": "e6fe5fc0905bd4d39fc64f363b4043700bf6ba701d5c22513d8a9288e3c1fcb8"
+  },
+  "data/json/C204.json": {
+   "bytes": 329733,
+   "sha256": "f9438e959c29f5961190cae536ecff5a261f98ba03a14b6827776996054395d2"
+  },
+  "data/json/C205.json": {
+   "bytes": 329897,
+   "sha256": "723fc3ea2cfdb7a11d385a1406733cfd19182021b1b72973f13c9b016484994e"
+  },
+  "data/json/C206.json": {
+   "bytes": 329895,
+   "sha256": "68990be4f61190ea60f650091cd8c4d40d490a7beb44a9cb45800f08ac4f4f85"
+  },
+  "data/json/C207.json": {
+   "bytes": 329892,
+   "sha256": "8c04e3fd8a1f7fc27cafdcab30cd2bccc097fe8965d390d4e457d26643be433a"
+  },
+  "data/json/C208.json": {
+   "bytes": 329891,
+   "sha256": "775b7c84b39648a747c1cde5440e0b8bf7a3904eca5a13c989da1d9b1d4a2deb"
+  },
+  "data/json/R201.json": {
+   "bytes": 334652,
+   "sha256": "f4fa21fd3da8c5de12b8783d34e5a4c3b31670569056bf2e9a6868a36b81ad66"
+  },
+  "data/json/R202.json": {
+   "bytes": 334607,
+   "sha256": "08c210a65a343818a99963831effcb30df2671843cbbb35b87721ac1991999eb"
+  },
+  "data/json/R203.json": {
+   "bytes": 334560,
+   "sha256": "6810446f6121f3a38ec284113cd932068cdb8d57b5bc9d0dc236fa2705b5f505"
+  },
+  "data/json/R204.json": {
+   "bytes": 334516,
+   "sha256": "4b6b52c624b229e9f0205bb6c2402684f189cbdf0e90b1d2ced1c734c58acdbb"
+  },
+  "data/json/R205.json": {
+   "bytes": 334648,
+   "sha256": "36d7413d80d83d8536375a27325645cb9f99b508a5e1b683ebd3db82198a6a20"
+  },
+  "data/json/R206.json": {
+   "bytes": 334605,
+   "sha256": "f3dae842fe78513b775f2855e5fd859e6e09a3dc7b13837b2a1179fc1a711be8"
+  },
+  "data/json/R207.json": {
+   "bytes": 334559,
+   "sha256": "b5ebc3a567ee97f92e556af72ed970c12d5ba6f35ad6ecfcdd3457c070588075"
+  },
+  "data/json/R208.json": {
+   "bytes": 334516,
+   "sha256": "64546c38f391a5d6cd570b8d8ef417b06e524611f386b122b95f361715495845"
+  },
+  "data/json/R209.json": {
+   "bytes": 334639,
+   "sha256": "02851c6ac8af1371a7fe611572a424630c776f3573d506aeecf1a75c0e53dc27"
+  },
+  "data/json/R210.json": {
+   "bytes": 334637,
+   "sha256": "fb4a68ef0311e7093676fdc22e0866515af6e3672c3d73a4dd5a6c240d7eb189"
+  },
+  "data/json/R211.json": {
+   "bytes": 334629,
+   "sha256": "4e04731fea1466278be6792821bef3a16be10321da10e193c4128f9044b996bd"
+  },
+  "data/json/RC201.json": {
+   "bytes": 330909,
+   "sha256": "7773caf15a69353543c2b12c785fb5f7a654796e9084768c5cfb450a227a59b3"
+  },
+  "data/json/RC202.json": {
+   "bytes": 330862,
+   "sha256": "01f5dc91f4e04e7f3ee1ee8b0e67898fd34f3e34bf87ae704f556991020260a4"
+  },
+  "data/json/RC203.json": {
+   "bytes": 330814,
+   "sha256": "e59a83a4d9975339f68b842aea8c49870f8abaf32064895d49bd1ba19867773d"
+  },
+  "data/json/RC204.json": {
+   "bytes": 330770,
+   "sha256": "f254dd631d07b8d68b2ba8b5e218e37e56185fa27e1957b3a481409b2bbc4ce3"
+  },
+  "data/json/RC205.json": {
+   "bytes": 330896,
+   "sha256": "8b9639f9acd5f279c27e86c2f6c84e9bb25b22fa0e3e4a99945aeaf75b4967f4"
+  },
+  "data/json/RC206.json": {
+   "bytes": 330901,
+   "sha256": "19d70e27cd94d54d1c1ac82bb7669397ad5177cdfb944eb6ed33598423f34be8"
+  },
+  "data/json/RC207.json": {
+   "bytes": 330894,
+   "sha256": "be2fa5f48c04d5552b914c957b855860494e7e5933977b00ef0a72c896db87e3"
+  },
+  "data/json/RC208.json": {
+   "bytes": 330882,
+   "sha256": "a22b716cc43bdbed0dad0bb556f474492de9fa636132b229accfc45ec46d674d"
+  },
+  "instanceGenerator.py": {
+   "bytes": 18198,
+   "sha256": "22988317bcdc13ea6dd89bfc687a243ce6f59947642401d0fe02fea6a7caabf8"
+  },
+  "integratedJointModel.py": {
+   "bytes": 21896,
+   "sha256": "8fdf4c39fce0b8e3ded246a47e6f786a02ab816797282094976c5fc11191c27e"
+  },
+  "solution.py": {
+   "bytes": 5814,
+   "sha256": "08c67736b9bb9734f36b9bd98120d5e5072241e84c4b4d7a39e18a0365744a87"
+  },
+  "solveJoint.py": {
+   "bytes": 5245,
+   "sha256": "09dbe9726b8296bece269db3fb9d4f57d9e45d38355970801a0c3c38598efc4a"
+  }
+ },
+ "licence": "NONE DECLARED by the authors; not redistributed here",
+ "source": "https://github.com/cigdemkarademir/2echelon-synchronization"
+}

@@ -1,0 +1,383 @@
+{
+ "numbers": {
+  "lb-unproven-wins": [
+   "lb-n20-domination",
+   "cells where our bound exceeds K's derived dual bound, of the K-unproven arm at n20"
+  ],
+  "lb-unproven-mean-ratio": [
+   "lb-n20-domination",
+   "mean ours/K dual bound over the K-unproven n20 arm"
+  ],
+  "budget-sensitivity": [
+   "trajectory-analysis-placement",
+   "share of the terminal bound held at a fraction of each cell's own budget"
+  ],
+  "wls-sensitivity": [
+   "degradation-defence",
+   "our arithmetic bound vs K best-known across their four cost scenarios"
+  ],
+  "lb-dual-wilcoxon": [
+   "lb-n20-domination",
+   "paired test of our bound against K's derived dual, K-unproven cells at n20 and n30"
+  ],
+  "lb-proven-pct-range": [
+   "full-descent-2pct-residual",
+   "our bound as a share of the proven optimum, K-proven n20 cells"
+  ],
+  "objective-identity-match": [
+   "objective-identity-v2",
+   "K-proven n20 optima we reproduce at their reported precision"
+  ],
+  "tw-ratio-by-family-n50": [
+   "tw-width-drives-k-difficulty",
+   "mean time-window width over horizon, by family at n50"
+  ],
+  "s2k-closure": [
+   "s2k-exact-closure",
+   "S2k: what our bound is worth to an exact solver on three open cells"
+  ],
+  "rc208-one-car": [
+   "rc208-quarantine-lifted-one-car-basin",
+   "the RC208/n20 one-vehicle outlier: value, comparator, mechanism"
+  ],
+  "one-car-cells-n20": [
+   "rc208-quarantine-lifted-one-car-basin",
+   "|C|=20 cells for which we hold a one-vehicle solution"
+  ],
+  "r205-one-car-optimal": [
+   "rc208-quarantine-lifted-one-car-basin",
+   "R205/n20: a one-vehicle solution, proven optimal"
+  ],
+  "transfer-duration-by-family": [
+   "objective-identity-v2",
+   "transfer duration U resolved by K's published rule, by instance family"
+  ],
+  "cross-size-share": [
+   "degradation-defence",
+   "our bound as a share of K best-known, n50 vs n100, one construction"
+  ],
+  "milp-over-kbk-by-family-n100": [
+   "degradation-defence",
+   "restriction bound as a share of K best-known, by family at n100"
+  ],
+  "protocol": [
+   "replicability-needs-det-ticks",
+   "protocol constants read from the artifacts, not typed"
+  ],
+  "ab-tightens-k-gaps": [
+   "ab-tightens-k-published-gaps",
+   "cells where the arithmetic bound exceeds K's published dual bound, and the gap reduction that follows"
+  ],
+  "ab-over-kbk-by-family-n50": [
+   "n50-headline-under-registered-estimator",
+   "arithmetic bound as a share of K best-known, by family at n50"
+  ],
+  "n50-ratio-vs-k": [
+   "n50-headline-under-registered-estimator",
+   "portfolio bound over K's derived dual bound at n50"
+  ],
+  "gap-closed-by-family": [
+   "gap-reporting-framing",
+   "share of K's closable gap that our portfolio bound closes, and the nominal gain, by family and size"
+  ],
+  "lb-time-to-exceed-k": [
+   "lb-n20-domination",
+   "wall seconds until our bound first exceeds K's derived dual bound, K-unproven cells"
+  ],
+  "lb-over-kdual-n100": [
+   "degradation-defence",
+   "our portfolio bound over K's derived dual bound, by family at n100"
+  ],
+  "ab-crossovers-by-size": [
+   "n50-headline-under-registered-estimator",
+   "cells where the arithmetic bound exceeds the restriction bound"
+  ],
+  "descent-cost-multiplier": [
+   "trajectory-analysis-placement",
+   "median wall-time multiplier per step down in k, n20"
+  ],
+  "budget-below-frontier": [
+   "trajectory-analysis-placement",
+   "median share of a cell's budget spent on solves that never certify, n20"
+  ],
+  "fleet-certificate-coverage": [
+   "fleet-certificate-scales-and-dominates-ab",
+   "cells where one vehicle is proved impossible, by size"
+  ],
+  "s3a-easiness-winrate": [
+   "s3a-ablation-complete-three-arm",
+   "informative cells where the easiness ordering gives the stronger frontier bound, per arm"
+  ],
+  "s3a-wilcoxon-p": [
+   "s3a-ablation-complete-three-arm",
+   "exact one-sided Wilcoxon signed-rank p on log frontier ratios, easiness vs arm"
+  ],
+  "s3a-mean-frontier-ratio": [
+   "s3a-ablation-complete-three-arm",
+   "mean arm/easiness frontier bound ratio over informative cells"
+  ],
+  "s3a-friedman-p": [
+   "s3a-ablation-complete-three-arm",
+   "Iman-Davenport F p-value, three arms over informative cells"
+  ],
+  "s3a-holm-adjusted-p": [
+   "s3a-ablation-complete-three-arm",
+   "Holm step-down adjusted p against the easiness control"
+  ],
+  "s3a-average-rank": [
+   "s3a-ablation-complete-three-arm",
+   "mean Friedman rank of each arm (1 = strongest bound)"
+  ],
+  "s3a-informative-cells": [
+   "s3a-ablation-complete-three-arm",
+   "cells entering the ablation after the pre-registered k=0 exclusion"
+  ],
+  "m6-matched-budget": [
+   "beats-both-k-bounds-v3",
+   "M6: our bound against K's LBBD reproduced at a budget matched to K's own per-cell incumbent time"
+  ],
+  "m7-matched-budget-n30": [
+   "beats-both-k-bounds-v3",
+   "M7: the |C|=30 arm of the matched-budget reproduction, the registered falsifier of beats-both-k-bounds-v3"
+  ],
+  "n20-fleet-total": [
+   "n20-fleet-total-42-best-found",
+   "|C|=20 street-fleet total against the total K's published mean implies"
+  ],
+  "tep-n10-attainment": [
+   "tep-primal-attainment-n10",
+   "|C|=10: attainment of the 27 K-proven optima by the TEP primal (per-cell best-of)"
+  ],
+  "tep-n20-split": [
+   "tep-primal-n20",
+   "|C|=20: PROVEN (7) attainment and OPEN (20) competition, with the open-cell bracket and bound comparison"
+  ],
+  "tep-n30-split": [
+   "tep-primal-n30",
+   "|C|=30: PROVEN (1) attainment and OPEN (26) competition, with the open-cell bracket and bound comparison"
+  ],
+  "tep-n30-fine-delta": [
+   "tep-bound-above-k-n30",
+   "|C|=30: the finer-bucket (d=5) bound leg -- cells proven and the median lift over the default width"
+  ],
+  "tep-n50-pool": [
+   "tep-primal-n50-pool",
+   "|C|=50: our 27-cell mean against the K pool the instances belong to (Table 4, 1:10); pooled, proximity inferred"
+  ],
+  "tep-n100-family": [
+   "tep-primal-n100-family",
+   "|C|=100: family means of our verified primal against K published family means; bound columns only where certified"
+  ],
+  "tep-coverage": [
+   "tep-primal-n100-family",
+   "which K exhibits the TEP results cover and which stay uncovered"
+  ],
+  "tep-bound-calibration": [
+   "tep-bound-calibration",
+   "bound quality against GROUND TRUTH: distance of our certified bound below the proven optimum, by size, with the share of the objective one car costs"
+  ],
+  "tep-abstract": [
+   "abstract-quantities-audited",
+   "every quantity the ABSTRACT asserts, from analysis/abstract_facts.py -- their proofs and published averages, our attainment over all 35 proven cells, the open-cell brackets at every size, which end closes the interval, and the budget"
+  ]
+ },
+ "figures": {
+  "F1_anytime_dual_n20": {
+   "sidecar": true,
+   "sources": [
+    "crossfeed/easy_reduction_descend_*_n20.json (lb_curve)",
+    "data/karademir2025/k_reference.json (table3.per_instance)"
+   ],
+   "command": "python analysis/make_figures.py",
+   "superseded": {
+    "on": "2026-09-20",
+    "why": "generated by the pre-d243 solver. The production configuration is now the SEMANTIC arm -- corrected (26) plus a valid big-M (ENGINE_VERSION 3.0) -- so every number behind these figures comes from a model that did not enforce (26) and used K's undersized constants in (14)/(22).",
+    "producing_code_hash": "c36b99c3787e63de",
+    "current_code_hash": "f68d8ff0",
+    "regenerate_from": "the full budget-matched grid (analysis/run_full_grid.py)"
+   }
+  },
+  "F2_closed_share_vs_size": {
+   "sidecar": true,
+   "sources": [
+    "crossfeed/easy_reduction_descend_*_n{20,30,50,100}.json",
+    "data/karademir2025/k_reference.json",
+    "runs/ab4_grid_results.json"
+   ],
+   "command": "python analysis/make_figures.py",
+   "superseded": {
+    "on": "2026-09-20",
+    "why": "generated by the pre-d243 solver. The production configuration is now the SEMANTIC arm -- corrected (26) plus a valid big-M (ENGINE_VERSION 3.0) -- so every number behind these figures comes from a model that did not enforce (26) and used K's undersized constants in (14)/(22).",
+    "producing_code_hash": "c36b99c3787e63de",
+    "current_code_hash": "f68d8ff0",
+    "regenerate_from": "the full budget-matched grid (analysis/run_full_grid.py)"
+   }
+  },
+  "F3_selection_ablation_n20": {
+   "sidecar": true,
+   "sources": [
+    "crossfeed/ablation_{random,reverse}_*_n20.json",
+    "crossfeed/easy_reduction_descend_*_n20.json",
+    "validation/PREREG_S3a_bound_selection_ablation.md"
+   ],
+   "command": "python analysis/make_figures.py",
+   "superseded": {
+    "on": "2026-09-20",
+    "why": "generated by the pre-d243 solver. The production configuration is now the SEMANTIC arm -- corrected (26) plus a valid big-M (ENGINE_VERSION 3.0) -- so every number behind these figures comes from a model that did not enforce (26) and used K's undersized constants in (14)/(22).",
+    "producing_code_hash": "c36b99c3787e63de",
+    "current_code_hash": "f68d8ff0",
+    "regenerate_from": "the full budget-matched grid (analysis/run_full_grid.py)"
+   }
+  },
+  "F4_retained_fraction_vs_size": {
+   "sidecar": true,
+   "sources": [
+    "crossfeed/easy_reduction_descend_*_n{10,20,30,50,100}.json"
+   ],
+   "command": "python analysis/make_figures.py",
+   "superseded": {
+    "on": "2026-09-20",
+    "why": "generated by the pre-d243 solver. The production configuration is now the SEMANTIC arm -- corrected (26) plus a valid big-M (ENGINE_VERSION 3.0) -- so every number behind these figures comes from a model that did not enforce (26) and used K's undersized constants in (14)/(22).",
+    "producing_code_hash": "c36b99c3787e63de",
+    "current_code_hash": "f68d8ff0",
+    "regenerate_from": "the full budget-matched grid (analysis/run_full_grid.py)"
+   }
+  },
+  "F5_ab_vs_restriction_crossover": {
+   "sidecar": true,
+   "sources": [
+    "crossfeed/easy_reduction_descend_*.json",
+    "runs/ab4_grid_results.json"
+   ],
+   "command": "python analysis/make_figures.py",
+   "superseded": {
+    "on": "2026-09-20",
+    "why": "generated by the pre-d243 solver. The production configuration is now the SEMANTIC arm -- corrected (26) plus a valid big-M (ENGINE_VERSION 3.0) -- so every number behind these figures comes from a model that did not enforce (26) and used K's undersized constants in (14)/(22).",
+    "producing_code_hash": "c36b99c3787e63de",
+    "current_code_hash": "f68d8ff0",
+    "regenerate_from": "the full budget-matched grid (analysis/run_full_grid.py)"
+   }
+  },
+  "T1_proven_gap_by_size": {
+   "sidecar": true,
+   "sources": [
+    "analysis/figstyle.py"
+   ],
+   "command": "python analysis/make_figures.py",
+   "superseded": null
+  },
+  "T2_which_leg_closes_it": {
+   "sidecar": true,
+   "sources": [
+    "analysis/figstyle.py"
+   ],
+   "command": "python analysis/make_figures.py",
+   "superseded": null
+  },
+  "T3_fleet_excess_explains_the_tail": {
+   "sidecar": true,
+   "sources": [
+    "analysis/figstyle.py"
+   ],
+   "command": "python analysis/make_figures.py",
+   "superseded": null
+  },
+  "T4_bound_calibration": {
+   "sidecar": true,
+   "sources": [
+    "analysis/figstyle.py"
+   ],
+   "command": "python analysis/make_figures.py",
+   "superseded": null
+  },
+  "T5_anytime_and_productivity": {
+   "sidecar": true,
+   "sources": [
+    "analysis/figstyle.py"
+   ],
+   "command": "python analysis/make_figures.py",
+   "superseded": null
+  },
+  "T6_stage_attribution": {
+   "sidecar": true,
+   "sources": [
+    "analysis/figstyle.py"
+   ],
+   "command": "python analysis/make_figures.py",
+   "superseded": null
+  },
+  "T7_intervals_per_cell_n100": {
+   "sidecar": true,
+   "sources": [
+    "analysis/figstyle.py"
+   ],
+   "command": "python analysis/make_figures.py",
+   "superseded": null
+  },
+  "T7_intervals_per_cell_n20": {
+   "sidecar": true,
+   "sources": [
+    "analysis/figstyle.py"
+   ],
+   "command": "python analysis/make_figures.py",
+   "superseded": null
+  },
+  "T7_intervals_per_cell_n30": {
+   "sidecar": true,
+   "sources": [
+    "analysis/figstyle.py"
+   ],
+   "command": "python analysis/make_figures.py",
+   "superseded": null
+  },
+  "T8_results_by_family": {
+   "sidecar": true,
+   "sources": [
+    "analysis/figstyle.py"
+   ],
+   "command": "python analysis/make_figures.py",
+   "superseded": null
+  }
+ },
+ "tables": {
+  "analysis/estimator_audit.py": [],
+  "analysis/kref_build.py": [
+   "paper/tables/table3_page.png"
+  ],
+  "analysis/kref_table4_extract.py": [
+   "paper/tables/.",
+   "paper/tables/table4_page.png"
+  ],
+  "analysis/make_tables.py": [],
+  "analysis/reproduction_index.py": []
+ },
+ "external": [
+  "table3",
+  "table4",
+  "table4_full",
+  "table6",
+  "text_facts"
+ ],
+ "defects": [],
+ "sources": {},
+ "_provenance": {
+  "sources": {},
+  "when": "2026-09-28T14:02:18",
+  "git_sha": "8a4440f793b8",
+  "git_dirty": true,
+  "python": "3.10.11",
+  "host": "LAPTOP-420NB7DQ",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cpu": {
+   "model": "Intel(R) Core(TM) Ultra 7 258V",
+   "logical": 8,
+   "cores": 8
+  },
+  "code_hash": "e24bcc52",
+  "solver_versions": {
+   "docplex": null,
+   "cplex": "22.1.1.0"
+  },
+  "gurobi": "13.0.3"
+ }
+}

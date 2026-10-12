@@ -1,0 +1,36 @@
+{
+  "title": "Certified lower bounds and matching incumbents for the 2E-MVRP-SS via a time-expanded trip-event partitioning",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "description": "Replication package for the paper \"A certified time-expanded set-partitioning algorithm tightening the reported optimality gap for the two-echelon multi-trip vehicle routing problem with satellite synchronization\" (Chouchena and Ben-Abu). It contains the bounding procedure (a time-expanded set-partitioning reformulation of the street echelon solved by column generation with an exact pricing routine, composed with the water-echelon bound of the originating study), the primal pipeline, an independent joint verifier, versioned per-instance certificates and decoded solutions, and the scripts that regenerate every reported table and figure. The predecessors' (Karademir, Beirigo and Atasoy, 2025) unlicensed instance generator and model are NOT redistributed; they are fetched and sha256-verified on demand (see THIRD_PARTY.md). code_hash, not git_sha, is the reproducibility anchor.",
+  "creators": [
+    {
+      "name": "Chouchena, David",
+      "orcid": "0009-0005-9871-1330",
+      "affiliation": "Sapir Academic College, D.N. Hof Ashkelon 7915600, Israel"
+    },
+    {
+      "name": "Ben-Abu, Yuval",
+      "orcid": "0000-0002-6983-5730",
+      "affiliation": "Sapir Academic College, D.N. Hof Ashkelon 7915600, Israel"
+    }
+  ],
+  "keywords": [
+    "two-echelon vehicle routing",
+    "satellite synchronization",
+    "multi-trip routing",
+    "column generation",
+    "lower bounds",
+    "city logistics"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1016/j.ejor.2024.10.047",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "publication-article"
+    }
+  ],
+  "notes": "The two mint-before-submission identifiers (this archive DOI and the GitHub repository URL) are inserted into the manuscript's data-availability statement once this release is published. The accompanying paper is under review at Annals of Operations Research; its DOI will be added as an isSupplementTo relation at camera-ready."
+}

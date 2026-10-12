@@ -1,0 +1,117 @@
+{
+  "_provenance": {
+    "code_hash": "26b414c6",
+    "code_hash_covers": [
+      "crossfeed/block_a.py",
+      "crossfeed/easy_reduction.py",
+      "crossfeed/blockA_cpsat.py",
+      "crossfeed/easy_reduction_descend.py",
+      "crossfeed/bound_tracer.py",
+      "build_instance.py",
+      "joint_model_cplex.py",
+      "joint_model_gurobi.py",
+      "solver/engines/fixopt.py"
+    ],
+    "code_hash_missing": [],
+    "code_in_play": {
+      "analysis/artifact_guard.py": "5aa960abca47c6e8",
+      "analysis/certify_frozen_solution.py": "6c2add598faac2ae",
+      "analysis/repro_preflight.py": "c0062485fae9b768",
+      "analysis/rt_class.py": "bf346ac520a31c00",
+      "analysis/stamp.py": "6f8d1d3a0792144f",
+      "analysis/verifier3.py": "ca99a477ad2ce826",
+      "instance_view.py": "5f3a0e8f996c0c65"
+    },
+    "code_in_play_hash": "378f445c9ad09525",
+    "code_in_play_n": 7,
+    "cpu": {
+      "cores": 8,
+      "logical": 8,
+      "model": "Intel(R) Core(TM) Ultra 7 258V"
+    },
+    "git_dirty": true,
+    "git_sha": "0db323602dc6",
+    "gurobi": "13.0.3",
+    "host": "LAPTOP-420NB7DQ",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.10.11",
+    "solver_tolerances": {
+      "FeasibilityTol": 1e-06,
+      "IntFeasTol": 1e-05,
+      "MIPGap": 0.0001,
+      "NumericFocus": 0,
+      "OptimalityTol": 1e-06,
+      "source": "gurobipy defaults for a fresh model"
+    },
+    "solver_versions": {
+      "cplex": "22.1.1.0",
+      "docplex": null
+    },
+    "source_hash": "08f619e4c276bfcb",
+    "sources": {
+      "analysis/certify_frozen_solution.py": "6c2add598faac2ae"
+    },
+    "sources_dirty": [],
+    "sources_unresolved": [],
+    "when": "2026-10-11T19:17:11"
+  },
+  "_rt": {
+    "clock": "time.time / time.process_time since analysis.stamp import",
+    "cores_regime": {
+      "cores_used_measured": 0.07,
+      "machine_cores": 8,
+      "machine_logical": 8,
+      "policy": "d47",
+      "policy_threads": 4,
+      "tenancy": 1,
+      "threads_requested": null
+    },
+    "cpu_s": 0.641,
+    "declared": false,
+    "det_ticks": null,
+    "policy": "d47",
+    "process_wall_s": 9.197,
+    "rt_class": "diagnostic",
+    "rt_not_comparable": "the writer declared no rt_class, so this wall was never certified against d47 (4 threads, single tenancy) and is not quotable",
+    "tenancy": 1,
+    "threads": null,
+    "wall_measured_by": "analysis/stamp.py",
+    "wall_s": 9.197
+  },
+  "archived_path": "validation/certificates/R205_n20_optimal_solution.json",
+  "archived_sha256": "12e0da5ad2d64f4dca1ea71761d2c1f8491b5e4fcf7e120fcb3e2a9b7722c095",
+  "best_bound": 642.216,
+  "cell": "R205",
+  "certified_at": "2026-10-11T16:17:11.116864+00:00",
+  "certified_code_hash": "26b414c6",
+  "certified_git_dirty": true,
+  "certified_git_sha": "0db323602dc6",
+  "claim": "these bytes encode a feasible solution to this instance with this objective",
+  "components": {},
+  "components_sum": null,
+  "key": "R205_n20_optimal",
+  "mip_gap": 0.0,
+  "nCars": 1,
+  "nVessel": 2,
+  "not_claimed": "which code state produced the solution; the run predates runs/provenance.csv and its code_hash is unrecoverable",
+  "note": "one street vehicle, and proven optimal: Gurobi status 2, bound == incumbent",
+  "objective_claimed": 642.216,
+  "objective_matches": true,
+  "objective_recomputed": 642.216,
+  "origin_path": "results/portfolio/R205_n20_redump.json",
+  "origin_run": "stage1 corrective re-dump 2026-09-15, exact Gurobi solve",
+  "origin_run_has_provenance_row": false,
+  "platform": "Windows-10-10.0.26200-SP0",
+  "proves_optimal": true,
+  "proximity": 0.0,
+  "python": "3.10.11",
+  "size": 20,
+  "solver_status": 2,
+  "sources": {
+    "analysis/certify_frozen_solution.py": "6c2add598faac2ae"
+  },
+  "tau": 20.0,
+  "verifier_ok": true,
+  "violations": [],
+  "wls": 0.1
+}

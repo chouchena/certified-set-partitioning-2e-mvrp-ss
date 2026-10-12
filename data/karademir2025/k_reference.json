@@ -1,0 +1,1492 @@
+{
+ "source": {
+  "citation": "Karademir, C. et al. (2025) European Journal of Operational Research 322(2) 480-499",
+  "doi": "10.1016/j.ejor.2024.10.047",
+  "code": "https://github.com/cigdemkarademir/2echelon-synchronization",
+  "extracted": "2026-09-12",
+  "extracted_from": [
+   "paper/paper-reference-data.md (transcribed + cross-checked against table crops 2026-09-01)",
+   "paper/tables/table3_page.png (summary rows, 2026-09-12)"
+  ],
+  "note": "CANONICAL. Read via analysis/kref.py, never by re-parsing markdown."
+ },
+ "table3": {
+  "per_instance": {
+   "10": {
+    "C201": {
+     "joint_bk": 365.5,
+     "joint_gap": 0.0,
+     "lbbd_bk": 365.5,
+     "lbbd_imp": 0.0
+    },
+    "R204": {
+     "joint_bk": 351.4,
+     "joint_gap": 0.0,
+     "lbbd_bk": 351.4,
+     "lbbd_imp": 0.0
+    },
+    "RC201": {
+     "joint_bk": 392.8,
+     "joint_gap": 0.0,
+     "lbbd_bk": 392.8,
+     "lbbd_imp": 0.0
+    },
+    "C202": {
+     "joint_bk": 327.5,
+     "joint_gap": 0.0,
+     "lbbd_bk": 327.5,
+     "lbbd_imp": 0.0
+    },
+    "R205": {
+     "joint_bk": 376.4,
+     "joint_gap": 0.0,
+     "lbbd_bk": 376.4,
+     "lbbd_imp": 0.0
+    },
+    "RC202": {
+     "joint_bk": 356.5,
+     "joint_gap": 0.0,
+     "lbbd_bk": 356.5,
+     "lbbd_imp": 0.0
+    },
+    "C203": {
+     "joint_bk": 327.5,
+     "joint_gap": 0.0,
+     "lbbd_bk": 327.5,
+     "lbbd_imp": 0.0
+    },
+    "R206": {
+     "joint_bk": 327.6,
+     "joint_gap": 0.0,
+     "lbbd_bk": 327.6,
+     "lbbd_imp": 0.0
+    },
+    "RC203": {
+     "joint_bk": 356.5,
+     "joint_gap": 0.0,
+     "lbbd_bk": 356.5,
+     "lbbd_imp": 0.0
+    },
+    "C204": {
+     "joint_bk": 304.3,
+     "joint_gap": 0.0,
+     "lbbd_bk": 304.3,
+     "lbbd_imp": 0.0
+    },
+    "R207": {
+     "joint_bk": 327.6,
+     "joint_gap": 0.0,
+     "lbbd_bk": 327.6,
+     "lbbd_imp": 0.0
+    },
+    "RC204": {
+     "joint_bk": 320.2,
+     "joint_gap": 0.0,
+     "lbbd_bk": 320.2,
+     "lbbd_imp": 0.0
+    },
+    "C205": {
+     "joint_bk": 365.5,
+     "joint_gap": 0.0,
+     "lbbd_bk": 365.5,
+     "lbbd_imp": 0.0
+    },
+    "R208": {
+     "joint_bk": 327.6,
+     "joint_gap": 0.0,
+     "lbbd_bk": 327.6,
+     "lbbd_imp": 0.0
+    },
+    "RC205": {
+     "joint_bk": 440.6,
+     "joint_gap": 0.0,
+     "lbbd_bk": 440.6,
+     "lbbd_imp": 0.0
+    },
+    "C206": {
+     "joint_bk": 365.5,
+     "joint_gap": 0.0,
+     "lbbd_bk": 365.5,
+     "lbbd_imp": 0.0
+    },
+    "R209": {
+     "joint_bk": 362.1,
+     "joint_gap": 0.0,
+     "lbbd_bk": 362.1,
+     "lbbd_imp": 0.0
+    },
+    "RC206": {
+     "joint_bk": 363.1,
+     "joint_gap": 0.0,
+     "lbbd_bk": 363.1,
+     "lbbd_imp": 0.0
+    },
+    "C207": {
+     "joint_bk": 365.5,
+     "joint_gap": 0.0,
+     "lbbd_bk": 365.5,
+     "lbbd_imp": 0.0
+    },
+    "R210": {
+     "joint_bk": 353.4,
+     "joint_gap": 0.0,
+     "lbbd_bk": 353.4,
+     "lbbd_imp": 0.0
+    },
+    "RC207": {
+     "joint_bk": 364.4,
+     "joint_gap": 0.0,
+     "lbbd_bk": 364.4,
+     "lbbd_imp": 0.0
+    },
+    "C208": {
+     "joint_bk": 358.4,
+     "joint_gap": 0.0,
+     "lbbd_bk": 358.4,
+     "lbbd_imp": 0.0
+    },
+    "R211": {
+     "joint_bk": 344.5,
+     "joint_gap": 0.0,
+     "lbbd_bk": 344.5,
+     "lbbd_imp": 0.0
+    },
+    "RC208": {
+     "joint_bk": 318.7,
+     "joint_gap": 0.0,
+     "lbbd_bk": 318.7,
+     "lbbd_imp": 0.0
+    },
+    "R201": {
+     "joint_bk": 420.1,
+     "joint_gap": 0.0,
+     "lbbd_bk": 420.1,
+     "lbbd_imp": 0.0
+    },
+    "R202": {
+     "joint_bk": 387.8,
+     "joint_gap": 0.0,
+     "lbbd_bk": 387.8,
+     "lbbd_imp": 0.0
+    },
+    "R203": {
+     "joint_bk": 387.8,
+     "joint_gap": 0.0,
+     "lbbd_bk": 387.8,
+     "lbbd_imp": 0.0
+    }
+   },
+   "20": {
+    "C201": {
+     "joint_bk": 697.7,
+     "joint_gap": 0.0,
+     "joint_inc_time": 4.0,
+     "lbbd_bk": 697.7,
+     "lbbd_imp": 0.0,
+     "lbbd_inc_time": 2.0
+    },
+    "C202": {
+     "joint_bk": 678.7,
+     "joint_gap": 22.0,
+     "joint_inc_time": 1690.0,
+     "lbbd_bk": 678.7,
+     "lbbd_imp": 0.0,
+     "lbbd_inc_time": 241.0
+    },
+    "C203": {
+     "joint_bk": 682.7,
+     "joint_gap": 54.0,
+     "joint_inc_time": 8395.0,
+     "lbbd_bk": 676.3,
+     "lbbd_imp": -0.9,
+     "lbbd_inc_time": 1649.0
+    },
+    "C204": {
+     "joint_bk": 683.5,
+     "joint_gap": 57.0,
+     "joint_inc_time": 2261.0,
+     "lbbd_bk": 668.1,
+     "lbbd_imp": -2.3,
+     "lbbd_inc_time": 380.0
+    },
+    "C205": {
+     "joint_bk": 685.2,
+     "joint_gap": 0.0,
+     "joint_inc_time": 69.0,
+     "lbbd_bk": 685.2,
+     "lbbd_imp": 0.0,
+     "lbbd_inc_time": 99.0
+    },
+    "C206": {
+     "joint_bk": 680.8,
+     "joint_gap": 0.0,
+     "joint_inc_time": 137.0,
+     "lbbd_bk": 680.8,
+     "lbbd_imp": 0.0,
+     "lbbd_inc_time": 133.0
+    },
+    "C207": {
+     "joint_bk": 681.8,
+     "joint_gap": 23.0,
+     "joint_inc_time": 1258.0,
+     "lbbd_bk": 678.8,
+     "lbbd_imp": -0.4,
+     "lbbd_inc_time": 428.0
+    },
+    "C208": {
+     "joint_bk": 678.1,
+     "joint_gap": 0.0,
+     "joint_inc_time": 2457.0,
+     "lbbd_bk": 680.3,
+     "lbbd_imp": 0.3,
+     "lbbd_inc_time": 14.0
+    },
+    "R201": {
+     "joint_bk": 821.7,
+     "joint_gap": 0.0,
+     "joint_inc_time": 102.0,
+     "lbbd_bk": 821.7,
+     "lbbd_imp": 0.0,
+     "lbbd_inc_time": 50.0
+    },
+    "R202": {
+     "joint_bk": 757.0,
+     "joint_gap": 19.0,
+     "joint_inc_time": 11478.0,
+     "lbbd_bk": 756.7,
+     "lbbd_imp": 0.0,
+     "lbbd_inc_time": 243.0
+    },
+    "R203": {
+     "joint_bk": 638.4,
+     "joint_gap": 37.0,
+     "joint_inc_time": 12783.0,
+     "lbbd_bk": 635.8,
+     "lbbd_imp": -0.4,
+     "lbbd_inc_time": 1710.0
+    },
+    "R204": {
+     "joint_bk": 605.7,
+     "joint_gap": 42.0,
+     "joint_inc_time": 5713.0,
+     "lbbd_bk": 605.7,
+     "lbbd_imp": 0.0,
+     "lbbd_inc_time": 3036.0
+    },
+    "R205": {
+     "joint_bk": 642.2,
+     "joint_gap": 0.0,
+     "joint_inc_time": 1990.0,
+     "lbbd_bk": 676.3,
+     "lbbd_imp": 5.3,
+     "lbbd_inc_time": 529.0
+    },
+    "R206": {
+     "joint_bk": 612.9,
+     "joint_gap": 31.0,
+     "joint_inc_time": 7405.0,
+     "lbbd_bk": 603.8,
+     "lbbd_imp": -1.5,
+     "lbbd_inc_time": 517.0
+    },
+    "R207": {
+     "joint_bk": 601.7,
+     "joint_gap": 36.0,
+     "joint_inc_time": 8972.0,
+     "lbbd_bk": 605.4,
+     "lbbd_imp": 0.6,
+     "lbbd_inc_time": 2747.0
+    },
+    "R208": {
+     "joint_bk": 549.9,
+     "joint_gap": 37.0,
+     "joint_inc_time": 11009.0,
+     "lbbd_bk": 549.9,
+     "lbbd_imp": 0.0,
+     "lbbd_inc_time": 809.0
+    },
+    "R209": {
+     "joint_bk": 626.3,
+     "joint_gap": 6.0,
+     "joint_inc_time": 10974.0,
+     "lbbd_bk": 626.3,
+     "lbbd_imp": 0.0,
+     "lbbd_inc_time": 99.0
+    },
+    "R210": {
+     "joint_bk": 647.1,
+     "joint_gap": 11.0,
+     "joint_inc_time": 3954.0,
+     "lbbd_bk": 632.8,
+     "lbbd_imp": -2.2,
+     "lbbd_inc_time": 3158.0
+    },
+    "R211": {
+     "joint_bk": 669.1,
+     "joint_gap": 48.0,
+     "joint_inc_time": 10782.0,
+     "lbbd_bk": 584.4,
+     "lbbd_imp": -12.7,
+     "lbbd_inc_time": 1316.0
+    },
+    "RC201": {
+     "joint_bk": 981.2,
+     "joint_gap": 0.0,
+     "joint_inc_time": 27.0,
+     "lbbd_bk": 981.2,
+     "lbbd_imp": 0.0,
+     "lbbd_inc_time": 168.0
+    },
+    "RC202": {
+     "joint_bk": 906.4,
+     "joint_gap": 44.0,
+     "joint_inc_time": 5928.0,
+     "lbbd_bk": 906.4,
+     "lbbd_imp": 0.0,
+     "lbbd_inc_time": 751.0
+    },
+    "RC203": {
+     "joint_bk": 754.3,
+     "joint_gap": 56.0,
+     "joint_inc_time": 8413.0,
+     "lbbd_bk": 767.6,
+     "lbbd_imp": 1.8,
+     "lbbd_inc_time": 2947.0
+    },
+    "RC204": {
+     "joint_bk": 642.4,
+     "joint_gap": 50.0,
+     "joint_inc_time": 10375.0,
+     "lbbd_bk": 642.4,
+     "lbbd_imp": 0.0,
+     "lbbd_inc_time": 3763.0
+    },
+    "RC205": {
+     "joint_bk": 935.5,
+     "joint_gap": 15.0,
+     "joint_inc_time": 1098.0,
+     "lbbd_bk": 938.4,
+     "lbbd_imp": 0.3,
+     "lbbd_inc_time": 570.0
+    },
+    "RC206": {
+     "joint_bk": 885.2,
+     "joint_gap": 28.0,
+     "joint_inc_time": 1149.0,
+     "lbbd_bk": 885.2,
+     "lbbd_imp": 0.0,
+     "lbbd_inc_time": 837.0
+    },
+    "RC207": {
+     "joint_bk": 885.0,
+     "joint_gap": 26.0,
+     "joint_inc_time": 4242.0,
+     "lbbd_bk": 888.7,
+     "lbbd_imp": 0.4,
+     "lbbd_inc_time": 13.0
+    },
+    "RC208": {
+     "joint_bk": 881.6,
+     "joint_gap": 65.0,
+     "joint_inc_time": 4166.0,
+     "lbbd_bk": 858.7,
+     "lbbd_imp": -2.6,
+     "lbbd_inc_time": 1478.0
+    }
+   },
+   "30": {
+    "C201": {
+     "joint_bk": 1011.9,
+     "joint_gap": 0.0,
+     "joint_inc_time": 1313.0,
+     "lbbd_bk": 1012.5,
+     "lbbd_imp": 0.1,
+     "lbbd_inc_time": 113.0
+    },
+    "C202": {
+     "joint_bk": 876.4,
+     "joint_gap": 32.0,
+     "joint_inc_time": 9620.0,
+     "lbbd_bk": 854.9,
+     "lbbd_imp": -2.4,
+     "lbbd_inc_time": 4235.0
+    },
+    "C203": {
+     "joint_bk": 1047.2,
+     "joint_gap": 52.0,
+     "joint_inc_time": 10406.0,
+     "lbbd_bk": 843.6,
+     "lbbd_imp": -19.4,
+     "lbbd_inc_time": 6006.0
+    },
+    "C204": {
+     "joint_bk": 902.9,
+     "joint_gap": 62.0,
+     "joint_inc_time": 11985.0,
+     "lbbd_bk": 810.8,
+     "lbbd_imp": -10.2,
+     "lbbd_inc_time": 2663.0
+    },
+    "C205": {
+     "joint_bk": 869.6,
+     "joint_gap": 10.0,
+     "joint_inc_time": 4735.0,
+     "lbbd_bk": 869.6,
+     "lbbd_imp": 0.0,
+     "lbbd_inc_time": 194.0
+    },
+    "C206": {
+     "joint_bk": 853.7,
+     "joint_gap": 10.0,
+     "joint_inc_time": 4212.0,
+     "lbbd_bk": 847.5,
+     "lbbd_imp": -0.7,
+     "lbbd_inc_time": 3081.0
+    },
+    "C207": {
+     "joint_bk": 836.9,
+     "joint_gap": 35.0,
+     "joint_inc_time": 7128.0,
+     "lbbd_bk": 843.3,
+     "lbbd_imp": 0.8,
+     "lbbd_inc_time": 687.0
+    },
+    "C208": {
+     "joint_bk": 845.5,
+     "joint_gap": 42.0,
+     "joint_inc_time": 5856.0,
+     "lbbd_bk": 835.7,
+     "lbbd_imp": -1.2,
+     "lbbd_inc_time": 324.0
+    },
+    "R201": {
+     "joint_bk": 1048.8,
+     "joint_gap": 2.0,
+     "joint_inc_time": 6757.0,
+     "lbbd_bk": 1048.8,
+     "lbbd_imp": 0.0,
+     "lbbd_inc_time": 143.0
+    },
+    "R202": {
+     "joint_bk": 1046.8,
+     "joint_gap": 49.0,
+     "joint_inc_time": 13800.0,
+     "lbbd_bk": 1003.0,
+     "lbbd_imp": -4.2,
+     "lbbd_inc_time": 5179.0
+    },
+    "R203": {
+     "joint_bk": 999.9,
+     "joint_gap": 54.0,
+     "joint_inc_time": 10185.0,
+     "lbbd_bk": 919.8,
+     "lbbd_imp": -8.0,
+     "lbbd_inc_time": 6090.0
+    },
+    "R204": {
+     "joint_bk": 929.3,
+     "joint_gap": 55.0,
+     "joint_inc_time": 9735.0,
+     "lbbd_bk": 851.1,
+     "lbbd_imp": -8.4,
+     "lbbd_inc_time": 2015.0
+    },
+    "R205": {
+     "joint_bk": 1017.6,
+     "joint_gap": 40.0,
+     "joint_inc_time": 6300.0,
+     "lbbd_bk": 968.5,
+     "lbbd_imp": -4.8,
+     "lbbd_inc_time": 2401.0
+    },
+    "R206": {
+     "joint_bk": 950.1,
+     "joint_gap": 50.0,
+     "joint_inc_time": 9933.0,
+     "lbbd_bk": 914.0,
+     "lbbd_imp": -3.8,
+     "lbbd_inc_time": 6695.0
+    },
+    "R207": {
+     "joint_bk": 969.9,
+     "joint_gap": 55.0,
+     "joint_inc_time": 8144.0,
+     "lbbd_bk": 914.5,
+     "lbbd_imp": -5.7,
+     "lbbd_inc_time": 6204.0
+    },
+    "R208": {
+     "joint_bk": 931.2,
+     "joint_gap": 56.0,
+     "joint_inc_time": 8706.0,
+     "lbbd_bk": 884.6,
+     "lbbd_imp": -5.0,
+     "lbbd_inc_time": 3532.0
+    },
+    "R209": {
+     "joint_bk": 1071.7,
+     "joint_gap": 53.0,
+     "joint_inc_time": 7514.0,
+     "lbbd_bk": 933.9,
+     "lbbd_imp": -12.9,
+     "lbbd_inc_time": 4303.0
+    },
+    "R210": {
+     "joint_bk": 1024.6,
+     "joint_gap": 36.0,
+     "joint_inc_time": 3302.0,
+     "lbbd_bk": 937.3,
+     "lbbd_imp": -8.5,
+     "lbbd_inc_time": 2760.0
+    },
+    "R211": {
+     "joint_bk": 964.9,
+     "joint_gap": 57.0,
+     "joint_inc_time": 13067.0,
+     "lbbd_bk": 900.3,
+     "lbbd_imp": -6.7,
+     "lbbd_inc_time": 1618.0
+    },
+    "RC201": {
+     "joint_bk": 1712.7,
+     "joint_gap": 11.0,
+     "joint_inc_time": 2321.0,
+     "lbbd_bk": 1665.5,
+     "lbbd_imp": -2.8,
+     "lbbd_inc_time": 1896.0
+    },
+    "RC202": {
+     "joint_bk": 1641.9,
+     "joint_gap": 60.0,
+     "joint_inc_time": 10662.0,
+     "lbbd_bk": 1413.4,
+     "lbbd_imp": -13.9,
+     "lbbd_inc_time": 1984.0
+    },
+    "RC203": {
+     "joint_bk": 1589.6,
+     "joint_gap": 70.0,
+     "joint_inc_time": 3490.0,
+     "lbbd_bk": 1379.3,
+     "lbbd_imp": -13.2,
+     "lbbd_inc_time": 4536.0
+    },
+    "RC204": {
+     "joint_bk": 1336.6,
+     "joint_gap": 71.0,
+     "joint_inc_time": 13249.0,
+     "lbbd_bk": 1273.9,
+     "lbbd_imp": -4.7,
+     "lbbd_inc_time": 1927.0
+    },
+    "RC205": {
+     "joint_bk": 1639.7,
+     "joint_gap": 39.0,
+     "joint_inc_time": 3705.0,
+     "lbbd_bk": 1597.7,
+     "lbbd_imp": -2.6,
+     "lbbd_inc_time": 2571.0
+    },
+    "RC206": {
+     "joint_bk": 1395.6,
+     "joint_gap": 26.0,
+     "joint_inc_time": 13448.0,
+     "lbbd_bk": 1384.6,
+     "lbbd_imp": -0.8,
+     "lbbd_inc_time": 442.0
+    },
+    "RC207": {
+     "joint_bk": 1705.9,
+     "joint_gap": 64.0,
+     "joint_inc_time": 4718.0,
+     "lbbd_bk": 1602.3,
+     "lbbd_imp": -6.1,
+     "lbbd_inc_time": 12293.0
+    },
+    "RC208": {
+     "joint_bk": 1353.9,
+     "joint_gap": 71.0,
+     "joint_inc_time": 8681.0,
+     "lbbd_bk": 1293.0,
+     "lbbd_imp": -4.5,
+     "lbbd_inc_time": 6252.0
+    }
+   }
+  },
+  "summary": {
+   "10": {
+    "joint": {
+     "bk": 357.7,
+     "gap": 0.0,
+     "inc_time": 31.9,
+     "run_time": 197
+    },
+    "lbbd": {
+     "bk": 357.7,
+     "imp": 0.0,
+     "inc_time": 4.5,
+     "run_time": 11
+    },
+    "initial_solution": 357.8
+   },
+   "20": {
+    "joint": {
+     "bk": 722.7,
+     "gap": 26.2,
+     "inc_time": 5067.8,
+     "run_time": 10554
+    },
+    "lbbd": {
+     "bk": 719.0,
+     "imp": -0.5,
+     "inc_time": 1025.3,
+     "run_time": 9192
+    },
+    "initial_solution": 747.7
+   },
+   "30": {
+    "joint": {
+     "bk": 1132.4,
+     "gap": 43.0,
+     "inc_time": 7887.8,
+     "run_time": 13346
+    },
+    "lbbd": {
+     "bk": 1066.8,
+     "imp": -5.5,
+     "inc_time": 3338.6,
+     "run_time": 13365
+    },
+    "initial_solution": 1197.0
+   }
+  }
+ },
+ "table4": [
+  {
+   "size": 10,
+   "wls": "1:10",
+   "method": "Joint",
+   "bk": 357.7,
+   "inc_time": 31.9,
+   "gap_imp": 0.0
+  },
+  {
+   "size": 10,
+   "wls": "1:10",
+   "method": "LBBD",
+   "bk": 357.7,
+   "inc_time": 4.5,
+   "gap_imp": 0.0
+  },
+  {
+   "size": 10,
+   "wls": "1:5",
+   "method": "Joint",
+   "bk": 403.5,
+   "inc_time": 40.7,
+   "gap_imp": 0.0
+  },
+  {
+   "size": 10,
+   "wls": "1:5",
+   "method": "LBBD",
+   "bk": 403.5,
+   "inc_time": 7.1,
+   "gap_imp": 0.0
+  },
+  {
+   "size": 10,
+   "wls": "1:1",
+   "method": "Joint",
+   "bk": 851.5,
+   "inc_time": 205.0,
+   "gap_imp": 0.0
+  },
+  {
+   "size": 10,
+   "wls": "1:1",
+   "method": "LBBD",
+   "bk": 854.5,
+   "inc_time": 19.2,
+   "gap_imp": 0.4
+  },
+  {
+   "size": 10,
+   "wls": "10:1",
+   "method": "Joint",
+   "bk": 19330.8,
+   "inc_time": 101.4,
+   "gap_imp": 0.0
+  },
+  {
+   "size": 10,
+   "wls": "10:1",
+   "method": "LBBD",
+   "bk": 19337.4,
+   "inc_time": 29.4,
+   "gap_imp": 0.0
+  },
+  {
+   "size": 20,
+   "wls": "1:10",
+   "method": "Joint",
+   "bk": 722.7,
+   "inc_time": 5067.8,
+   "gap_imp": 26.2
+  },
+  {
+   "size": 20,
+   "wls": "1:10",
+   "method": "LBBD",
+   "bk": 719.0,
+   "inc_time": 1025.7,
+   "gap_imp": -0.5
+  },
+  {
+   "size": 20,
+   "wls": "1:5",
+   "method": "Joint",
+   "bk": 833.0,
+   "inc_time": 5910.1,
+   "gap_imp": 26.6
+  },
+  {
+   "size": 20,
+   "wls": "1:5",
+   "method": "LBBD",
+   "bk": 833.0,
+   "inc_time": 2218.0,
+   "gap_imp": 0.0
+  },
+  {
+   "size": 20,
+   "wls": "1:1",
+   "method": "Joint",
+   "bk": 1961.4,
+   "inc_time": 7031.2,
+   "gap_imp": 22.5
+  },
+  {
+   "size": 20,
+   "wls": "1:1",
+   "method": "LBBD",
+   "bk": 1939.8,
+   "inc_time": 2741.4,
+   "gap_imp": -1.1
+  },
+  {
+   "size": 20,
+   "wls": "10:1",
+   "method": "Joint",
+   "bk": 51167.3,
+   "inc_time": 6819.3,
+   "gap_imp": 5.0
+  },
+  {
+   "size": 20,
+   "wls": "10:1",
+   "method": "LBBD",
+   "bk": 50903.9,
+   "inc_time": 3198.9,
+   "gap_imp": -0.5
+  },
+  {
+   "size": 50,
+   "wls": "1:10",
+   "method": "Joint",
+   "bk": 1989.3,
+   "inc_time": 12007.9,
+   "gap_imp": 58.0
+  },
+  {
+   "size": 50,
+   "wls": "1:10",
+   "method": "LBBD",
+   "bk": 1941.8,
+   "inc_time": 5107.3,
+   "gap_imp": -2.4
+  },
+  {
+   "size": 50,
+   "wls": "1:5",
+   "method": "Joint",
+   "bk": 2361.9,
+   "inc_time": 12404.6,
+   "gap_imp": 57.1
+  },
+  {
+   "size": 50,
+   "wls": "1:5",
+   "method": "LBBD",
+   "bk": 2250.5,
+   "inc_time": 4867.4,
+   "gap_imp": -4.7
+  },
+  {
+   "size": 50,
+   "wls": "1:1",
+   "method": "Joint",
+   "bk": 5477.0,
+   "inc_time": 12269.1,
+   "gap_imp": 45.2
+  },
+  {
+   "size": 50,
+   "wls": "1:1",
+   "method": "LBBD",
+   "bk": 5021.8,
+   "inc_time": 5615.6,
+   "gap_imp": -8.3
+  },
+  {
+   "size": 50,
+   "wls": "10:1",
+   "method": "Joint",
+   "bk": 124438.2,
+   "inc_time": 13248.9,
+   "gap_imp": 12.5
+  },
+  {
+   "size": 50,
+   "wls": "10:1",
+   "method": "LBBD",
+   "bk": 119488.7,
+   "inc_time": 8436.3,
+   "gap_imp": -4.0
+  }
+ ],
+ "table6": {
+  "C": {
+   "n": 8,
+   "gap_joint": 60.1,
+   "joint": {
+    "zIP": 4271.3,
+    "travel_total": 4723.6,
+    "travel_sl": 2212.4,
+    "travel_wl": 2511.2,
+    "fleet_sl": 8.0,
+    "fleet_wl": 8.75,
+    "dev_vessel_lb": 0.75
+   },
+   "lbbd": {
+    "zIP": 3857.2,
+    "travel_total": 4039.6,
+    "travel_sl": 1958.5,
+    "travel_wl": 2081.1,
+    "fleet_sl": 7.5,
+    "fleet_wl": 8.0,
+    "dev_vessel_lb": 0.0
+   },
+   "min_transfers": 37.0
+  },
+  "R": {
+   "n": 11,
+   "gap_joint": 74.6,
+   "joint": {
+    "zIP": 4158.9,
+    "travel_total": 4443.4,
+    "travel_sl": 2182.8,
+    "travel_wl": 2260.6,
+    "fleet_sl": 9.27,
+    "fleet_wl": 9.55,
+    "dev_vessel_lb": 3.55
+   },
+   "lbbd": {
+    "zIP": 3720.9,
+    "travel_total": 3415.3,
+    "travel_sl": 1997.7,
+    "travel_wl": 1417.6,
+    "fleet_sl": 8.64,
+    "fleet_wl": 6.09,
+    "dev_vessel_lb": 0.09
+   },
+   "min_transfers": 30.9
+  },
+  "RC": {
+   "n": 8,
+   "gap_joint": 77.0,
+   "joint": {
+    "zIP": 5432.5,
+    "travel_total": 5452.9,
+    "travel_sl": 2840.2,
+    "travel_wl": 2612.7,
+    "fleet_sl": 9.5,
+    "fleet_wl": 9.25,
+    "dev_vessel_lb": 2.25
+   },
+   "lbbd": {
+    "zIP": 4810.6,
+    "travel_total": 4451.6,
+    "travel_sl": 1525.1,
+    "travel_wl": 1970.6,
+    "fleet_sl": 8.75,
+    "fleet_wl": 7.88,
+    "dev_vessel_lb": 0.88
+   },
+   "min_transfers": 33.3
+  }
+ },
+ "text_facts": {
+  "time_limit_s": 14400,
+  "subproblem_tl_s": {
+   "<=30": 50,
+   "100": 100
+  },
+  "hardware": "4 CPUs Intel Xeon Gold 5218 @ 2.30 GHz",
+  "solver": "Gurobi 9.1.2",
+  "tau_rule": "ceil(2 x mean customer service time)",
+  "proximity": {
+   "table3": 0.0,
+   "table4": 0.0,
+   "table6": 0.1,
+   "fig4_range": [
+    0,
+    0.1,
+    0.2,
+    0.3,
+    0.4
+   ],
+   "fig5": 0.1,
+   "table5": 0.1
+  },
+  "proximity_basis": {
+   "table3": "INFERRED. S5.2 states sizes and WLS=1:10 only. 0.0 follows from S5.4's 'compared to the base scenario, where proximity equals to 0', proximity being varied only in S5.4.",
+   "table4": "INFERRED. Same basis as table3.",
+   "table6": "STATED. Table 6 note: 'WLS = 1:10, and the proximity = 0.1'.",
+   "fig4_range": "STATED. S5.4 sweeps proximity 0 to 0.4 at |C|=50 against k-means.",
+   "fig5": "STATED. S5.5.2: '4 satellites are located at the 0.1 proximity value for two-echelon systems, and at the depot for single-echelon systems.'",
+   "table5": "STATED. Table 5 row 'Sailing between satellites': Proximity = 0.1 for both IWLT-Stationary and IWLT-Flexible."
+  },
+  "satellites": 4,
+  "lefv_capacity": 50,
+  "vessel_capacity": 250,
+  "sizes_tested": {
+   "table3": [
+    10,
+    20,
+    30
+   ],
+   "table4": [
+    10,
+    20,
+    50
+   ],
+   "table6": [
+    100
+   ],
+   "fig4": [
+    50
+   ],
+   "fig5": [
+    10,
+    20,
+    30,
+    40,
+    50
+   ],
+   "n40_per_instance": false
+  },
+  "initial_solution_gap_pct": {
+   "10": 0.2,
+   "20": 3.4,
+   "30": 5.7
+  },
+  "fig4": {
+   "sizes": [
+    50
+   ],
+   "proximity_order": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4
+   ],
+   "travel_time_increase_pct_vs_kmeans": [
+    15.3,
+    6.6,
+    6.8,
+    14.0,
+    21.2
+   ],
+   "street_fleet_by_proximity": [
+    3.76,
+    3.64,
+    3.87,
+    3.97,
+    4.39
+   ],
+   "street_fleet_kmeans": 3.61,
+   "kmeans_travel_improvement_pct_by_family": {
+    "C": 21.3,
+    "R": 15.5,
+    "RC": 5.2
+   },
+   "vessel_lower_bound_by_family": {
+    "C": 4,
+    "R": 3,
+    "RC": 4
+   },
+   "note": "K state proximity 0.1 'optimizes the problems better on average in terms of fleet size and overall travel time compared to k-means'."
+  },
+  "fig5": {
+   "sizes": [
+    10,
+    20,
+    30,
+    40,
+    50
+   ],
+   "proximity": 0.1,
+   "instances_averaged": {
+    "10": 27,
+    "20": 27,
+    "30": 27,
+    "40": 26,
+    "50": 26
+   },
+   "exclusion": "instance 205 becomes infeasible for SINGLE-ECHELON systems under the test settings, so it is dropped from the common instance set at |C|=40 and 50. The family is not named in the caption (C205, R205 and RC205 all exist; dropping all three would give 24, so exactly one is meant). The infeasibility is in the benchmark, NOT in the 2E-MVRP-SS.",
+   "only_lefvs_street_tt_increase_pct": [
+    83,
+    136,
+    177,
+    203,
+    240
+   ],
+   "iwlt_stationary_street_reduction_pct": [
+    17,
+    21,
+    16,
+    18,
+    9
+   ],
+   "iwlt_flexible_street_reduction_pct": [
+    28,
+    30,
+    28,
+    27,
+    19
+   ],
+   "iwlt_stationary_total_tt_increase_pct": [
+    16,
+    31,
+    45,
+    45,
+    49
+   ],
+   "iwlt_flexible_total_tt_increase_pct": [
+    28,
+    37,
+    46,
+    42,
+    47
+   ],
+   "settings_differ": "Multiple trips are NOT allowed for large vehicles in the alternative systems. Fig. 5 reports average travel times and average fleet sizes, not the lexicographic objective z used in Tables 3/4/6."
+  },
+  "NOT_captured": {
+   "_note": "Deliberate omissions. Each states what K DOES publish and what we chose not to take, in that order. An omission is never phrased as an absence in K.",
+   "table1_notation_table2_variants": "Not numeric results.",
+   "table5_service_design_alternatives": "Row values not captured. Its PROXIMITY setting (0.1, both IWLT columns) IS captured under text_facts.proximity.table5 -- a setting that decides whether a comparison is valid is not merely a setting.",
+   "fig4_proximity_and_kmeans": "K publish a full proximity sweep at |C| = 50. Its PLOTTED points are an image and are not captured; the PROSE values are, under text_facts.fig4. D2 k-means remains out of scope.",
+   "fig5_benchmark_systems": "K publish benchmark-system results at |C| = 10,20,30,40,50 at proximity 0.1, and this is the ONLY place |C| = 40 appears. The figure's data table is an image and its ABSOLUTE values are not captured; the PROSE percentages ARE, under text_facts.fig5. IWLT-Flexible is the 2E-MVRP-SS, so a real comparison exists there -- on travel time and fleet size, not on z.",
+   "table6_savings_pct_rows": "Derivable from zIP and verified to reproduce (9.7/10.5/11.4)."
+  },
+  "open_problems_quoted": [
+   "need for improvement in the relaxed cost formulation of the master problem (S5.3, S6)",
+   "LBBD has the potential to facilitate the development of further heuristics (S6)",
+   "the underlying lagrangian bounding framework can provide the basis for designing subgradient optimization methods (S6)"
+  ],
+  "prose_claims_verified": {
+   "_note": "Numeric claims made in K's prose, each VERIFIED to reproduce from our captured per-instance table on 2026-09-13. They double as an end-to-end checksum on the inheritance: five independent statements from their text all reproduce exactly.",
+   "n20_lbbd_mean_improvement_pct": {
+    "published": 0.5,
+    "recomputed": -0.53,
+    "status": "OK"
+   },
+   "n20_max_gap_cell": {
+    "published": [
+     "R205",
+     5.3
+    ],
+    "recomputed": [
+     "R205",
+     5.3
+    ],
+    "status": "OK"
+   },
+   "n30_improved_count": {
+    "published": [
+     23,
+     27
+    ],
+    "recomputed": 23,
+    "status": "OK"
+   },
+   "n30_improvement_range_pct": {
+    "published": [
+     0.7,
+     19.4
+    ],
+    "recomputed": [
+     0.7,
+     19.4
+    ],
+    "status": "OK"
+   },
+   "n30_joint_improves_only": {
+    "published": [
+     "C201",
+     "C207"
+    ],
+    "recomputed": [
+     "C201",
+     "C207"
+    ],
+    "status": "OK"
+   },
+   "n30_mean_improvement_pct": {
+    "published": 5.5,
+    "recomputed": -5.54,
+    "status": "OK"
+   }
+  }
+ },
+ "table4_full": [
+  {
+   "size": 10,
+   "wls": "1:10",
+   "method": "Joint",
+   "bk": 357.7,
+   "inc_time": 31.9,
+   "gap_imp": 0.0,
+   "travel_total": 381.9,
+   "travel_streets": 207.9,
+   "travel_waterways": 174.1,
+   "fleet_sl": 1.0,
+   "fleet_wl": 1.0,
+   "used_satellites": 2.8
+  },
+  {
+   "size": 10,
+   "wls": "1:10",
+   "method": "LBBD",
+   "bk": 357.7,
+   "inc_time": 4.5,
+   "gap_imp": 0.0,
+   "travel_total": 381.9,
+   "travel_streets": 207.9,
+   "travel_waterways": 174.1,
+   "fleet_sl": 1.0,
+   "fleet_wl": 1.0,
+   "used_satellites": 2.8
+  },
+  {
+   "size": 10,
+   "wls": "1:5",
+   "method": "Joint",
+   "bk": 403.5,
+   "inc_time": 40.7,
+   "gap_imp": 0.0,
+   "travel_total": 364.3,
+   "travel_streets": 210.9,
+   "travel_waterways": 153.4,
+   "fleet_sl": 1.0,
+   "fleet_wl": 1.0,
+   "used_satellites": 2.3
+  },
+  {
+   "size": 10,
+   "wls": "1:5",
+   "method": "LBBD",
+   "bk": 403.5,
+   "inc_time": 7.1,
+   "gap_imp": 0.0,
+   "travel_total": 364.3,
+   "travel_streets": 210.9,
+   "travel_waterways": 153.4,
+   "fleet_sl": 1.0,
+   "fleet_wl": 1.0,
+   "used_satellites": 2.3
+  },
+  {
+   "size": 10,
+   "wls": "1:1",
+   "method": "Joint",
+   "bk": 851.5,
+   "inc_time": 205.0,
+   "gap_imp": 0.0,
+   "travel_total": 334.1,
+   "travel_streets": 247.4,
+   "travel_waterways": 86.7,
+   "fleet_sl": 1.0,
+   "fleet_wl": 1.0,
+   "used_satellites": 1.0
+  },
+  {
+   "size": 10,
+   "wls": "1:1",
+   "method": "LBBD",
+   "bk": 854.5,
+   "inc_time": 19.2,
+   "gap_imp": 0.4,
+   "travel_total": 337.1,
+   "travel_streets": 247.7,
+   "travel_waterways": 89.4,
+   "fleet_sl": 1.0,
+   "fleet_wl": 1.0,
+   "used_satellites": 1.0
+  },
+  {
+   "size": 10,
+   "wls": "10:1",
+   "method": "Joint",
+   "bk": 19330.8,
+   "inc_time": 101.4,
+   "gap_imp": 0.0,
+   "travel_total": 343.8,
+   "travel_streets": 262.7,
+   "travel_waterways": 81.0,
+   "fleet_sl": 1.0,
+   "fleet_wl": 1.0,
+   "used_satellites": 1.0
+  },
+  {
+   "size": 10,
+   "wls": "10:1",
+   "method": "LBBD",
+   "bk": 19337.4,
+   "inc_time": 29.4,
+   "gap_imp": 0.0,
+   "travel_total": 346.8,
+   "travel_streets": 265.3,
+   "travel_waterways": 81.4,
+   "fleet_sl": 1.0,
+   "fleet_wl": 1.0,
+   "used_satellites": 1.0
+  },
+  {
+   "size": 20,
+   "wls": "1:10",
+   "method": "Joint",
+   "bk": 722.7,
+   "inc_time": 5067.8,
+   "gap_imp": 26.2,
+   "travel_total": 785.8,
+   "travel_streets": 404.9,
+   "travel_waterways": 380.8,
+   "fleet_sl": 1.59,
+   "fleet_wl": 2.0,
+   "used_satellites": 3.8
+  },
+  {
+   "size": 20,
+   "wls": "1:10",
+   "method": "LBBD",
+   "bk": 719.0,
+   "inc_time": 1025.7,
+   "gap_imp": -0.5,
+   "travel_total": 786.8,
+   "travel_streets": 401.9,
+   "travel_waterways": 385.0,
+   "fleet_sl": 1.59,
+   "fleet_wl": 2.0,
+   "used_satellites": 3.9
+  },
+  {
+   "size": 20,
+   "wls": "1:5",
+   "method": "Joint",
+   "bk": 833.0,
+   "inc_time": 5910.1,
+   "gap_imp": 26.6,
+   "travel_total": 773.6,
+   "travel_streets": 407.8,
+   "travel_waterways": 365.8,
+   "fleet_sl": 1.59,
+   "fleet_wl": 2.0,
+   "used_satellites": 3.6
+  },
+  {
+   "size": 20,
+   "wls": "1:5",
+   "method": "LBBD",
+   "bk": 833.0,
+   "inc_time": 2218.0,
+   "gap_imp": 0.0,
+   "travel_total": 782.0,
+   "travel_streets": 397.9,
+   "travel_waterways": 384.1,
+   "fleet_sl": 1.63,
+   "fleet_wl": 2.0,
+   "used_satellites": 3.6
+  },
+  {
+   "size": 20,
+   "wls": "1:1",
+   "method": "Joint",
+   "bk": 1961.4,
+   "inc_time": 7031.2,
+   "gap_imp": 22.5,
+   "travel_total": 717.2,
+   "travel_streets": 448.1,
+   "travel_waterways": 269.1,
+   "fleet_sl": 1.63,
+   "fleet_wl": 2.0,
+   "used_satellites": 2.3
+  },
+  {
+   "size": 20,
+   "wls": "1:1",
+   "method": "LBBD",
+   "bk": 1939.8,
+   "inc_time": 2741.4,
+   "gap_imp": -1.1,
+   "travel_total": 723.6,
+   "travel_streets": 447.6,
+   "travel_waterways": 276.0,
+   "fleet_sl": 1.56,
+   "fleet_wl": 2.0,
+   "used_satellites": 2.3
+  },
+  {
+   "size": 20,
+   "wls": "10:1",
+   "method": "Joint",
+   "bk": 51167.3,
+   "inc_time": 6819.3,
+   "gap_imp": 5.0,
+   "travel_total": 781.1,
+   "travel_streets": 538.6,
+   "travel_waterways": 242.4,
+   "fleet_sl": 1.68,
+   "fleet_wl": 2.0,
+   "used_satellites": 1.6
+  },
+  {
+   "size": 20,
+   "wls": "10:1",
+   "method": "LBBD",
+   "bk": 50903.9,
+   "inc_time": 3198.9,
+   "gap_imp": -0.5,
+   "travel_total": 734.8,
+   "travel_streets": 485.0,
+   "travel_waterways": 249.7,
+   "fleet_sl": 1.56,
+   "fleet_wl": 2.0,
+   "used_satellites": 1.6
+  },
+  {
+   "size": 50,
+   "wls": "1:10",
+   "method": "Joint",
+   "bk": 1989.3,
+   "inc_time": 12007.9,
+   "gap_imp": 58.0,
+   "travel_total": 2017.3,
+   "travel_streets": 1117.4,
+   "travel_waterways": 899.9,
+   "fleet_sl": 3.81,
+   "fleet_wl": 3.89,
+   "used_satellites": 4.0
+  },
+  {
+   "size": 50,
+   "wls": "1:10",
+   "method": "LBBD",
+   "bk": 1941.8,
+   "inc_time": 5107.3,
+   "gap_imp": -2.4,
+   "travel_total": 1951.0,
+   "travel_streets": 1099.4,
+   "travel_waterways": 851.6,
+   "fleet_sl": 3.7,
+   "fleet_wl": 3.59,
+   "used_satellites": 4.0
+  },
+  {
+   "size": 50,
+   "wls": "1:5",
+   "method": "Joint",
+   "bk": 2361.9,
+   "inc_time": 12404.6,
+   "gap_imp": 57.1,
+   "travel_total": 2051.6,
+   "travel_streets": 1165.4,
+   "travel_waterways": 886.1,
+   "fleet_sl": 4.04,
+   "fleet_wl": 3.85,
+   "used_satellites": 4.0
+  },
+  {
+   "size": 50,
+   "wls": "1:5",
+   "method": "LBBD",
+   "bk": 2250.5,
+   "inc_time": 4867.4,
+   "gap_imp": -4.7,
+   "travel_total": 1924.2,
+   "travel_streets": 1101.4,
+   "travel_waterways": 822.8,
+   "fleet_sl": 3.89,
+   "fleet_wl": 3.59,
+   "used_satellites": 3.9
+  },
+  {
+   "size": 50,
+   "wls": "1:1",
+   "method": "Joint",
+   "bk": 5477.0,
+   "inc_time": 12269.1,
+   "gap_imp": 45.2,
+   "travel_total": 2096.5,
+   "travel_streets": 1312.9,
+   "travel_waterways": 783.7,
+   "fleet_sl": 4.26,
+   "fleet_wl": 3.63,
+   "used_satellites": 3.5
+  },
+  {
+   "size": 50,
+   "wls": "1:1",
+   "method": "LBBD",
+   "bk": 5021.8,
+   "inc_time": 5615.6,
+   "gap_imp": -8.3,
+   "travel_total": 1918.1,
+   "travel_streets": 1173.1,
+   "travel_waterways": 745.0,
+   "fleet_sl": 3.7,
+   "fleet_wl": 3.59,
+   "used_satellites": 3.7
+  },
+  {
+   "size": 50,
+   "wls": "10:1",
+   "method": "Joint",
+   "bk": 124438.2,
+   "inc_time": 13248.9,
+   "gap_imp": 12.5,
+   "travel_total": 2436.7,
+   "travel_streets": 1703.7,
+   "travel_waterways": 733.0,
+   "fleet_sl": 5.04,
+   "fleet_wl": 3.59,
+   "used_satellites": 3.1
+  },
+  {
+   "size": 50,
+   "wls": "10:1",
+   "method": "LBBD",
+   "bk": 119488.7,
+   "inc_time": 8436.3,
+   "gap_imp": -4.0,
+   "travel_total": 2089.9,
+   "travel_streets": 1428.7,
+   "travel_waterways": 661.2,
+   "fleet_sl": 3.67,
+   "fleet_wl": 3.59,
+   "used_satellites": 2.8
+  }
+ ]
+}

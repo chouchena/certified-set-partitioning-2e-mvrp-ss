@@ -1,0 +1,501 @@
+{
+ "size": 100,
+ "variant": "pu_union",
+ "rows": [
+  {
+   "cell": "C201",
+   "best": 3453.281,
+   "cfg": "pu_ng10",
+   "cars": 6,
+   "our_lb": 3138.397022802232,
+   "ng_admitted": [
+    5,
+    10,
+    25
+   ],
+   "ng_excluded": [],
+   "rt_cum": 1010.5,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "C202",
+   "best": 3290.264,
+   "cfg": "pu_ng10",
+   "cars": 6,
+   "our_lb": 2999.8233780006935,
+   "ng_admitted": [
+    5,
+    10,
+    25
+   ],
+   "ng_excluded": [],
+   "rt_cum": 4250.8,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "C203",
+   "best": 3261.714,
+   "cfg": "pu_ng10",
+   "cars": 6,
+   "our_lb": 2921.6539358626783,
+   "ng_admitted": [
+    5,
+    10,
+    25
+   ],
+   "ng_excluded": [],
+   "rt_cum": 5661.5,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "C204",
+   "best": 3255.944,
+   "cfg": "pu_ng10",
+   "cars": 6,
+   "our_lb": 2844.539155550785,
+   "ng_admitted": [
+    5,
+    10
+   ],
+   "ng_excluded": [],
+   "rt_cum": 5709.1,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "C205",
+   "best": 3294.354,
+   "cfg": "pu_ng25",
+   "cars": 6,
+   "our_lb": 2997.9900407787777,
+   "ng_admitted": [
+    5,
+    10,
+    25
+   ],
+   "ng_excluded": [],
+   "rt_cum": 3352.6,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "C206",
+   "best": 3290.494,
+   "cfg": "pu_ng25",
+   "cars": 6,
+   "our_lb": 2957.550529321806,
+   "ng_admitted": [
+    5,
+    10,
+    25
+   ],
+   "ng_excluded": [],
+   "rt_cum": 3255.1,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "C207",
+   "best": 3268.824,
+   "cfg": "pu_ng25",
+   "cars": 6,
+   "our_lb": 2929.416370369985,
+   "ng_admitted": [
+    5,
+    10,
+    25
+   ],
+   "ng_excluded": [],
+   "rt_cum": 4572.9,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "C208",
+   "best": 3269.994,
+   "cfg": "pu_ng10",
+   "cars": 6,
+   "our_lb": 2903.041847827567,
+   "ng_admitted": [
+    5,
+    10,
+    25
+   ],
+   "ng_excluded": [],
+   "rt_cum": 5465.5,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R201",
+   "best": 3084.695,
+   "cfg": "pu_ng25",
+   "cars": 6,
+   "our_lb": 2707.1196306696033,
+   "ng_admitted": [
+    5,
+    10,
+    25
+   ],
+   "ng_excluded": [],
+   "rt_cum": 4266.7,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R202",
+   "best": 2800.385,
+   "cfg": "pu_ng10",
+   "cars": 5,
+   "our_lb": 2463.1235081976665,
+   "ng_admitted": [
+    5,
+    10,
+    25
+   ],
+   "ng_excluded": [],
+   "rt_cum": 3713.6,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R203",
+   "best": 2529.326,
+   "cfg": "pu_ng5",
+   "cars": 4,
+   "our_lb": 2227.296127411849,
+   "ng_admitted": [
+    5,
+    10
+   ],
+   "ng_excluded": [],
+   "rt_cum": 5013.3,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R204",
+   "best": 2404.927,
+   "cfg": "frzdual2-derived",
+   "cars": 4,
+   "our_lb": 2039.036635405947,
+   "ng_admitted": [],
+   "ng_excluded": [],
+   "rt_cum": 869.9,
+   "theirs": null,
+   "proven": false,
+   "dual_derived": true
+  },
+  {
+   "cell": "R205",
+   "best": 2762.446,
+   "cfg": "pu_ng25",
+   "cars": 5,
+   "our_lb": 2375.0682506237567,
+   "ng_admitted": [
+    5,
+    10,
+    25
+   ],
+   "ng_excluded": [],
+   "rt_cum": 5699.9,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R206",
+   "best": 2526.71,
+   "cfg": "pu_ng10",
+   "cars": 4,
+   "our_lb": 2205.987303539729,
+   "ng_admitted": [
+    5,
+    10
+   ],
+   "ng_excluded": [],
+   "rt_cum": 4431.0,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R207",
+   "best": 2458.035,
+   "cfg": "pu_ng10",
+   "cars": 4,
+   "our_lb": 2104.948263894534,
+   "ng_admitted": [
+    10
+   ],
+   "ng_excluded": [],
+   "rt_cum": 4231.9,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R208",
+   "best": 2353.758,
+   "cfg": "frzdual2-derived",
+   "cars": 4,
+   "our_lb": 2015.154760903307,
+   "ng_admitted": [],
+   "ng_excluded": [],
+   "rt_cum": 1144.8,
+   "theirs": null,
+   "proven": false,
+   "dual_derived": true
+  },
+  {
+   "cell": "R209",
+   "best": 2668.95,
+   "cfg": "pu_ng10",
+   "cars": 5,
+   "our_lb": 2252.4588175345693,
+   "ng_admitted": [
+    5,
+    10
+   ],
+   "ng_excluded": [],
+   "rt_cum": 5403.4,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R210",
+   "best": 2538.932,
+   "cfg": "pu_ng5",
+   "cars": 4,
+   "our_lb": 2237.3487407293205,
+   "ng_admitted": [
+    5,
+    10
+   ],
+   "ng_excluded": [],
+   "rt_cum": 5657.1,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "R211",
+   "best": 2623.02,
+   "cfg": "pu_ng10",
+   "cars": 5,
+   "our_lb": 2143.169249987765,
+   "ng_admitted": [
+    10
+   ],
+   "ng_excluded": [],
+   "rt_cum": 3895.8,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "RC201",
+   "best": 3987.477,
+   "cfg": "pu_ng10",
+   "cars": 6,
+   "our_lb": 3478.7716396459855,
+   "ng_admitted": [
+    5,
+    10,
+    25
+   ],
+   "ng_excluded": [],
+   "rt_cum": 3608.4,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "RC202",
+   "best": 3648.632,
+   "cfg": "pu_ng25",
+   "cars": 5,
+   "our_lb": 3119.5468473311867,
+   "ng_admitted": [
+    5,
+    10,
+    25
+   ],
+   "ng_excluded": [],
+   "rt_cum": 4556.0,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "RC203",
+   "best": 3422.639,
+   "cfg": "pu_ng25",
+   "cars": 5,
+   "our_lb": 2839.5154958308967,
+   "ng_admitted": [
+    5,
+    10,
+    25
+   ],
+   "ng_excluded": [],
+   "rt_cum": 5619.5,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "RC204",
+   "best": 3232.867,
+   "cfg": "pu_ng5",
+   "cars": 5,
+   "our_lb": 2673.884550490801,
+   "ng_admitted": [
+    5,
+    10
+   ],
+   "ng_excluded": [],
+   "rt_cum": 5373.2,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "RC205",
+   "best": 3819.699,
+   "cfg": "pu_ng10",
+   "cars": 6,
+   "our_lb": 3264.411383961894,
+   "ng_admitted": [
+    5,
+    10,
+    25
+   ],
+   "ng_excluded": [],
+   "rt_cum": 3513.3,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "RC206",
+   "best": 3506.213,
+   "cfg": "pu_ng10",
+   "cars": 5,
+   "our_lb": 3064.930092591828,
+   "ng_admitted": [
+    5,
+    10,
+    25
+   ],
+   "ng_excluded": [],
+   "rt_cum": 5406.5,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "RC207",
+   "best": 3437.485,
+   "cfg": "pu_ng10",
+   "cars": 5,
+   "our_lb": 2957.832506284485,
+   "ng_admitted": [
+    5,
+    10
+   ],
+   "ng_excluded": [],
+   "rt_cum": 4237.2,
+   "theirs": null,
+   "proven": false
+  },
+  {
+   "cell": "RC208",
+   "best": 3343.821,
+   "cfg": "pu_ng10",
+   "cars": 5,
+   "our_lb": 2804.9481900054257,
+   "ng_admitted": [
+    5,
+    10
+   ],
+   "ng_excluded": [],
+   "rt_cum": 5175.7,
+   "theirs": null,
+   "proven": false
+  }
+ ],
+ "sources": {
+  "analysis/tep_grid_consolidate.py": "ecd2f38500834997"
+ },
+ "_provenance": {
+  "sources": {
+   "analysis/tep_grid_consolidate.py": "ecd2f38500834997"
+  },
+  "when": "2026-10-09T17:47:58",
+  "git_sha": "805c370fb5eb",
+  "git_dirty": true,
+  "sources_dirty": [],
+  "python": "3.10.11",
+  "host": "LAPTOP-420NB7DQ",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cpu": {
+   "model": "Intel(R) Core(TM) Ultra 7 258V",
+   "logical": 8,
+   "cores": 8
+  },
+  "source_hash": "26986a1519374cdf",
+  "sources_unresolved": [],
+  "code_in_play_hash": "14833616d0a11c2c",
+  "code_in_play_n": 6,
+  "code_in_play": {
+   "analysis/artifact_gate.py": "e35185e0e89b2ab5",
+   "analysis/artifact_guard.py": "5aa960abca47c6e8",
+   "analysis/repro_preflight.py": "c0062485fae9b768",
+   "analysis/rt_class.py": "bf346ac520a31c00",
+   "analysis/stamp.py": "6f8d1d3a0792144f",
+   "analysis/tep_grid_consolidate.py": "ecd2f38500834997"
+  },
+  "code_hash_missing": [],
+  "code_hash_covers": [
+   "crossfeed/block_a.py",
+   "crossfeed/easy_reduction.py",
+   "crossfeed/blockA_cpsat.py",
+   "crossfeed/easy_reduction_descend.py",
+   "crossfeed/bound_tracer.py",
+   "build_instance.py",
+   "joint_model_cplex.py",
+   "joint_model_gurobi.py",
+   "solver/engines/fixopt.py"
+  ],
+  "code_hash": "26b414c6",
+  "solver_versions": {
+   "docplex": null,
+   "cplex": "22.1.1.0"
+  },
+  "gurobi": "13.0.3",
+  "solver_tolerances": {
+   "FeasibilityTol": 1e-06,
+   "IntFeasTol": 1e-05,
+   "OptimalityTol": 1e-06,
+   "MIPGap": 0.0001,
+   "NumericFocus": 0,
+   "source": "gurobipy defaults for a fresh model"
+  }
+ },
+ "_rt": {
+  "wall_s": 6.475,
+  "wall_measured_by": "analysis/stamp.py",
+  "process_wall_s": 6.475,
+  "cpu_s": 0.219,
+  "det_ticks": null,
+  "clock": "time.time / time.process_time since analysis.stamp import",
+  "rt_class": "diagnostic",
+  "rt_not_comparable": "the writer declared no rt_class, so this wall was never certified against d47 (4 threads, single tenancy) and is not quotable",
+  "threads": null,
+  "tenancy": 1,
+  "policy": "d47",
+  "declared": false,
+  "cores_regime": {
+   "threads_requested": null,
+   "cores_used_measured": 0.034,
+   "tenancy": 1,
+   "machine_cores": 8,
+   "machine_logical": 8,
+   "policy_threads": 4,
+   "policy": "d47"
+  }
+ }
+}

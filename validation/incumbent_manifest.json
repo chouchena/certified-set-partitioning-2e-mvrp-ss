@@ -1,0 +1,1356 @@
+{
+ "cells": [
+  {
+   "cell": "C201",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 369.059,
+   "reported_ov": 369.059,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_C201_n10.json"
+  },
+  {
+   "cell": "C202",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 327.489,
+   "reported_ov": 327.489,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_C202_n10.json"
+  },
+  {
+   "cell": "C203",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 327.489,
+   "reported_ov": 327.489,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_C203_n10.json"
+  },
+  {
+   "cell": "C204",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 304.269,
+   "reported_ov": 304.269,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_C204_n10.json"
+  },
+  {
+   "cell": "C205",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 366.759,
+   "reported_ov": 366.759,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_C205_n10.json"
+  },
+  {
+   "cell": "C206",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 366.759,
+   "reported_ov": 366.759,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_C206_n10.json"
+  },
+  {
+   "cell": "C207",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 365.489,
+   "reported_ov": 365.489,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_C207_n10.json"
+  },
+  {
+   "cell": "C208",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 363.909,
+   "reported_ov": 363.909,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_C208_n10.json"
+  },
+  {
+   "cell": "R201",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 420.144,
+   "reported_ov": 420.144,
+   "selection": "ng5",
+   "size": 10,
+   "source": "tep_solve_pu_ng5_R201_n10.json"
+  },
+  {
+   "cell": "R202",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 388.438,
+   "reported_ov": 388.438,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_R202_n10.json"
+  },
+  {
+   "cell": "R203",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 388.438,
+   "reported_ov": 388.438,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_R203_n10.json"
+  },
+  {
+   "cell": "R204",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 354.654,
+   "reported_ov": 354.654,
+   "selection": "ng5",
+   "size": 10,
+   "source": "tep_solve_pu_ng5_R204_n10.json"
+  },
+  {
+   "cell": "R205",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 382.046,
+   "reported_ov": 382.046,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_R205_n10.json"
+  },
+  {
+   "cell": "R206",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 327.558,
+   "reported_ov": 327.558,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_R206_n10.json"
+  },
+  {
+   "cell": "R207",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 327.558,
+   "reported_ov": 327.558,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_R207_n10.json"
+  },
+  {
+   "cell": "R208",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 327.558,
+   "reported_ov": 327.558,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_R208_n10.json"
+  },
+  {
+   "cell": "R209",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 362.074,
+   "reported_ov": 362.074,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_R209_n10.json"
+  },
+  {
+   "cell": "R210",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 354.654,
+   "reported_ov": 354.654,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_R210_n10.json"
+  },
+  {
+   "cell": "R211",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 344.5,
+   "reported_ov": 344.5,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_R211_n10.json"
+  },
+  {
+   "cell": "RC201",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 392.769,
+   "reported_ov": 392.769,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_RC201_n10.json"
+  },
+  {
+   "cell": "RC202",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 356.509,
+   "reported_ov": 356.509,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_RC202_n10.json"
+  },
+  {
+   "cell": "RC203",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 356.509,
+   "reported_ov": 356.509,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_RC203_n10.json"
+  },
+  {
+   "cell": "RC204",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 320.2,
+   "reported_ov": 320.2,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_RC204_n10.json"
+  },
+  {
+   "cell": "RC205",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 440.64,
+   "reported_ov": 440.64,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_RC205_n10.json"
+  },
+  {
+   "cell": "RC206",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 363.069,
+   "reported_ov": 363.069,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_RC206_n10.json"
+  },
+  {
+   "cell": "RC207",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 364.359,
+   "reported_ov": 364.359,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_RC207_n10.json"
+  },
+  {
+   "cell": "RC208",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 319.495,
+   "reported_ov": 319.495,
+   "selection": "ng10",
+   "size": 10,
+   "source": "tep_solve_pu_ng10_RC208_n10.json"
+  },
+  {
+   "cell": "C201",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 697.695,
+   "reported_ov": 697.695,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_C201_n20.json"
+  },
+  {
+   "cell": "C202",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 679.445,
+   "reported_ov": 679.445,
+   "selection": "ng5",
+   "size": 20,
+   "source": "tep_solve_pu_ng5_C202_n20.json"
+  },
+  {
+   "cell": "C203",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 673.605,
+   "reported_ov": 673.605,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_C203_n20.json"
+  },
+  {
+   "cell": "C204",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 668.935,
+   "reported_ov": 668.935,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_C204_n20.json"
+  },
+  {
+   "cell": "C205",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 685.185,
+   "reported_ov": 685.185,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_C205_n20.json"
+  },
+  {
+   "cell": "C206",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 680.785,
+   "reported_ov": 680.785,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_C206_n20.json"
+  },
+  {
+   "cell": "C207",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 679.802,
+   "reported_ov": 679.802,
+   "selection": "ng5",
+   "size": 20,
+   "source": "tep_solve_pu_ng5_C207_n20.json"
+  },
+  {
+   "cell": "C208",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 678.135,
+   "reported_ov": 678.135,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_C208_n20.json"
+  },
+  {
+   "cell": "R201",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 821.706,
+   "reported_ov": 821.706,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_R201_n20.json"
+  },
+  {
+   "cell": "R202",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 772.226,
+   "reported_ov": 772.226,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_R202_n20.json"
+  },
+  {
+   "cell": "R203",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 642.946,
+   "reported_ov": 642.946,
+   "selection": "ng5",
+   "size": 20,
+   "source": "tep_solve_pu_ng5_R203_n20.json"
+  },
+  {
+   "cell": "R204",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 613.346,
+   "reported_ov": 613.346,
+   "selection": "ng20",
+   "size": 20,
+   "source": "tep_solve_pu_ng20_R204_n20.json"
+  },
+  {
+   "cell": "R205",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 657.326,
+   "reported_ov": 657.326,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_R205_n20.json"
+  },
+  {
+   "cell": "R206",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 618.625,
+   "reported_ov": 618.625,
+   "selection": "ng5",
+   "size": 20,
+   "source": "tep_solve_pu_ng5_R206_n20.json"
+  },
+  {
+   "cell": "R207",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 582.385,
+   "reported_ov": 582.385,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_R207_n20.json"
+  },
+  {
+   "cell": "R208",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 553.806,
+   "reported_ov": 553.806,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_R208_n20.json"
+  },
+  {
+   "cell": "R209",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 626.266,
+   "reported_ov": 626.266,
+   "selection": "ng5",
+   "size": 20,
+   "source": "tep_solve_pu_ng5_R209_n20.json"
+  },
+  {
+   "cell": "R210",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 636.857,
+   "reported_ov": 636.857,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_R210_n20.json"
+  },
+  {
+   "cell": "R211",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 577.696,
+   "reported_ov": 577.696,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_R211_n20.json"
+  },
+  {
+   "cell": "RC201",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 990.858,
+   "reported_ov": 990.858,
+   "selection": "ng20",
+   "size": 20,
+   "source": "tep_solve_pu_ng20_RC201_n20.json"
+  },
+  {
+   "cell": "RC202",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 908.067,
+   "reported_ov": 908.067,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_RC202_n20.json"
+  },
+  {
+   "cell": "RC203",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 724.997,
+   "reported_ov": 724.997,
+   "selection": "ng20",
+   "size": 20,
+   "source": "tep_solve_pu_ng20_RC203_n20.json"
+  },
+  {
+   "cell": "RC204",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 642.378,
+   "reported_ov": 642.378,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_RC204_n20.json"
+  },
+  {
+   "cell": "RC205",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 935.758,
+   "reported_ov": 935.758,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_RC205_n20.json"
+  },
+  {
+   "cell": "RC206",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 893.263,
+   "reported_ov": 893.263,
+   "selection": "ng10",
+   "size": 20,
+   "source": "tep_solve_pu_ng10_RC206_n20.json"
+  },
+  {
+   "cell": "RC207",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 882.228,
+   "reported_ov": 882.228,
+   "selection": "ng20",
+   "size": 20,
+   "source": "tep_solve_pu_ng20_RC207_n20.json"
+  },
+  {
+   "cell": "RC208",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 708.883,
+   "reported_ov": 708.883,
+   "selection": "ng5",
+   "size": 20,
+   "source": "tep_solve_pu_ng5_RC208_n20.json"
+  },
+  {
+   "cell": "C201",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1017.432,
+   "reported_ov": 1017.432,
+   "selection": "ng25",
+   "size": 30,
+   "source": "tep_solve_pu_ng25_C201_n30.json"
+  },
+  {
+   "cell": "C202",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 857.181,
+   "reported_ov": 857.181,
+   "selection": "ng10",
+   "size": 30,
+   "source": "tep_solve_pu_ng10_C202_n30.json"
+  },
+  {
+   "cell": "C203",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 827.03,
+   "reported_ov": 827.03,
+   "selection": "ng10",
+   "size": 30,
+   "source": "tep_solve_pu_ng10_C203_n30.json"
+  },
+  {
+   "cell": "C204",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 804.75,
+   "reported_ov": 804.75,
+   "selection": "ng5",
+   "size": 30,
+   "source": "tep_solve_pu_ng5_C204_n30.json"
+  },
+  {
+   "cell": "C205",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 871.49,
+   "reported_ov": 871.49,
+   "selection": "ng10",
+   "size": 30,
+   "source": "tep_solve_pu_ng10_C205_n30.json"
+  },
+  {
+   "cell": "C206",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 856.651,
+   "reported_ov": 856.651,
+   "selection": "ng10",
+   "size": 30,
+   "source": "tep_solve_pu_ng10_C206_n30.json"
+  },
+  {
+   "cell": "C207",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 834.97,
+   "reported_ov": 834.97,
+   "selection": "ng25",
+   "size": 30,
+   "source": "tep_solve_pu_ng25_C207_n30.json"
+  },
+  {
+   "cell": "C208",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 837.64,
+   "reported_ov": 837.64,
+   "selection": "ng10",
+   "size": 30,
+   "source": "tep_solve_pu_ng10_C208_n30.json"
+  },
+  {
+   "cell": "R201",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1064.708,
+   "reported_ov": 1064.708,
+   "selection": "ng25",
+   "size": 30,
+   "source": "tep_solve_pu_ng25_R201_n30.json"
+  },
+  {
+   "cell": "R202",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1012.544,
+   "reported_ov": 1012.544,
+   "selection": "ng5",
+   "size": 30,
+   "source": "tep_solve_pu_ng5_R202_n30.json"
+  },
+  {
+   "cell": "R203",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 913.429,
+   "reported_ov": 913.429,
+   "selection": "ng10",
+   "size": 30,
+   "source": "tep_solve_pu_ng10_R203_n30.json"
+  },
+  {
+   "cell": "R204",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 851.142,
+   "reported_ov": 851.142,
+   "selection": "ng10",
+   "size": 30,
+   "source": "tep_solve_pu_ng10_R204_n30.json"
+  },
+  {
+   "cell": "R205",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 959.712,
+   "reported_ov": 959.712,
+   "selection": "ng10",
+   "size": 30,
+   "source": "tep_solve_pu_ng10_R205_n30.json"
+  },
+  {
+   "cell": "R206",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 926.334,
+   "reported_ov": 926.334,
+   "selection": "ng25",
+   "size": 30,
+   "source": "tep_solve_pu_ng25_R206_n30.json"
+  },
+  {
+   "cell": "R207",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 882.248,
+   "reported_ov": 882.248,
+   "selection": "ng25",
+   "size": 30,
+   "source": "tep_solve_pu_ng25_R207_n30.json"
+  },
+  {
+   "cell": "R208",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 702.028,
+   "reported_ov": 702.028,
+   "selection": "ng10",
+   "size": 30,
+   "source": "tep_solve_pu_ng10_R208_n30.json"
+  },
+  {
+   "cell": "R209",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 924.921,
+   "reported_ov": 924.921,
+   "selection": "ng25",
+   "size": 30,
+   "source": "tep_solve_pu_ng25_R209_n30.json"
+  },
+  {
+   "cell": "R210",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 906.762,
+   "reported_ov": 906.762,
+   "selection": "ng5",
+   "size": 30,
+   "source": "tep_solve_pu_ng5_R210_n30.json"
+  },
+  {
+   "cell": "R211",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 896.142,
+   "reported_ov": 896.142,
+   "selection": "ng5",
+   "size": 30,
+   "source": "tep_solve_pu_ng5_R211_n30.json"
+  },
+  {
+   "cell": "RC201",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1675.219,
+   "reported_ov": 1675.219,
+   "selection": "ng10",
+   "size": 30,
+   "source": "tep_solve_pu_ng10_RC201_n30.json"
+  },
+  {
+   "cell": "RC202",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1407.548,
+   "reported_ov": 1407.548,
+   "selection": "ng10",
+   "size": 30,
+   "source": "tep_solve_pu_ng10_RC202_n30.json"
+  },
+  {
+   "cell": "RC203",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1390.618,
+   "reported_ov": 1390.618,
+   "selection": "ng5",
+   "size": 30,
+   "source": "tep_solve_pu_ng5_RC203_n30.json"
+  },
+  {
+   "cell": "RC204",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1271.698,
+   "reported_ov": 1271.698,
+   "selection": "ng25",
+   "size": 30,
+   "source": "tep_solve_pu_ng25_RC204_n30.json"
+  },
+  {
+   "cell": "RC205",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1597.649,
+   "reported_ov": 1597.649,
+   "selection": "ng10",
+   "size": 30,
+   "source": "tep_solve_pu_ng10_RC205_n30.json"
+  },
+  {
+   "cell": "RC206",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1399.081,
+   "reported_ov": 1399.081,
+   "selection": "ng5",
+   "size": 30,
+   "source": "tep_solve_pu_ng5_RC206_n30.json"
+  },
+  {
+   "cell": "RC207",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1358.968,
+   "reported_ov": 1358.968,
+   "selection": "ng25",
+   "size": 30,
+   "source": "tep_solve_pu_ng25_RC207_n30.json"
+  },
+  {
+   "cell": "RC208",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1298.215,
+   "reported_ov": 1298.215,
+   "selection": "ng10",
+   "size": 30,
+   "source": "tep_solve_pu_ng10_RC208_n30.json"
+  },
+  {
+   "cell": "C201",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1754.841,
+   "reported_ov": 1754.841,
+   "selection": "ng5",
+   "size": 50,
+   "source": "tep_solve_pu_ng5_C201_n50.json"
+  },
+  {
+   "cell": "C202",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1576.814,
+   "reported_ov": 1576.814,
+   "selection": "ng5",
+   "size": 50,
+   "source": "tep_solve_pu_ng5_C202_n50.json"
+  },
+  {
+   "cell": "C203",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1458.843,
+   "reported_ov": 1458.843,
+   "selection": "ng10",
+   "size": 50,
+   "source": "tep_solve_pu_ng10_C203_n50.json"
+  },
+  {
+   "cell": "C204",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1436.785,
+   "reported_ov": 1436.785,
+   "selection": "ng5",
+   "size": 50,
+   "source": "tep_solve_pu_ng5_C204_n50.json"
+  },
+  {
+   "cell": "C205",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1569.743,
+   "reported_ov": 1569.743,
+   "selection": "ng10",
+   "size": 50,
+   "source": "tep_solve_pu_ng10_C205_n50.json"
+  },
+  {
+   "cell": "C206",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1503.483,
+   "reported_ov": 1503.483,
+   "selection": "ng25",
+   "size": 50,
+   "source": "tep_solve_pu_ng25_C206_n50.json"
+  },
+  {
+   "cell": "C207",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1477.255,
+   "reported_ov": 1477.255,
+   "selection": "ng10",
+   "size": 50,
+   "source": "tep_solve_pu_ng10_C207_n50.json"
+  },
+  {
+   "cell": "C208",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1469.973,
+   "reported_ov": 1469.973,
+   "selection": "ng10",
+   "size": 50,
+   "source": "tep_solve_pu_ng10_C208_n50.json"
+  },
+  {
+   "cell": "R201",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1867.568,
+   "reported_ov": 1867.568,
+   "selection": "ng5",
+   "size": 50,
+   "source": "tep_solve_pu_ng5_R201_n50.json"
+  },
+  {
+   "cell": "R202",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1681.258,
+   "reported_ov": 1681.258,
+   "selection": "ng10",
+   "size": 50,
+   "source": "tep_solve_pu_ng10_R202_n50.json"
+  },
+  {
+   "cell": "R203",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1587.432,
+   "reported_ov": 1587.432,
+   "selection": "ng5",
+   "size": 50,
+   "source": "tep_solve_pu_ng5_R203_n50.json"
+  },
+  {
+   "cell": "R204",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1290.297,
+   "reported_ov": 1290.297,
+   "selection": "ng10",
+   "size": 50,
+   "source": "tep_solve_pu_ng10_R204_n50.json"
+  },
+  {
+   "cell": "R205",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1677.465,
+   "reported_ov": 1677.465,
+   "selection": "ng25",
+   "size": 50,
+   "source": "tep_solve_pu_ng25_R205_n50.json"
+  },
+  {
+   "cell": "R206",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1602.164,
+   "reported_ov": 1602.164,
+   "selection": "ng25",
+   "size": 50,
+   "source": "tep_solve_pu_ng25_R206_n50.json"
+  },
+  {
+   "cell": "R207",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1556.931,
+   "reported_ov": 1556.931,
+   "selection": "ng10",
+   "size": 50,
+   "source": "tep_solve_pu_ng10_R207_n50.json"
+  },
+  {
+   "cell": "R208",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1287.677,
+   "reported_ov": 1287.677,
+   "selection": "ng10",
+   "size": 50,
+   "source": "tep_solve_pu_ng10_R208_n50.json"
+  },
+  {
+   "cell": "R209",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1599.064,
+   "reported_ov": 1599.064,
+   "selection": "ng5",
+   "size": 50,
+   "source": "tep_solve_pu_ng5_R209_n50.json"
+  },
+  {
+   "cell": "R210",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1609.181,
+   "reported_ov": 1609.181,
+   "selection": "ng5",
+   "size": 50,
+   "source": "tep_solve_pu_ng5_R210_n50.json"
+  },
+  {
+   "cell": "R211",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1375.938,
+   "reported_ov": 1375.938,
+   "selection": "ng10",
+   "size": 50,
+   "source": "tep_solve_pu_ng10_R211_n50.json"
+  },
+  {
+   "cell": "RC201",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 2319.031,
+   "reported_ov": 2319.031,
+   "selection": "ng25",
+   "size": 50,
+   "source": "tep_solve_pu_ng25_RC201_n50.json"
+  },
+  {
+   "cell": "RC202",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1975.645,
+   "reported_ov": 1975.645,
+   "selection": "ng25",
+   "size": 50,
+   "source": "tep_solve_pu_ng25_RC202_n50.json"
+  },
+  {
+   "cell": "RC203",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1883.292,
+   "reported_ov": 1883.292,
+   "selection": "ng10",
+   "size": 50,
+   "source": "tep_solve_pu_ng10_RC203_n50.json"
+  },
+  {
+   "cell": "RC204",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1787.522,
+   "reported_ov": 1787.522,
+   "selection": "ng5",
+   "size": 50,
+   "source": "tep_solve_pu_ng5_RC204_n50.json"
+  },
+  {
+   "cell": "RC205",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 2210.267,
+   "reported_ov": 2210.267,
+   "selection": "ng25",
+   "size": 50,
+   "source": "tep_solve_pu_ng25_RC205_n50.json"
+  },
+  {
+   "cell": "RC206",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1979.125,
+   "reported_ov": 1979.125,
+   "selection": "ng5",
+   "size": 50,
+   "source": "tep_solve_pu_ng5_RC206_n50.json"
+  },
+  {
+   "cell": "RC207",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1905.032,
+   "reported_ov": 1905.032,
+   "selection": "ng5",
+   "size": 50,
+   "source": "tep_solve_pu_ng5_RC207_n50.json"
+  },
+  {
+   "cell": "RC208",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 1856.139,
+   "reported_ov": 1856.139,
+   "selection": "ng25",
+   "size": 50,
+   "source": "tep_solve_pu_ng25_RC208_n50.json"
+  },
+  {
+   "cell": "C201",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3453.281,
+   "reported_ov": 3453.281,
+   "selection": "ng10",
+   "size": 100,
+   "source": "tep_solve_pu_ng10_C201_n100.json"
+  },
+  {
+   "cell": "C202",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3290.264,
+   "reported_ov": 3290.264,
+   "selection": "ng10",
+   "size": 100,
+   "source": "tep_solve_pu_ng10_C202_n100.json"
+  },
+  {
+   "cell": "C203",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3261.714,
+   "reported_ov": 3261.714,
+   "selection": "ng10",
+   "size": 100,
+   "source": "tep_solve_pu_ng10_C203_n100.json"
+  },
+  {
+   "cell": "C204",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3255.944,
+   "reported_ov": 3255.944,
+   "selection": "ng10",
+   "size": 100,
+   "source": "tep_solve_pu_ng10_C204_n100.json"
+  },
+  {
+   "cell": "C205",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3294.354,
+   "reported_ov": 3294.354,
+   "selection": "ng25",
+   "size": 100,
+   "source": "tep_solve_pu_ng25_C205_n100.json"
+  },
+  {
+   "cell": "C206",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3290.494,
+   "reported_ov": 3290.494,
+   "selection": "ng25",
+   "size": 100,
+   "source": "tep_solve_pu_ng25_C206_n100.json"
+  },
+  {
+   "cell": "C207",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3268.824,
+   "reported_ov": 3268.824,
+   "selection": "ng25",
+   "size": 100,
+   "source": "tep_solve_pu_ng25_C207_n100.json"
+  },
+  {
+   "cell": "C208",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3269.994,
+   "reported_ov": 3269.994,
+   "selection": "ng10",
+   "size": 100,
+   "source": "tep_solve_pu_ng10_C208_n100.json"
+  },
+  {
+   "cell": "R201",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3084.695,
+   "reported_ov": 3084.695,
+   "selection": "ng25",
+   "size": 100,
+   "source": "tep_solve_pu_ng25_R201_n100.json"
+  },
+  {
+   "cell": "R202",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 2800.385,
+   "reported_ov": 2800.385,
+   "selection": "ng10",
+   "size": 100,
+   "source": "tep_solve_pu_ng10_R202_n100.json"
+  },
+  {
+   "cell": "R203",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 2529.326,
+   "reported_ov": 2529.326,
+   "selection": "ng5",
+   "size": 100,
+   "source": "tep_solve_pu_ng5_R203_n100.json"
+  },
+  {
+   "cell": "R204",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 2404.927,
+   "reported_ov": 2404.927,
+   "selection": "derived",
+   "size": 100,
+   "source": "tep_solve_frzdual2_R204_n100.json"
+  },
+  {
+   "cell": "R205",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 2762.446,
+   "reported_ov": 2762.446,
+   "selection": "ng25",
+   "size": 100,
+   "source": "tep_solve_pu_ng25_R205_n100.json"
+  },
+  {
+   "cell": "R206",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 2526.71,
+   "reported_ov": 2526.71,
+   "selection": "ng10",
+   "size": 100,
+   "source": "tep_solve_pu_ng10_R206_n100.json"
+  },
+  {
+   "cell": "R207",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 2458.035,
+   "reported_ov": 2458.035,
+   "selection": "ng10",
+   "size": 100,
+   "source": "tep_solve_pu_ng10_R207_n100.json"
+  },
+  {
+   "cell": "R208",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 2353.758,
+   "reported_ov": 2353.758,
+   "selection": "derived",
+   "size": 100,
+   "source": "tep_solve_frzdual2_R208_n100.json"
+  },
+  {
+   "cell": "R209",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 2668.95,
+   "reported_ov": 2668.95,
+   "selection": "ng10",
+   "size": 100,
+   "source": "tep_solve_pu_ng10_R209_n100.json"
+  },
+  {
+   "cell": "R210",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 2538.932,
+   "reported_ov": 2538.932,
+   "selection": "ng5",
+   "size": 100,
+   "source": "tep_solve_pu_ng5_R210_n100.json"
+  },
+  {
+   "cell": "R211",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 2623.02,
+   "reported_ov": 2623.02,
+   "selection": "ng10",
+   "size": 100,
+   "source": "tep_solve_pu_ng10_R211_n100.json"
+  },
+  {
+   "cell": "RC201",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3987.477,
+   "reported_ov": 3987.477,
+   "selection": "ng10",
+   "size": 100,
+   "source": "tep_solve_pu_ng10_RC201_n100.json"
+  },
+  {
+   "cell": "RC202",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3648.632,
+   "reported_ov": 3648.632,
+   "selection": "ng25",
+   "size": 100,
+   "source": "tep_solve_pu_ng25_RC202_n100.json"
+  },
+  {
+   "cell": "RC203",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3422.639,
+   "reported_ov": 3422.639,
+   "selection": "ng25",
+   "size": 100,
+   "source": "tep_solve_pu_ng25_RC203_n100.json"
+  },
+  {
+   "cell": "RC204",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3232.867,
+   "reported_ov": 3232.867,
+   "selection": "ng5",
+   "size": 100,
+   "source": "tep_solve_pu_ng5_RC204_n100.json"
+  },
+  {
+   "cell": "RC205",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3819.699,
+   "reported_ov": 3819.699,
+   "selection": "ng10",
+   "size": 100,
+   "source": "tep_solve_pu_ng10_RC205_n100.json"
+  },
+  {
+   "cell": "RC206",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3506.213,
+   "reported_ov": 3506.213,
+   "selection": "ng10",
+   "size": 100,
+   "source": "tep_solve_pu_ng10_RC206_n100.json"
+  },
+  {
+   "cell": "RC207",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3437.485,
+   "reported_ov": 3437.485,
+   "selection": "ng10",
+   "size": 100,
+   "source": "tep_solve_pu_ng10_RC207_n100.json"
+  },
+  {
+   "cell": "RC208",
+   "cost_match": true,
+   "feasible": true,
+   "recomputed_obj": 3343.821,
+   "reported_ov": 3343.821,
+   "selection": "ng10",
+   "size": 100,
+   "source": "tep_solve_pu_ng10_RC208_n100.json"
+  }
+ ],
+ "cost_tol_relative": 0.0001,
+ "note": "source is the runs/oracle artifact our_union selects per cell; its `solution` field is the reported incumbent (packaged under certificates/). recomputed is verifier3's independent objective."
+}
