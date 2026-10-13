@@ -1,5 +1,5 @@
 {
-  "title": "Certified lower bounds and matching incumbents for the 2E-MVRP-SS via a time-expanded trip-event partitioning",
+  "title": "A certified time-expanded set-partitioning algorithm tightening the reported optimality gap for the two-echelon multi-trip vehicle routing problem with satellite synchronization",
   "upload_type": "software",
   "access_right": "open",
   "license": "MIT",

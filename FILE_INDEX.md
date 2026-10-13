@@ -432,6 +432,7 @@ Every file in this release and its purpose. This is the replication package for 
 - `analysis/time_to_parity.py` -- TIME TO PARITY — our dual time-to-tie PLUS our primal time-to-tie, against K's compounded RT.
 - `analysis/transcription_audit.py` -- TRANSCRIPTION AUDIT: is verifier3's reading of K's (1)-(30) corroborated by sources that are NOT my reading? Design: validation/DESIGN_transcription_audit.md Design audit: validation/AUDIT_design_transcription.md (five mandated changes, all
 - `analysis/trial_reuse_harm.py` -- Does the reuse constructor ever HURT, at the sizes where nobody has looked? (n=596) WHY.
+- `analysis/triangle_audit.py` -- Triangle-inequality audit for the street distance matrix D (review item 3H, 2026-10-13).
 - `analysis/ttb_head_to_head.py` -- OUR (LB TTB + primal TTB) against THEIRS — same target, same machine, both methods.
 - `analysis/tw_width_mechanism.py` -- Time-window WIDTH as the discriminator of K's reported difficulty.
 - `analysis/undo_spawn_blast.py` -- Undo the blast radius of the 2026-09-20 import-gate incident.
@@ -511,6 +512,7 @@ Every file in this release and its purpose. This is the replication package for 
 
 - `CLAIMS.md` -- Human-readable claim register: each empirical claim with its falsifier.
 - `validation/EQ_TO_CODE.md` -- Map from each model equation to the code line that implements it.
+- `validation/FINDING_triangle_inequality.md` -- Metricity audit (review response): the street matrix is non-metric only at |C|=100 by <=0.01 (two-decimal rounding), depot-customer window arcs are shortest paths, and no reported bound requires metricity; reproduced by analysis/triangle_audit.py.
 - `validation/VALIDATION_REPORT.md` -- Readable validation report for the formulation and implementation.
 - `validation/certificate_records.json` -- Index of the per-instance lower-bound certificates.
 - `validation/claims.json` -- Machine-readable claim register (checked by analysis/claims.py); REPRODUCTION_INDEX links each number to a claim id here.
